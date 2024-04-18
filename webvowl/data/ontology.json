@@ -1,0 +1,3665 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "cs", "ar", "ja", "el", "en", "it", "fr", "da", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "https://w3id.org/sedimark/ontology", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/vcard/ns", "https://purl.org/dc/terms", "http://www.w3.org/ns/odrl/2", "https://w3id.org/sedimark/vocab", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/dc/terms", "http://www.w3.org/2008/05/skos", "http://xmlns.com/foaf/0.1", "http://www.w3.org/ns/adms", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "undefined" : "SEDIMARK Marketplace Ontology"
+    },
+    "iri" : "https://w3id.org/sedimark/ontology#",
+    "description" : {
+      "undefined" : "The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.\n\nThis model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sedi-ont",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "SEDIMARK Marketplace Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "112",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "113",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "66",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "114",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "116",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "124",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "153",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "154",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "159",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "162",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "181",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "179",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "200",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/sedimark/vocab#OtherAsset",
+    "baseIri" : "https://w3id.org/sedimark/vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtherAsset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/AssetCollection",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AssetCollection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/sedimark/vocab#AIModelAsset",
+    "baseIri" : "https://w3id.org/sedimark/vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AIModelAsset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#Participant",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Participant"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "description" : { },
+      "labels" : {
+        "IRI-based" : "CVSSP"
+      }
+    } ],
+    "id" : "10",
+    "superClasses" : [ "11", "12" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/LocationPeriodOrJurisdiction",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LocationPeriodOrJurisdiction"
+    },
+    "subClasses" : [ "20", "21" ],
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Resource",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New class added in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva clase agregada en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "da",
+        "value" : "Ny klasse i DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová t?ída p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova classe aggiunta in DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Resource published or curated by a single agent.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Risorsa pubblicata o curata da un singolo agente.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Recurso publicado o curado por un agente único.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "T?ída všech katalogizovaných zdroj?, nadt?ída dcat:Dataset, dcat:DataService, dcat:Catalog a všech ostatních ?len? dcat:Catalog. Tato t?ída nese vlastnosti spole?né všem katalogizovaným zdroj?m v?etn? datových sad a datových služeb. Je siln? doporu?eno používat specifi?t?jší podt?ídy, pokud je to možné. P?i popisu zdroje, který není ani dcat:Dataset, ani dcat:DataService se doporu?uje vytvo?it odpovídající podt?ídu dcat:Resrouce a nebo použít dcat:Resource s vlastností dct:type pro ur?ení konkrétního typu.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder dataset og datatjenester. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dct:type property to indicate the specific type.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "dcat:Resource er et udvidelsespunkt der tillader oprettelsen af enhver type af kataloger. Yderligere subklasser kan defineres i en DCAT-profil eller i en applikation til kataloger med andre typer af ressourcer.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional subclasses may be defined in a DCAT profile or application for catalogs of other kinds of resources.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "La clase de todos los recursos catalogados, la superclase de dcat:Dataset, dcat:DataService, dcat:Catalog y cualquier otro miembro de un dcat:Catalog. Esta clase tiene propiedades comunes a todos los recursos catalogados, incluyendo conjuntos de datos y servicios de datos. Se recomienda fuertemente que se use una clase más específica. Cuando se describe un recurso que no es un dcat:Dataset o dcat:DataService, se recomienda crear una sub-clase apropiada de dcat:Resource, o usar dcat:Resource con la propiedad dct:type to indicar el tipo específico.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un'applicazione per cataloghi di altri tipi di risorse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "dcat:Resource es un punto de extensión que permite la definición de cualquier tipo de catálogo. Se pueden definir subclases adicionales en perfil de DCAT o una aplicación para catálogos de otro tipo de recursos.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si raccomanda vivamente di utilizzare una sottoclasse più specifica. Quando si descrive una risorsa che non è un dcat:Dataset o dcat:DataService, si raccomanda di creare una sottoclasse di dcat:Resource appropriata, o utilizzare dcat:Resource con la proprietà dct:type per indicare il tipo specifico.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "dcat:Resource je bod pro rozší?ení umož?ující definici r?zných druh? katalog?. Další podt?ídy lze definovat v profilech DCAT ?i aplikacích pro katalogy zdroj? jiných druh?.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Katalogizovaný zdroj",
+      "IRI-based" : "Resource",
+      "en" : "Catalogued resource",
+      "it" : "Risorsa catalogata",
+      "da" : "Katalogiseret ressource",
+      "es" : "Recurso catalogado"
+    },
+    "subClasses" : [ "1", "25", "26" ],
+    "comment" : {
+      "cs" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
+      "en" : "Resource published or curated by a single agent.",
+      "it" : "Risorsa pubblicata o curata da un singolo agente.",
+      "da" : "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.",
+      "es" : "Recurso publicado o curado por un agente único."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Offer",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offer"
+    },
+    "subClasses" : [ "28" ],
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Individual",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Individual"
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Project",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Project"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/PersonalProfileDocument",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PersonalProfileDocument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Distribution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "??? ???? ?????? ???????? ???? ?????? ????. ????? ?????? ?? ???? ?? ???? ????? ?????? ? ????? ??????.  ??? ???? ?????? ?? ????? ?????? ???? ?? ?????? ?????? ??? ???????? ?? ????? ??? ???.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "?????????? ??? ???????????? ????????? ????? ???? ??????? ?????????. ???? ?????? ????????? ?????? ?? ????? ????????? ?? ???????????? ??????, ?? ?????? ????? ?????? ?? ???????????? ???????????? ?????? ??????? ? ??????????? ?????? ????????. ???????????? ???????? ???????????????? ??? ????????????? ?????? ?????? CSV, ??? API ? ??? RSS feed.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Konkrétní reprezentace datové sady. Datová sada m?že být dostupná v r?zných serializacích, které se mohou navzájem lišit r?znými zp?soby, mimo jiné p?irozeným jazykem, media-typem ?i formátem, schematickou organizací, ?asovým a prostorovým rozlišením, úrovní detailu ?i profily (které mohou specifikovat n?které ?i všechny tyto rozdíly).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "???????????????????????????????????????????????????????????????????????????????????????????????????????????????CSV?????API?RSS???????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datamanifestation",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datadistribution",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datarepræsentation",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Dataudstilling",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L'utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Denne klasse repræsenterer datasættets overordnede tilgængelighed og giver ikke oplysninger om hvilken metode der kan anvendes til at få adgang til data, dvs. om adgang til datasættet realiseres ved direkte download, API eller via et websted. Anvendelsen af egenskaben dcat:downloadURL indikerer at distributionen kan downloades direkte.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skute?né metod? p?ístupu k dat?m, tj. zda jsou p?ímo ke stažení, skrze API ?i p?es webovou stránku. Použití vlastnosti dcat:downloadURL indikuje p?ímo stažitelné distribuce.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "fr",
+        "value" : "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information sur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "?????????????????????????????????????????????????????????????API????????????????????????????dcat:downloadURL???????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "el",
+        "value" : "???? ?????????? ??? ?????? ????????????? ???? ??????? ????????? ??? ??? ??????? ?????? ???? ??? ??????????? ?????? ????????? ??? ????????, ?? ????? ????? ?????????????, ???? API ? ???? ???? ???????????. ? ????? ??? ????????? dcat:downloadURL ??????? ???? ????? ?????????????? ????????.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Distribuce",
+      "ar" : "???????",
+      "IRI-based" : "Distribution",
+      "ja" : "??",
+      "el" : "???????",
+      "en" : "Distribution",
+      "it" : "Distribuzione",
+      "fr" : "Distribution",
+      "da" : "Distribution",
+      "es" : "Distribución"
+    },
+    "comment" : {
+      "cs" : "Konkrétní reprezentace datové sady. Datová sada m?že být dostupná v r?zných serializacích, které se mohou navzájem lišit r?znými zp?soby, mimo jiné p?irozeným jazykem, media-typem ?i formátem, schematickou organizací, ?asovým a prostorovým rozlišením, úrovní detailu ?i profily (které mohou specifikovat n?které ?i všechny tyto rozdíly).",
+      "ar" : "??? ???? ?????? ???????? ???? ?????? ????. ????? ?????? ?? ???? ?? ???? ????? ?????? ? ????? ??????.  ??? ???? ?????? ?? ????? ?????? ???? ?? ?????? ?????? ??? ???????? ?? ????? ??? ???.",
+      "ja" : "???????????????????????????????????????????????????????????????????????????????????????????????????????????????CSV?????API?RSS???????????",
+      "el" : "?????????? ??? ???????????? ????????? ????? ???? ??????? ?????????. ???? ?????? ????????? ?????? ?? ????? ????????? ?? ???????????? ??????, ?? ?????? ????? ?????? ?? ???????????? ???????????? ?????? ??????? ? ??????????? ?????? ????????. ???????????? ???????? ???????????????? ??? ????????????? ?????? ?????? CSV, ??? API ? ??? RSS feed.",
+      "en" : "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+      "it" : "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.",
+      "fr" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.",
+      "da" : "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).",
+      "es" : "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Request",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Request"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#Agreement",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agreement"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/agreement-001",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "agreement-001"
+      }
+    } ],
+    "id" : "55",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#Concept",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2008/05/skos",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An abstract idea or notion; a unit of thought.",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-05-xx",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Assertion",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Assertion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Organization",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/sedimark/vocab#DataAsset",
+    "baseIri" : "https://w3id.org/sedimark/vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataAsset"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "description" : {
+        "undefined" : "This dataset captures data from step counter on wearable smart watch for subject 001"
+      },
+      "annotations" : {
+        "identifier" : [ {
+          "identifier" : "identifier",
+          "language" : "undefined",
+          "value" : "cvssp-livinglab-wearable-steps-001",
+          "type" : "label"
+        } ],
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+          "type" : "iri"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "Steps Dataset for Subject 001",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "steps-asset-001"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "1", "26" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OnlineAccount",
+      "undefined" : "Online Account"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "cvssp-online-account"
+      }
+    } ],
+    "subClasses" : [ "78", "79", "80" ],
+    "comment" : {
+      "undefined" : "An online account."
+    },
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://schema.org/Organization",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Set",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Set"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/vcard/ns#Agent",
+    "baseIri" : "http://www.w3.org/2006/vcard/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Agent",
+    "equivalent" : [ "84" ],
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent"
+    },
+    "comment" : {
+      "en" : "A resource that acts or has the power to act."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://purl.org/dc/terms/LicenseDocument",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LicenseDocument",
+      "en" : "License Document"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "annotations" : {
+        "license" : [ {
+          "identifier" : "license",
+          "language" : "undefined",
+          "value" : "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/",
+          "type" : "label"
+        } ],
+        "rights" : [ {
+          "identifier" : "rights",
+          "language" : "undefined",
+          "value" : "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "wearable-001-license-doc"
+      }
+    } ],
+    "comment" : {
+      "en" : "A legal document giving official permission to do something with a resource."
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "88" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/PeriodOfTime",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PeriodOfTime",
+      "en" : "Period of Time"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "health-monitoring-morning-period"
+      }
+    } ],
+    "comment" : {
+      "en" : "An interval of time that is named or defined by its start and end dates."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Ticket",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ticket"
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#AssetQuality",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Quality metrics associated with Asset"
+    },
+    "label" : {
+      "IRI-based" : "AssetQuality"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "steps-asset-001-quality"
+      }
+    } ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#OfferingContract",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OfferingContract"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/wearable-contract",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "wearable-contract"
+      }
+    } ],
+    "id" : "28",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Attribution",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attribution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Image",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Image"
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Asset",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/odrl/2/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A resource or a collection of resources that are the subject of a Rule.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Asset",
+      "en" : "Asset"
+    },
+    "subClasses" : [ "4", "93" ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#Collection",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "54",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "equivalent" : [ "83" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "112",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "113",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "66",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Organization",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "subClasses" : [ "10" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "114",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "63",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/dc/terms/RightsStatement",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RightsStatement",
+      "en" : "Rights Statement"
+    },
+    "subClasses" : [ "87" ],
+    "comment" : {
+      "en" : "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."
+    },
+    "attributes" : [ "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Catalog",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "English, Italian, Spanish definitions updated in this revision. Multilingual text not yet updated.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/TR/vocab-dcat/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ja",
+        "value" : "???????????????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Une collection élaborée de métadonnées sur les jeux de données.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "?????? ?? ??????? ????? ????????",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "?ízená kolekce metadat o datových sadách a datových službách.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "En samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "el",
+        "value" : "??? ??????????? ??????? ????????????? ???? ??????? ?????????.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "???????????????????????????1??????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Normalmente, un catálogo de datos disponible en la web se representa como una única instancia de esta clase.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Normalmente, un catalogo di dati nel web viene rappresentato come una singola istanza di questa classe.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Et webbaseret datakatalog repræsenteres typisk ved en enkelt instans af denne klasse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A web-based data catalog is typically represented as a single instance of this class.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Webový datový katalog je typicky reprezentován jako jedna instance této t?ídy.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "el",
+        "value" : "???????, ???? ????????? ????????? ???? ????????? ???? ????????????? ?? ??? ??????????? ????? ??? ??????.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "Katalog",
+      "ar" : "???? ????? ????????",
+      "IRI-based" : "Catalog",
+      "el" : "?????????",
+      "ja" : "????",
+      "en" : "Catalog",
+      "it" : "Catalogo",
+      "fr" : "Catalogue",
+      "da" : "Katalog",
+      "es" : "Catálogo"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "surrey-local-catalogue"
+      }
+    } ],
+    "subClasses" : [ "23", "93" ],
+    "comment" : {
+      "cs" : "?ízená kolekce metadat o datových sadách a datových službách",
+      "ar" : "?????? ?? ??????? ????? ????????",
+      "el" : "??? ??????????? ??????? ????????????? ???? ??????? ?????????",
+      "ja" : "???????????????????????????????????????",
+      "en" : "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).",
+      "it" : "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).",
+      "fr" : "Une collection élaborée de métadonnées sur les jeux de données",
+      "da" : "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). ",
+      "es" : "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://schema.org/CreativeWork",
+    "equivalent" : [ "9" ],
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "116",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "39",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125"
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "68"
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://purl.org/dc/terms/Location",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Location",
+      "en" : "Location"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/living-lab-01",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "living-lab-01"
+      }
+    } ],
+    "comment" : {
+      "en" : "A spatial region or named place."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#Self-Listing",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Self-Listing"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "description" : {
+        "undefined" : "Self-listing for the ehealth-living-lab data provision"
+      },
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+          "type" : "iri"
+        } ],
+        "rights" : [ {
+          "identifier" : "rights",
+          "language" : "undefined",
+          "value" : "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/",
+          "type" : "label"
+        } ],
+        "publisher" : [ {
+          "identifier" : "publisher",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+          "type" : "iri"
+        } ],
+        "modified" : [ {
+          "identifier" : "modified",
+          "language" : "undefined",
+          "value" : "2024-01-02",
+          "type" : "label"
+        } ],
+        "language" : [ {
+          "identifier" : "language",
+          "language" : "undefined",
+          "value" : "English",
+          "type" : "label"
+        } ],
+        "issued" : [ {
+          "identifier" : "issued",
+          "language" : "undefined",
+          "value" : "2024-01-01",
+          "type" : "label"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "E-health Living Lab",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ehealth-living-lab"
+      }
+    } ],
+    "id" : "23",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineChatAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnlineChatAccount"
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#DataService",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataService"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineGamingAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnlineGamingAccount"
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Policy",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A Policy may contain multiple Rules.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/odrl/2/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A non-empty group of Permissions and/or Prohibitions.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Policy",
+      "en" : "Policy"
+    },
+    "subClasses" : [ "137", "91", "69", "81", "52", "56", "27" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#Asset",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset"
+    },
+    "subClasses" : [ "0", "74", "149", "6" ],
+    "id" : "1",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "153",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "154",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "103",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "159",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Rule",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rule"
+    },
+    "attributes" : [ "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OnlineEcommerceAccount"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "http://purl.org/dc/terms/LinguisticSystem",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "description" : {
+      "en" : "Written, spoken, sign, and computer languages are linguistic systems."
+    },
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2008-01-14",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LinguisticSystem",
+      "en" : "Linguistic System"
+    },
+    "comment" : {
+      "en" : "A system of signs, symbols, sounds, gestures, or rules used in communication."
+    },
+    "attributes" : [ "external" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Privacy",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Privacy"
+    },
+    "attributes" : [ "external" ],
+    "id" : "137",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Party",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/odrl/2/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An entity or a collection of entities that undertake Roles in a Rule.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Party",
+      "en" : "Party"
+    },
+    "union" : [ "11", "72", "84", "12", "162", "82", "125", "29" ],
+    "subClasses" : [ "175" ],
+    "attributes" : [ "union", "external" ],
+    "id" : "14"
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "179"
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "200"
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Agreement",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agreement"
+    },
+    "subClasses" : [ "55" ],
+    "attributes" : [ "external" ],
+    "id" : "56",
+    "superClasses" : [ "15" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "102"
+  }, {
+    "instances" : 0,
+    "union" : [ "127", "15" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/sedimark/vocab#ServiceAsset",
+    "baseIri" : "https://w3id.org/sedimark/vocab",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ServiceAsset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "149",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#Offering",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offering"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "description" : {
+        "undefined" : "This offering provides data assets with data originating from wearable sensors on smart watches"
+      },
+      "annotations" : {
+        "creator" : [ {
+          "identifier" : "creator",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+          "type" : "iri"
+        } ],
+        "created" : [ {
+          "identifier" : "created",
+          "language" : "undefined",
+          "value" : "2024-01-01",
+          "type" : "label"
+        } ],
+        "publisher" : [ {
+          "identifier" : "publisher",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+          "type" : "iri"
+        } ],
+        "language" : [ {
+          "identifier" : "language",
+          "language" : "undefined",
+          "value" : "English",
+          "type" : "label"
+        } ],
+        "isPartOf" : [ {
+          "identifier" : "isPartOf",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab",
+          "type" : "iri"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "Wearable data for Subject 001",
+          "type" : "label"
+        } ],
+        "issued" : [ {
+          "identifier" : "issued",
+          "language" : "undefined",
+          "value" : "2024-01-02",
+          "type" : "label"
+        } ],
+        "temporal" : [ {
+          "identifier" : "temporal",
+          "language" : "undefined",
+          "value" : "https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "wearable-offering-001"
+      }
+    } ],
+    "id" : "93",
+    "superClasses" : [ "5", "34" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "equivalent" : [ "119" ],
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Document",
+      "undefined" : "Document"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "cvssp-homepage"
+      }
+    }, {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "cvssp-open-id-profile"
+      }
+    } ],
+    "subClasses" : [ "41", "100" ],
+    "comment" : {
+      "undefined" : "A document."
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "74", "34" ],
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#CatalogRecord",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CatalogRecord"
+    },
+    "attributes" : [ "external" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/PartyCollection",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PartyCollection"
+    },
+    "attributes" : [ "external" ],
+    "id" : "175",
+    "superClasses" : [ "14" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "197",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "209",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "210",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/2008/05/skos#mappingRelation",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "mappingRelation"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "workInfoHomepage"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/assignerOf",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "assignerOf"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#compressFormat",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "compressFormat"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#hasSelf-Listing",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasSelf-Listing"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#packageFormat",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "packageFormat"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/page",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "page"
+    },
+    "domain" : "8",
+    "subproperty" : [ "32" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#catalog",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "catalog"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "34",
+    "attributes" : [ "external", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#distribution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "distribution"
+    },
+    "domain" : "18",
+    "attributes" : [ "external", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/name",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "A name for some thing."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#hasAssetQuality",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasAssetQuality"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#byteSize",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "byteSize"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isPrimaryTopicOf"
+    },
+    "domain" : "8",
+    "subproperty" : [ "47", "32" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://purl.org/dc/terms/created",
+    "baseIri" : "https://purl.org/dc/terms",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "created"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://purl.org/dc/terms/identifier",
+    "baseIri" : "https://purl.org/dc/terms",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#hasTopConcept",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasTopConcept"
+    },
+    "domain" : "54",
+    "attributes" : [ "external", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/function",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "function"
+    },
+    "domain" : "58",
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#belongsTo",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "belongsTo"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.w3.org/ns/adms#sample",
+    "baseIri" : "http://www.w3.org/ns/adms",
+    "range" : "61",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/adms",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "sample",
+      "en" : "sample"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "Links to a sample of an Asset (which is itself an Asset)."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/account",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "account"
+    },
+    "domain" : "63",
+    "attributes" : [ "external", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#service",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "service"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "34",
+    "attributes" : [ "external", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/target",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "target"
+    },
+    "domain" : "68",
+    "attributes" : [ "external", "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://purl.org/dc/terms/description",
+    "baseIri" : "https://purl.org/dc/terms",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/tipjar",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "tipjar"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/relation",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "relation"
+    },
+    "domain" : "76",
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/inheritFrom",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "inheritFrom"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/hasPolicy",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasPolicy"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/topic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "topic"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/sha1",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "sha1"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#hasAsset",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasAsset"
+    },
+    "domain" : "93",
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "wasInfluencedBy"
+    },
+    "domain" : "39",
+    "subproperty" : [ "95" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#themeTaxonomy",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "themeTaxonomy"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#record",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "record"
+    },
+    "domain" : "34",
+    "attributes" : [ "external", "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "wasAttributedTo"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/constraint",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "constraint"
+    },
+    "domain" : "102",
+    "attributes" : [ "external", "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "dataset"
+    },
+    "superproperty" : [ "35" ],
+    "domain" : "34",
+    "attributes" : [ "external", "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#references",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "references"
+    },
+    "domain" : "55",
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/publications",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "publications"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/interest",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "interest"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/openid",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "openid",
+      "undefined" : "openid"
+    },
+    "superproperty" : [ "46" ],
+    "domain" : "84",
+    "comment" : {
+      "undefined" : "An OpenID for an Agent."
+    },
+    "attributes" : [ "external", "object", "inverse functional" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/permission",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "permission"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/obligation",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "obligation"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#mediaType",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "mediaType"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "primaryTopic"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/schoolHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "schoolHomepage"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/partOf",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "partOf"
+    },
+    "domain" : "124",
+    "attributes" : [ "external", "object" ],
+    "id" : "126"
+  }, {
+    "range" : "15",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "15",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#qualifiedRelation",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "qualifiedRelation"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "15",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/assigneeOf",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "assigneeOf"
+    },
+    "domain" : "14",
+    "attributes" : [ "external", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#qualifiedAttribution",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "99",
+    "annotations" : {
+      "sharesDefinitionWith" : [ {
+        "identifier" : "sharesDefinitionWith",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Attribution",
+        "type" : "iri"
+      } ],
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "qualifiedAttributionOf",
+        "type" : "label"
+      } ],
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "agents-responsibility",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "unqualifiedForm" : [ {
+        "identifier" : "unqualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#wasAttributedTo",
+        "type" : "iri"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "qualified",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "qualifiedAttribution",
+      "undefined" : "qualifiedAttribution"
+    },
+    "superproperty" : [ "134" ],
+    "domain" : "111",
+    "comment" : {
+      "en" : "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/conflict",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "conflict"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "135"
+  }, {
+    "range" : "15",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "range" : "27",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "range" : "15",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "139"
+  }, {
+    "range" : "15",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "24",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "34",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/logo",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "logo",
+      "undefined" : "logo"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "A logo representing some thing."
+    },
+    "attributes" : [ "external", "object", "inverse functional" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "accountServiceHomepage"
+    },
+    "domain" : "64",
+    "attributes" : [ "external", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "24",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "145"
+  }, {
+    "range" : "24",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "34",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "19",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "accountName"
+    },
+    "domain" : "64",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "150"
+  }, {
+    "range" : "19",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "88",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "155"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/output",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "output"
+    },
+    "domain" : "153",
+    "attributes" : [ "external", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/homepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "homepage",
+      "undefined" : "homepage"
+    },
+    "superproperty" : [ "46", "31" ],
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "A homepage for some thing."
+    },
+    "attributes" : [ "external", "object", "inverse functional" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://purl.org/dc/terms/title",
+    "baseIri" : "https://purl.org/dc/terms",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "agent"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "5",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "9",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "9",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "26",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "26",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#hasOfferingContract",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasOfferingContract"
+    },
+    "domain" : "93",
+    "attributes" : [ "object" ],
+    "id" : "171"
+  }, {
+    "range" : "64",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "14",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/prohibition",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "prohibition"
+    },
+    "domain" : "15",
+    "attributes" : [ "external", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#semanticRelation",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "semanticRelation"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/action",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "action"
+    },
+    "domain" : "179",
+    "attributes" : [ "external", "object" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/holdsAccount",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "holdsAccount"
+    },
+    "domain" : "63",
+    "attributes" : [ "external", "object" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#qualifiedGeneration",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "qualifiedGeneration"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "object" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://purl.org/dc/terms/hasPart",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "39",
+    "description" : {
+      "en" : "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."
+    },
+    "annotations" : {
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2000-07-11",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "39",
+    "subproperty" : [ "33", "65", "104" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/weblog",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "weblog"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#generated",
+    "inverse" : "95",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "generated"
+    },
+    "domain" : "109",
+    "attributes" : [ "external", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "64",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "185"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/assigner",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "assigner"
+    },
+    "domain" : "188",
+    "attributes" : [ "external", "object" ],
+    "id" : "187"
+  }, {
+    "range" : "64",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "15",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "1",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "1",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "109",
+    "annotations" : {
+      "inverse" : [ {
+        "identifier" : "inverse",
+        "language" : "undefined",
+        "value" : "generated",
+        "type" : "label"
+      } ],
+      "component" : [ {
+        "identifier" : "component",
+        "language" : "undefined",
+        "value" : "entities-activities",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov-o#",
+        "type" : "iri"
+      } ],
+      "category" : [ {
+        "identifier" : "category",
+        "language" : "undefined",
+        "value" : "starting-point",
+        "type" : "label"
+      } ],
+      "qualifiedForm" : [ {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
+        "type" : "iri"
+      }, {
+        "identifier" : "qualifiedForm",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/prov#Generation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasGeneratedBy",
+      "undefined" : "wasGeneratedBy"
+    },
+    "superproperty" : [ "94" ],
+    "domain" : "111",
+    "attributes" : [ "external", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#hasOffering",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "hasOffering"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "primaryTopic"
+    },
+    "domain" : "196",
+    "attributes" : [ "allValues", "external", "object" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#accessURL",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "accessURL"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "37",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "12",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/assignee",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "assignee"
+    },
+    "domain" : "200",
+    "attributes" : [ "external", "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "activity"
+    },
+    "domain" : "39",
+    "attributes" : [ "external", "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#temporalResolution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "123",
+    "annotations" : {
+      "editorialNote" : [ {
+        "identifier" : "editorialNote",
+        "language" : "cs",
+        "value" : "M?že se vyskytnout v popisu Datové sady nebo Distribuce, takže nebyl specifikován defini?ní obor.",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "en",
+        "value" : "Might appear in the description of a Dataset or a Distribution, so no domain is specified.",
+        "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "da",
+        "value" : "Kan optræde i forbindelse med beskrivelse af datasættet eller datasætditributionen, så der er ikke angivet et domæne for egenskaben.",
+        "type" : "label"
+      } ],
+      "changeNote" : [ {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva propiedad añadida en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property added in DCAT 2.0.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "periodo di tempo minimo risolvibile in un set di dati.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "minimální doba trvání rozlišitelná v datové sad?.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "período de tiempo mínimo en el conjunto de datos.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "minimum time period resolvable in a dataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "mindste tidsperiode der kan resolveres i datasættet.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Pokud je datová sada ?asovou ?adou, m?la by tato vlastnost odpovídat rozestupu položek v ?ad?. Pro ostatní druhy datových sad bude tato vlastnost obvykle indikovat nejmenší ?asovou vzdálenost mezi položkami této datové sady.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Alternative temporal resolutions might be provided as different dataset distributions.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Distintas distribuciones del conjunto de datos pueden tener resoluciones temporales diferentes.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Se il set di dati è una serie temporale, questo dovrebbe corrispondere alla spaziatura degli elementi della serie. Per altri tipi di set di dati, questa proprietà di solito indica la più piccola differenza di tempo tra gli elementi nel set di dati.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "R?zná ?asová rozlišení mohou být poskytována jako r?zné distribuce datové sady.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Risoluzioni temporali alternative potrebbero essere fornite come diverse distribuzioni di set di dati.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Si el conjunto de datos es una serie temporal, debe corresponder al espaciado de los elementos de la serie. Para otro tipo de conjuntos de datos, esta propiedad indicará usualmente la menor diferencia de tiempo entre elementos en el dataset.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "cs" : "?asové rozlišení",
+      "IRI-based" : "temporalResolution",
+      "en" : "temporal resolution",
+      "it" : "risoluzione temporale",
+      "da" : "tidslig opløsning",
+      "es" : "resolución temporal"
+    },
+    "domain" : "39",
+    "comment" : {
+      "cs" : "minimální doba trvání rozlišitelná v datové sad?.",
+      "en" : "minimum time period resolvable in a dataset.",
+      "it" : "periodo di tempo minimo risolvibile in un set di dati.",
+      "da" : "mindste tidsperiode der kan resolveres i datasættet.",
+      "es" : "período de tiempo mínimo en el conjunto de datos."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#downloadURL",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "downloadURL"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://www.w3.org/ns/adms#status",
+    "baseIri" : "http://www.w3.org/ns/adms",
+    "range" : "110",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/adms",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "status"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "The status of the Asset in the context of a particular workflow process."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "3",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "157",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos#topConceptOf",
+    "baseIri" : "http://www.w3.org/2008/05/skos",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "topConceptOf"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/mbox",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "159",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://xmlns.com/foaf/0.1/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "mbox",
+      "undefined" : "personal mailbox"
+    },
+    "domain" : "84",
+    "comment" : {
+      "undefined" : "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
+    },
+    "attributes" : [ "external", "object", "inverse functional" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#qualifiedInfluence",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "154",
+    "label" : {
+      "IRI-based" : "qualifiedInfluence"
+    },
+    "domain" : "154",
+    "subproperty" : [ "133" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "workplaceHomepage"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "210"
+  } ]
+}
