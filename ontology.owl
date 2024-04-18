@@ -1,0 +1,2972 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/sedimark/ontology#"
+     xml:base="https://w3id.org/sedimark/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:terms2="https://purl.org/dc/terms/"
+     xmlns:ontology="https://w3id.org/sedimark/ontology#">
+    <owl:Ontology rdf:about="https://w3id.org/sedimark/ontology#">
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.
+
+This model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SEDIMARK Marketplace Ontology</dc:title>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">sedi-ont</vann:preferredNamespacePrefix>
+        <schema:logo rdf:resource="https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/dcam/rangeIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/dcam/rangeIncludes"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessRights">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <terms:description xml:lang="en">Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</terms:issued>
+        <rdfs:comment xml:lang="en">Information about who access the resource or an indication of its security status.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Access Rights</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Frequency"/>
+        <terms:description xml:lang="en">Recommended practice is to use a value from the Collection Description Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)].</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
+        <rdfs:comment xml:lang="en">The frequency with which items are added to a collection.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Accrual Periodicity</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/available">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Date that the resource became or will become available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Available</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Standard"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</terms:issued>
+        <rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Conforms To</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage">
+        <terms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.  Because coverage is so broadly defined, it is preferable to use the more specific subproperties Temporal Coverage and Spatial Coverage.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Date of creation of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Created</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a date of acceptance may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</terms:issued>
+        <rdfs:comment xml:lang="en">Date of acceptance of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Accepted</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/extent -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/extent">
+        <terms:description xml:lang="en">Recommended practice is to specify the file size in megabytes and duration in ISO 8601 format.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Extent"/>
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/MediaType"/>
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples of dimensions include size and duration.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+        <terms:description xml:lang="en">Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Is Version Of.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">A related resource that is a version, edition, or adaptation of the described resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Has Version</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN).  Persistent identifiers should be provided as HTTP URIs.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Part.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Is Part Of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Issued</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+        <terms:description xml:lang="en">Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/medium -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/medium">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Modified</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/relation">
+        <terms:description xml:lang="en">Recommended practice is to identify the related resource by means of a URI.  If this is not possible or feasible, a string conforming to a formal identification system may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.  Recommended practice is to refer to a rights statement with a URI.  If this is not possible or feasible, a literal value (name, label, or short text) may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. The described resource may be derived from the related resource in whole or in part. Best practice is to identify the related resource by means of a URI or a string conforming to a formal identification system.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Location"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Spatial Coverage</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
+        <terms:description xml:lang="en">Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/tableOfContents -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Temporal characteristics of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Temporal Coverage</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the property Format.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/valid">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+        <rdfs:comment xml:lang="en">Date (often a range) of validity of a resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Date Valid</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://schema.org/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/logo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#definition"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#category -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#component -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#component"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#inverse -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#inverse"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedForm -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#qualifiedForm"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#sharesDefinitionWith -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#sharesDefinitionWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#unqualifiedForm -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#unqualifiedForm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#hasTopConcept -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#hasTopConcept">
+        <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#mappingRelation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#mappingRelation">
+        <rdfs:domain rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#semanticRelation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#semanticRelation">
+        <rdfs:domain rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#topConceptOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2008/05/skos#topConceptOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#sample -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#sample">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#status -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#status">
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">The status of the Asset in the context of a particular workflow process.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+        <rdfs:label xml:lang="en">status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#accessURL">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#catalog -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#catalog">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#compressFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#compressFormat">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#dataset -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#dataset">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#distribution">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#mediaType -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#mediaType">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#packageFormat -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#packageFormat">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#qualifiedRelation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#qualifiedRelation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#record -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#record">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#service -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#service">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#themeTaxonomy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/dcat#themeTaxonomy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/action -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/action">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/assignee -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/assignee">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/assigneeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/assigneeOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/assigner -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/assigner">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/assignerOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/assignerOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/conflict -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/conflict">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/constraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/constraint">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/function -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/function">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/hasPolicy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/hasPolicy">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/inheritFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/inheritFrom">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/obligation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/obligation">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/output -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/output">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/partOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/partOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Asset"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Party"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/permission -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/permission">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/prohibition -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/prohibition">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/relation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/relation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/target -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/target">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Policy"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#activity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAttribution -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
+        <rdfs:comment xml:lang="en">If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>qualifiedAttribution</rdfs:label>
+        <prov:category>qualified</prov:category>
+        <prov:component>agents-responsibility</prov:component>
+        <prov:inverse>qualifiedAttributionOf</prov:inverse>
+        <prov:sharesDefinitionWith rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
+        <prov:unqualifiedForm rdf:resource="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedGeneration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedInfluence -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#qualifiedInfluence"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedAttribution"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#agent"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/prov#activity"/>
+        </owl:propertyChainAxiom>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <rdfs:label>wasGeneratedBy</rdfs:label>
+        <prov:category>starting-point</prov:category>
+        <prov:component>entities-activities</prov:component>
+        <prov:inverse>generated</prov:inverse>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+        <prov:qualifiedForm rdf:resource="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInfluencedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/account -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/account">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/accountServiceHomepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/accountServiceHomepage">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/holdsAccount -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/holdsAccount">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/page"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment>A homepage for some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>homepage</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/interest -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/interest">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isPrimaryTopicOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/logo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>A logo representing some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>logo</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a &apos;static inverse functional property&apos;, in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>personal mailbox</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/openid -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/openid">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment>An OpenID for an Agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>openid</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/page">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/publications -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/publications">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/schoolHomepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/schoolHomepage">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/tipjar -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/tipjar">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/topic -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/topic">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/weblog -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/weblog">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workInfoHomepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/workInfoHomepage">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/workplaceHomepage -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/workplaceHomepage">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#belongsTo">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Self-Listing"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#Participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#hasAsset -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#hasAsset">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Offering"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#hasAssetQuality -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#hasAssetQuality">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Asset"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#AssetQuality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#hasOffering -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#hasOffering">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Self-Listing"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#Offering"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#hasOfferingContract -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#hasOfferingContract">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Offering"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#OfferingContract"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#hasSelf-Listing -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#hasSelf-Listing">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Participant"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#Self-Listing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#references -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sedimark/ontology#references">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/ontology#Agreement"/>
+        <rdfs:range rdf:resource="https://w3id.org/sedimark/ontology#Offering"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/adms#sample -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/adms#sample"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#byteSize -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#byteSize">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#temporalResolution -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#temporalResolution">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:comment xml:lang="da">mindste tidsperiode der kan resolveres i datasættet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">minimum time period resolvable in a dataset.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">minimální doba trvání rozlišitelná v datové sadě.</rdfs:comment>
+        <rdfs:comment xml:lang="it">periodo di tempo minimo risolvibile in un set di dati.</rdfs:comment>
+        <rdfs:comment xml:lang="es">período de tiempo mínimo en el conjunto de datos.</rdfs:comment>
+        <rdfs:label xml:lang="es">resolución temporal</rdfs:label>
+        <rdfs:label xml:lang="it">risoluzione temporale</rdfs:label>
+        <rdfs:label xml:lang="en">temporal resolution</rdfs:label>
+        <rdfs:label xml:lang="da">tidslig opløsning</rdfs:label>
+        <rdfs:label xml:lang="cs">časové rozlišení</rdfs:label>
+        <skos:changeNote xml:lang="en">New property added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová vlastnost přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva propiedad añadida en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova proprietà aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="da">mindste tidsperiode der kan resolveres i datasættet.</skos:definition>
+        <skos:definition xml:lang="en">minimum time period resolvable in a dataset.</skos:definition>
+        <skos:definition xml:lang="cs">minimální doba trvání rozlišitelná v datové sadě.</skos:definition>
+        <skos:definition xml:lang="it">periodo di tempo minimo risolvibile in un set di dati.</skos:definition>
+        <skos:definition xml:lang="es">período de tiempo mínimo en el conjunto de datos.</skos:definition>
+        <skos:editorialNote xml:lang="da">Kan optræde i forbindelse med beskrivelse af datasættet eller datasætditributionen, så der er ikke angivet et domæne for egenskaben.</skos:editorialNote>
+        <skos:editorialNote xml:lang="en">Might appear in the description of a Dataset or a Distribution, so no domain is specified.</skos:editorialNote>
+        <skos:editorialNote xml:lang="cs">Může se vyskytnout v popisu Datové sady nebo Distribuce, takže nebyl specifikován definiční obor.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">Alternative temporal resolutions might be provided as different dataset distributions.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Distintas distribuciones del conjunto de datos pueden tener resoluciones temporales diferentes.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Pokud je datová sada časovou řadou, měla by tato vlastnost odpovídat rozestupu položek v řadě. Pro ostatní druhy datových sad bude tato vlastnost obvykle indikovat nejmenší časovou vzdálenost mezi položkami této datové sady.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Risoluzioni temporali alternative potrebbero essere fornite come diverse distribuzioni di set di dati.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Různá časová rozlišení mohou být poskytována jako různé distribuce datové sady.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Se il set di dati è una serie temporale, questo dovrebbe corrispondere alla spaziatura degli elementi della serie. Per altri tipi di set di dati, questa proprietà di solito indica la più piccola differenza di tempo tra gli elementi nel set di dati.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Si el conjunto de datos es una serie temporal, debe corresponder al espaciado de los elementos de la serie. Para otro tipo de conjuntos de datos, esta propiedad indicará usualmente la menor diferencia de tiempo entre elementos en el dataset.</skos:scopeNote>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/accountName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/accountName">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A name for some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/sha1 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/sha1">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.org/dc/terms/created -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- https://purl.org/dc/terms/description -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- https://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- https://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A resource that acts or has the power to act.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LicenseDocument">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License Document</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LinguisticSystem -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LinguisticSystem">
+        <terms:description xml:lang="en">Written, spoken, sign, and computer languages are linguistic systems.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Linguistic System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A spatial region or named place.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/LocationPeriodOrJurisdiction -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/LocationPeriodOrJurisdiction"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An interval of time that is named or defined by its start and end dates.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Period of Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/RightsStatement -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/RightsStatement">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Rights Statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CreativeWork -->
+
+
+    <owl:Class rdf:about="http://schema.org/CreativeWork">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Organization -->
+
+
+    <owl:Class rdf:about="http://schema.org/Organization"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Individual -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Individual"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#Collection -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2008/05/skos#Collection">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2008/05/skos#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2008/05/skos#Concept">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+        <terms:issued>2008-05-xx</terms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2008/05/skos"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <skos1:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos1:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#ConceptScheme -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2008/05/skos#ConceptScheme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Catalog">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:comment xml:lang="en">A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).</rdfs:comment>
+        <rdfs:comment xml:lang="da">En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). </rdfs:comment>
+        <rdfs:comment xml:lang="es">Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Une collection élaborée de métadonnées sur les jeux de données</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Řízená kolekce metadat o datových sadách a datových službách</rdfs:comment>
+        <rdfs:comment xml:lang="el">Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων</rdfs:comment>
+        <rdfs:comment xml:lang="ar">مجموعة من توصيفات قوائم البيانات</rdfs:comment>
+        <rdfs:comment xml:lang="ja">データ・カタログは、データセットに関するキュレートされたメタデータの集合です。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="en">Catalog</rdfs:label>
+        <rdfs:label xml:lang="it">Catalogo</rdfs:label>
+        <rdfs:label xml:lang="fr">Catalogue</rdfs:label>
+        <rdfs:label xml:lang="es">Catálogo</rdfs:label>
+        <rdfs:label xml:lang="cs">Katalog</rdfs:label>
+        <rdfs:label xml:lang="da">Katalog</rdfs:label>
+        <rdfs:label xml:lang="el">Κατάλογος</rdfs:label>
+        <rdfs:label xml:lang="ar">فهرس قوائم البيانات</rdfs:label>
+        <rdfs:label xml:lang="ja">カタログ</rdfs:label>
+        <skos:definition xml:lang="en">A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).</skos:definition>
+        <skos:definition xml:lang="da">En samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog).</skos:definition>
+        <skos:definition xml:lang="es">Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).</skos:definition>
+        <skos:definition xml:lang="it">Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).</skos:definition>
+        <skos:definition xml:lang="fr">Une collection élaborée de métadonnées sur les jeux de données.</skos:definition>
+        <skos:definition xml:lang="cs">Řízená kolekce metadat o datových sadách a datových službách.</skos:definition>
+        <skos:definition xml:lang="el">Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων.</skos:definition>
+        <skos:definition xml:lang="ar">مجموعة من توصيفات قوائم البيانات</skos:definition>
+        <skos:definition xml:lang="ja">データ・カタログは、データセットに関するキュレートされたメタデータの集合です。</skos:definition>
+        <skos:editorialNote xml:lang="en">English, Italian, Spanish definitions updated in this revision. Multilingual text not yet updated.</skos:editorialNote>
+        <skos:scopeNote xml:lang="en">A web-based data catalog is typically represented as a single instance of this class.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Et webbaseret datakatalog repræsenteres typisk ved en enkelt instans af denne klasse.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Normalmente, un catalogo di dati nel web viene rappresentato come una singola istanza di questa classe.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Normalmente, un catálogo de datos disponible en la web se representa como una única instancia de esta clase.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Webový datový katalog je typicky reprezentován jako jedna instance této třídy.</skos:scopeNote>
+        <skos:scopeNote xml:lang="el">Συνήθως, ένας κατάλογος δεδομένων στον Παγκόσμιο Ιστό αναπαρίσταται ως ένα στιγμιότυπο αυτής της κλάσης.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ja">通常、ウェブ・ベースのデータ・カタログは、このクラスの1つのインスタンスとして表わされます。</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#CatalogRecord -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#CatalogRecord">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DataService -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution">
+        <rdfs:comment xml:lang="en">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</rdfs:comment>
+        <rdfs:comment xml:lang="da">En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Représente une forme spécifique d&apos;un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, &apos;media-type&apos; o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).</rdfs:comment>
+        <rdfs:comment xml:lang="el">Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.</rdfs:comment>
+        <rdfs:comment xml:lang="ar">شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+        <rdfs:label xml:lang="cs">Distribuce</rdfs:label>
+        <rdfs:label xml:lang="es">Distribución</rdfs:label>
+        <rdfs:label xml:lang="da">Distribution</rdfs:label>
+        <rdfs:label xml:lang="en">Distribution</rdfs:label>
+        <rdfs:label xml:lang="fr">Distribution</rdfs:label>
+        <rdfs:label xml:lang="it">Distribuzione</rdfs:label>
+        <rdfs:label xml:lang="el">Διανομή</rdfs:label>
+        <rdfs:label xml:lang="ar">التوزيع</rdfs:label>
+        <rdfs:label xml:lang="ja">配信</rdfs:label>
+        <skos:altLabel xml:lang="da">Datadistribution</skos:altLabel>
+        <skos:altLabel xml:lang="da">Datamanifestation</skos:altLabel>
+        <skos:altLabel xml:lang="da">Datarepræsentation</skos:altLabel>
+        <skos:altLabel xml:lang="da">Dataudstilling</skos:altLabel>
+        <skos:definition xml:lang="en">A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</skos:definition>
+        <skos:definition xml:lang="da">En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).</skos:definition>
+        <skos:definition xml:lang="cs">Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</skos:definition>
+        <skos:definition xml:lang="it">Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.</skos:definition>
+        <skos:definition xml:lang="fr">Représente une forme spécifique d&apos;un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.</skos:definition>
+        <skos:definition xml:lang="es">Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, &apos;media-type&apos; o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).</skos:definition>
+        <skos:definition xml:lang="el">Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed.</skos:definition>
+        <skos:definition xml:lang="ar">شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك.</skos:definition>
+        <skos:definition xml:lang="ja">データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。</skos:definition>
+        <skos:scopeNote xml:lang="fr">Ceci représente une disponibilité générale du jeu de données, et implique qu&apos;il n&apos;existe pas d&apos;information sur la méthode d&apos;accès réelle des données, par exple, si c&apos;est un lien de téléchargement direct ou à travers une page Web.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">Denne klasse repræsenterer datasættets overordnede tilgængelighed og giver ikke oplysninger om hvilken metode der kan anvendes til at få adgang til data, dvs. om adgang til datasættet realiseres ved direkte download, API eller via et websted. Anvendelsen af egenskaben dcat:downloadURL indikerer at distributionen kan downloades direkte.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">Questa classe rappresenta una disponibilità generale di un dataset e non implica alcuna informazione sul metodo di accesso effettivo ai dati, ad esempio se si tratta di un accesso a download diretto, API, o attraverso una pagina Web. L&apos;utilizzo della proprietà dcat:downloadURL indica distribuzioni direttamente scaricabili.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skutečné metodě přístupu k datům, tj. zda jsou přímo ke stažení, skrze API či přes webovou stránku. Použití vlastnosti dcat:downloadURL indikuje přímo stažitelné distribuce.</skos:scopeNote>
+        <skos:scopeNote xml:lang="el">Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα, μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές.</skos:scopeNote>
+        <skos:scopeNote xml:lang="ja">これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource">
+        <rdfs:comment xml:lang="es">Recurso publicado o curado por un agente único.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Resource published or curated by a single agent.</rdfs:comment>
+        <rdfs:comment xml:lang="da">Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Risorsa pubblicata o curata da un singolo agente.</rdfs:comment>
+        <rdfs:comment xml:lang="cs">Zdroj publikovaný či řízený jediným činitelem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Catalogued resource</rdfs:label>
+        <rdfs:label xml:lang="da">Katalogiseret ressource</rdfs:label>
+        <rdfs:label xml:lang="cs">Katalogizovaný zdroj</rdfs:label>
+        <rdfs:label xml:lang="es">Recurso catalogado</rdfs:label>
+        <rdfs:label xml:lang="it">Risorsa catalogata</rdfs:label>
+        <skos:changeNote xml:lang="en">New class added in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="cs">Nová třída přidaná ve verzi DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="es">Nueva clase agregada en DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="it">Nuova classe aggiunta in DCAT 2.0.</skos:changeNote>
+        <skos:changeNote xml:lang="da">Ny klasse i DCAT 2.0.</skos:changeNote>
+        <skos:definition xml:lang="es">Recurso publicado o curado por un agente único.</skos:definition>
+        <skos:definition xml:lang="en">Resource published or curated by a single agent.</skos:definition>
+        <skos:definition xml:lang="da">Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.</skos:definition>
+        <skos:definition xml:lang="it">Risorsa pubblicata o curata da un singolo agente.</skos:definition>
+        <skos:definition xml:lang="cs">Zdroj publikovaný či řízený jediným činitelem.</skos:definition>
+        <skos:scopeNote xml:lang="da">Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder dataset og datatjenester. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">La clase de todos los recursos catalogados, la superclase de dcat:Dataset, dcat:DataService, dcat:Catalog y cualquier otro miembro de un dcat:Catalog. Esta clase tiene propiedades comunes a todos los recursos catalogados, incluyendo conjuntos de datos y servicios de datos. Se recomienda fuertemente que se use una clase más específica. Cuando se describe un recurso que no es un dcat:Dataset o dcat:DataService, se recomienda crear una sub-clase apropiada de dcat:Resource, o usar dcat:Resource con la propiedad dct:type to indicar el tipo específico.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si raccomanda vivamente di utilizzare una sottoclasse più specifica. Quando si descrive una risorsa che non è un dcat:Dataset o dcat:DataService, si raccomanda di creare una sottoclasse di dcat:Resource appropriata, o utilizzare dcat:Resource con la proprietà dct:type per indicare il tipo specifico.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dct:type property to indicate the specific type.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">Třída všech katalogizovaných zdrojů, nadtřída dcat:Dataset, dcat:DataService, dcat:Catalog a všech ostatních členů dcat:Catalog. Tato třída nese vlastnosti společné všem katalogizovaným zdrojům včetně datových sad a datových služeb. Je silně doporučeno používat specifičtější podtřídy, pokud je to možné. Při popisu zdroje, který není ani dcat:Dataset, ani dcat:DataService se doporučuje vytvořit odpovídající podtřídu dcat:Resrouce a nebo použít dcat:Resource s vlastností dct:type pro určení konkrétního typu.</skos:scopeNote>
+        <skos:scopeNote xml:lang="da">dcat:Resource er et udvidelsespunkt der tillader oprettelsen af enhver type af kataloger. Yderligere subklasser kan defineres i en DCAT-profil eller i en applikation til kataloger med andre typer af ressourcer.</skos:scopeNote>
+        <skos:scopeNote xml:lang="es">dcat:Resource es un punto de extensión que permite la definición de cualquier tipo de catálogo. Se pueden definir subclases adicionales en perfil de DCAT o una aplicación para catálogos de otro tipo de recursos.</skos:scopeNote>
+        <skos:scopeNote xml:lang="en">dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional subclasses may be defined in a DCAT profile or application for catalogs of other kinds of resources.</skos:scopeNote>
+        <skos:scopeNote xml:lang="cs">dcat:Resource je bod pro rozšíření umožňující definici různých druhů katalogů. Další podtřídy lze definovat v profilech DCAT či aplikacích pro katalogy zdrojů jiných druhů.</skos:scopeNote>
+        <skos:scopeNote xml:lang="it">dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un&apos;applicazione per cataloghi di altri tipi di risorse.</skos:scopeNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Agreement -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Agreement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Assertion -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Assertion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Asset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Asset">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <skos:definition xml:lang="en">A resource or a collection of resources that are the subject of a Rule.</skos:definition>
+        <skos:note xml:lang="en">The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/AssetCollection -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/AssetCollection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Offer -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Offer">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Party -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Party">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/Organization"/>
+                    <rdf:Description rdf:about="http://schema.org/Person"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Agent"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Individual"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Party</rdfs:label>
+        <skos:definition xml:lang="en">An entity or a collection of entities that undertake Roles in a Rule.</skos:definition>
+        <skos:note xml:lang="en">The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/PartyCollection -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/PartyCollection">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Policy -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Policy">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Policy</rdfs:label>
+        <skos:definition xml:lang="en">A non-empty group of Permissions and/or Prohibitions.</skos:definition>
+        <skos:note xml:lang="en">A Policy may contain multiple Rules.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Privacy -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Privacy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Request -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Request">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Rule -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Rule"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Set -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Set">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Ticket -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Ticket">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Policy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Attribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Attribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Document">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <rdfs:comment>A document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>Document</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineAccount -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineAccount">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>An online account.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>Online Account</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineChatAccount -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineChatAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineEcommerceAccount -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/OnlineGamingAccount -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/OnlineGamingAccount">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/PersonalProfileDocument -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/PersonalProfileDocument">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project"/>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#Agreement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#Agreement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Agreement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#Asset -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#AssetQuality -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#AssetQuality">
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Quality metrics associated with Asset</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#Offering -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#Offering">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#OfferingContract -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#OfferingContract">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Offer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#Participant -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#Participant">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Organization"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/ontology#Self-Listing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/ontology#Self-Listing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#AIModelAsset -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/vocab#AIModelAsset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sedimark/ontology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#DataAsset -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/vocab#DataAsset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sedimark/ontology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#OtherAsset -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/vocab#OtherAsset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sedimark/ontology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#ServiceAsset -->
+
+
+    <owl:Class rdf:about="https://w3id.org/sedimark/vocab#ServiceAsset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sedimark/ontology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://creativecommons.org/licenses/by/4.0/ -->
+
+
+    <owl:NamedIndividual rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">ontology license</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png"/>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/CVSSP -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/CVSSP">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/ontology#Participant"/>
+        <foaf:account rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account"/>
+        <foaf:homepage rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage"/>
+        <foaf:openid rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile"/>
+        <hasSelf-Listing rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab"/>
+        <foaf:name xml:lang="en"></foaf:name>
+        <terms2:description xml:lang="en"></terms2:description>
+        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal"></terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/agreement-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/agreement-001">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/ontology#Agreement"/>
+        <references rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email"/>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+        <foaf:accountName xml:lang="en"></foaf:accountName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/ontology#Self-Listing"/>
+        <terms:hasPart rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue"/>
+        <belongsTo rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
+        <hasOffering rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001"/>
+        <terms:creator rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
+        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Self-listing for the ehealth-living-lab data provision</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-01-01</terms:issued>
+        <terms:language rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">English</terms:language>
+        <terms:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-01-02</terms:modified>
+        <terms:publisher rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
+        <terms:rights>This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
+        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">E-health Living Lab</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/living-lab-01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/living-lab-01">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/vocab#DataAsset"/>
+        <hasAssetQuality rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality"/>
+        <dc:creator rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This dataset captures data from step counter on wearable smart watch for subject 001</dc:description>
+        <dc:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">cvssp-livinglab-wearable-steps-001</dc:identifier>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Steps Dataset for Subject 001</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/ontology#AssetQuality"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+        <terms:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+https://creativecommons.org/licenses/by-nd/4.0/</terms:license>
+        <terms:rights rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/wearable-contract -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/wearable-contract">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/ontology#OfferingContract"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001 -->
+
+
+    <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001">
+        <rdf:type rdf:resource="https://w3id.org/sedimark/ontology#Offering"/>
+        <dcat:dataset rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001"/>
+        <foaf:homepage rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage"/>
+        <hasAsset rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001"/>
+        <hasOfferingContract rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/wearable-contract"/>
+        <dcat:temporalResolution rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P6H</dcat:temporalResolution>
+        <terms:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-01-01</terms:created>
+        <terms:creator rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
+        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This offering provides data assets with data originating from wearable sensors on smart watches</terms:description>
+        <terms:isPartOf rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-01-02</terms:issued>
+        <terms:language rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">English</terms:language>
+        <terms:publisher rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
+        <terms:temporal rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period"/>
+        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wearable data for Subject 001</terms:title>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/AgentClass">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/BibliographicResource">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Box">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/DCMIType">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/DDC">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/FileFormat">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Frequency">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/IMT">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/ISO3166">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/ISO639-2">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/ISO639-3">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Jurisdiction">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/LCC">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/LCSH">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/MESH">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/MediaType">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/MediaTypeOrExtent">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/MethodOfAccrual">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/MethodOfInstruction">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/NLM">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Period">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/PhysicalMedium">
+        <terms:description xml:lang="en">Examples include paper, canvas, or DVD.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/PhysicalResource">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Point">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Policy">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/ProvenanceStatement">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/RFC1766">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/RFC3066">
+        <terms:description xml:lang="en">RFC 3066 has been obsoleted by RFC 4646.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/RFC4646">
+        <terms:description xml:lang="en">RFC 4646 obsoletes RFC 3066.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/RFC5646">
+        <terms:description xml:lang="en">RFC 5646 obsoletes RFC 4646.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/SizeOrDuration">
+        <terms:description xml:lang="en">Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/Standard">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/TGN">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/UDC">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/URI">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/W3CDTF">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/accrualMethod">
+        <terms:description xml:lang="en">Recommended practice is to use a value from the Collection Description Accrual Method Vocabulary [[DCMI-ACCRUALMETHOD](https://dublincore.org/groups/collections/accrual-method/)].</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/accrualPolicy">
+        <terms:description xml:lang="en">Recommended practice is to use a value from the Collection Description Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)].</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
+        <terms:description xml:lang="en">The distinction between titles and alternative titles is application-specific.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/audience">
+        <terms:description xml:lang="en">Recommended practice is to use this property with non-literal values from a vocabulary of audience types.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+        <terms:description xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/date">
+        <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a &apos;/&apos; (slash) character.  Either the start or end date may be missing.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/dateCopyrighted">
+        <terms:description xml:lang="en">Typically a year.  Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/dateSubmitted">
+        <terms:description xml:lang="en">Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty.  Examples of resources to which a &apos;Date Submitted&apos; may be relevant include a thesis (submitted to a university department) or an article (submitted to a journal).</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/educationLevel">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-07-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/hasFormat">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Format Of.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/instructionalMethod">
+        <terms:description xml:lang="en">Instructional Method typically includes ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-06-13</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isFormatOf">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Has Format.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of References.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isReplacedBy">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Replaces.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isRequiredBy">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Requires.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
+        <terms:description xml:lang="en">Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
+        <terms:description xml:lang="en">Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</terms:issued>
+        <rdfs:comment xml:lang="en">A legal document giving official permission to do something with the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">License</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/mediator">
+        <terms:description xml:lang="en">In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-05-21</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/provenance">
+        <terms:description xml:lang="en">The statement may include a description of any changes successive custodians made to the resource.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-09-20</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/replaces">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Replaced By.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/requires">
+        <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Required By.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-07-11</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/rightsHolder">
+        <terms:description xml:lang="en">Recommended practice is to refer to the rights holder with a URI. If this is not possible or feasible, a literal value that identifies the rights holder may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-14</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+        <rdfs:comment xml:lang="en">The preferred namespace prefix to use when using terms from this vocabulary in an XML document.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/vocab/vann/"/>
+        <rdfs:label xml:lang="en">Preferred Namespace Prefix</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/adms#sample">
+        <rdfs:comment xml:lang="en">Links to a sample of an Asset (which is itself an Asset).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+        <rdfs:label xml:lang="en">sample</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
