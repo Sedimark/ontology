@@ -12,6 +12,25 @@ Offering provided by CVSSP living lab for ehealth monitoring.
 
 ![image](https://github.com/Sedimark/ontology/assets/47256078/c44db277-2d05-4896-9522-3b344982d8af)
 
+## SPARQL Query Example:
+
+```sparql
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+SELECT * WHERE {
+  ?participant a sedi:Participant .
+  ?participant sedi:hasSelf-Listing ?selflisting .
+  ?selflisting sedi:hasOffering ?offering .
+  ?offering sedi:hasAsset ?asset . 
+  ?asset sedi:hasAssetQuality ?assetquality
+  
+} LIMIT 10
+
+```
 
 ## Licence
 This is licensed under a Creative Commons Attribution 4.0 International License.
