@@ -1,34 +1,57 @@
-About Widoco output
-===================
-The purpose of Widoco is to reuse and integrate existing tools for documentation, plus the set of features listed below:
-* Separation of the sections of your html page so you can write them independently and replace only those needed.
-* Automatic annotation in RDF-a of the html produced.
-* Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).
-* Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology.
-* Guidelines on the main sections that your document should have and how to complete them.
+# SEDIMARK Marketplace Ontology
 
-Widoco will create 3 different folders:
-|
-|-provenance (a folder including an html and RDF serialization of how the documentation page was created)
-|-resources (folder with the different resources)
-|-sections (folder with the different sections of the documentation, separated for easy editing. Just edit one and the main page will be updated)
+## About  
+The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.
+This model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative.
 
-Completing ontology metadata.
-===================
-Widoco uses the ontology metadata to update a configuration file. If you complete that configuration file (ended up widoco.conf), the tool will enhance your html with additional details, such as how to cite the document, previous revisions, icons with the licence, etc.
+## Core Concepts 
 
-Browser issues
-==========
-The result of executing Widoco is an html file. We have tested it in Mozilla, IE and Chrome, and when the page is stored in a server all the browsers work correctly. If you view the file locally, we recommend you to use Mozilla Firefox (or Internet Explorer, if you must). Google Chrome will not show the contents correctly, as it doesn't allow  XMLHttpRequest without HTTP. If you want to view the page locally with Google Chrome you have two possibilities:
+### Classes
+![image](https://github.com/Sedimark/ontology/assets/47256078/00d35702-b7cf-4eef-ad5b-9e2134c0ed26)
 
-a) Place the file in a server and access it via its URL (for example, put it in dropbox and access through its public url).
+## Properties
+![image](https://github.com/Sedimark/ontology/assets/47256078/cacb6d9d-1b8d-422e-a19d-fa35e5faf9bf)
 
-b) Execute Chrome with the following commands :
+## Instantiation Example:
+Offering provided by CVSSP living lab for ehealth monitoring.
 
-(WIN) chrome.exe --allow-file-access-from-files,
+![image](https://github.com/Sedimark/ontology/assets/47256078/c44db277-2d05-4896-9522-3b344982d8af)
 
-(OSX) open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
+## SPARQL Query Example:
 
-(UNX) /usr/bin/google-chrome --allow-file-access-from-files
+```sparql
+prefix sedi: <https://w3id.org/sedimark/ontology#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dct: <http://purl.org/dc/terms/>
 
-Do you have a problem? open an issue at https://github.com/dgarijo/Widoco
+
+SELECT * WHERE {
+  ?participant a sedi:Participant .
+  ?participant sedi:hasSelf-Listing ?selflisting .
+  ?selflisting dct:hasPart ?localCat.
+  ?selflisting sedi:hasOffering ?offering .
+  ?offering sedi:hasAsset ?asset .
+  ?asset sedi:hasAssetQuality ?assetquality .
+  ?offering dcat:temporalResolution ?tempRes .  
+  
+} LIMIT 10
+
+```
+
+### Example Result:
+
+| participant                                   | selflisting                                                | localCat                                                       | offering                                                      | asset                                                   | assetquality                                                    | tempRes |
+| --------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- | ------- |
+| https://sedimark.surrey.ac.uk/ecosystem/CVSSP | https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab | https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue | https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality | P6H     |
+
+## Licence
+This is licensed under a Creative Commons Attribution 4.0 International License.
+
+## Acknowledgement
+This work is funded by the European Union under the Horizon Europe framework programme [grant no. 101070074]. 
+This project is also partly funded by UK Research and Innovation (UKRI) under the UK government’s Horizon Europe funding guarantee [grant no. 10043699].
