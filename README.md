@@ -7,6 +7,11 @@ This model is supported by existing proposals by similar initiatives and is buil
 ## High-Level Diagram: Core Concepts
 ![image](https://github.com/Sedimark/ontology/assets/47256078/00d35702-b7cf-4eef-ad5b-9e2134c0ed26)
 
+## Instantiation (Exemplification)
+Offering provided by CVSSP living lab for ehealth monitoring.
+
+![image](https://github.com/Sedimark/ontology/assets/47256078/c44db277-2d05-4896-9522-3b344982d8af)
+
 
 ## Licence
 This is licensed under a Creative Commons Attribution 4.0 International License.
