@@ -20,22 +20,34 @@ Offering provided by CVSSP living lab for ehealth monitoring.
 ## SPARQL Query Example:
 
 ```sparql
+prefix sedi: <https://w3id.org/sedimark/ontology#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 prefix xml: <http://www.w3.org/XML/1998/namespace>
 prefix xsd: <http://www.w3.org/2001/XMLSchema#>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dct: <http://purl.org/dc/terms/>
 
 
 SELECT * WHERE {
   ?participant a sedi:Participant .
   ?participant sedi:hasSelf-Listing ?selflisting .
+  ?selflisting dct:hasPart ?localCat.
   ?selflisting sedi:hasOffering ?offering .
-  ?offering sedi:hasAsset ?asset . 
-  ?asset sedi:hasAssetQuality ?assetquality
+  ?offering sedi:hasAsset ?asset .
+  ?asset sedi:hasAssetQuality ?assetquality .
+  ?offering dcat:temporalResolution ?tempRes .  
   
 } LIMIT 10
 
 ```
+
+### Example Result:
+
+| participant                                   | selflisting                                                | localCat                                                       | offering                                                      | asset                                                   | assetquality                                                    | tempRes |
+| --------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- | ------- |
+| https://sedimark.surrey.ac.uk/ecosystem/CVSSP | https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab | https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue | https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality | P6H     |
 
 ## Licence
 This is licensed under a Creative Commons Attribution 4.0 International License.
