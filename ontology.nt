@@ -2,6 +2,7 @@
 <https://w3id.org/sedimark/ontology#> <http://purl.org/dc/elements/1.1/description> "The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.\n\nThis model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/sedimark/ontology#> <http://purl.org/dc/elements/1.1/title> "SEDIMARK Marketplace Ontology"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/sedimark/ontology#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/sedimark/ontology#> <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/sedimark/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-ont"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/sedimark/ontology#> <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> .
 # 
@@ -251,11 +252,6 @@
 # 
 # http://purl.org/dc/terms/publisher
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/dc/terms/publisher> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> .
-<http://purl.org/dc/terms/publisher> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource available."@en .
-<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher"@en .
 <http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/publisher> .
 # 
 # http://purl.org/dc/terms/relation
@@ -1414,6 +1410,7 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period
 <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+<https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> <http://www.w3.org/ns/dcat#temporalResolution> "P6H"^^<http://www.w3.org/2001/XMLSchema#duration> .
 # 
 # https://sedimark.surrey.ac.uk/ecosystem/living-lab-01
 <https://sedimark.surrey.ac.uk/ecosystem/living-lab-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1671,6 +1668,12 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 # 
 <http://purl.org/dc/terms/provenance> <http://purl.org/dc/terms/description> "The statement may include a description of any changes successive custodians made to the resource."@en .
 <http://purl.org/dc/terms/provenance> <http://purl.org/dc/terms/issued> "2004-09-20"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+<http://purl.org/dc/terms/publisher> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/publisher> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource available."@en .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publisher"@en .
 # 
 <http://purl.org/dc/terms/references> <http://purl.org/dc/terms/description> "This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By."@en .
 <http://purl.org/dc/terms/references> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .

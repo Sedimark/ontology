@@ -3437,6 +3437,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+  } ],
+  "http://www.w3.org/ns/dcat#temporalResolution" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#duration",
+    "@value" : "P6H"
   } ]
 }, {
   "@id" : "https://sedimark.surrey.ac.uk/ecosystem/living-lab-01",
@@ -3567,6 +3571,10 @@
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",

@@ -25,6 +25,7 @@
 This model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SEDIMARK Marketplace Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace</terms:publisher>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">sedi-ont</vann:preferredNamespacePrefix>
         <schema:logo rdf:resource="https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png"/>
     </owl:Ontology>
@@ -452,11 +453,6 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
-        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Publisher</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
     </owl:AnnotationProperty>
     
@@ -2460,6 +2456,7 @@ https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
 
     <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period">
         <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <dcat:temporalResolution rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P6H</dcat:temporalResolution>
     </owl:NamedIndividual>
     
 
@@ -2936,6 +2933,13 @@ https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
     <rdf:Description rdf:about="http://purl.org/dc/terms/provenance">
         <terms:description xml:lang="en">The statement may include a description of any changes successive custodians made to the resource.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-09-20</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/references">
         <terms:description xml:lang="en">This property is intended to be used with non-literal values. This property is an inverse property of Is Referenced By.</terms:description>
