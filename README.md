@@ -17,6 +17,82 @@ Offering provided by CVSSP living lab for ehealth monitoring.
 
 ![image](https://github.com/Sedimark/ontology/assets/47256078/c44db277-2d05-4896-9522-3b344982d8af)
 
+### Serialisation (JSON-LD)
+```json
+{
+  "@graph": [
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001",
+      "http://purl.org/dc/elements/1.1/creator": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      }
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
+      "https://purl.org/dc/terms/description": {
+        "@language": "en",
+        "@value": ""
+      },
+      "http://xmlns.com/foaf/0.1/name": {
+        "@language": "en",
+        "@value": ""
+      },
+      "hasSelf-Listing": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab"
+      },
+      "http://xmlns.com/foaf/0.1/openid": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile"
+      },
+      "http://xmlns.com/foaf/0.1/homepage": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage"
+      },
+      "http://xmlns.com/foaf/0.1/account": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account"
+      },
+      "dct:description": {
+        "@value": "",
+        "@type": "rdfs:Literal"
+      },
+      "@type": [
+        "owl:NamedIndividual",
+        "Participant"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab",
+      "belongsTo": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      },
+      "dct:publisher": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      },
+      "dct:creator": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      }
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001",
+      "dct:publisher": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      },
+      "dct:creator": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      }
+    }
+  ],
+  "@context": {
+    "sedi": "https://w3id.org/sedimark/ontology#",
+    "dct": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "@vocab": "https://w3id.org/sedimark/ontology#"
+  }
+}
+```
 ## SPARQL Query Example:
 
 ```sparql
