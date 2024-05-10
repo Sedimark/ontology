@@ -318,9 +318,16 @@ SELECT * WHERE {
 
 ### Example Result:
 
+#### Table  
 | participant                                   | selflisting                                                | localCat                                                       | offering                                                      | asset                                                   | assetquality                                                    | tempRes |
 | --------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- | ------- |
 | https://sedimark.surrey.ac.uk/ecosystem/CVSSP | https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab | https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue | https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality | P6H     |
+
+#### CSV  
+```csv
+participant,selflisting,localCat,offering,asset,assetquality,tempRes
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab,https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue,https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality,P6H
+```
 
 ## Licence
 This is licensed under a Creative Commons Attribution 4.0 International License.
