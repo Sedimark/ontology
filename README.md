@@ -22,10 +22,68 @@ Offering provided by CVSSP living lab for ehealth monitoring.
 {
   "@graph": [
     {
-      "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001",
-      "http://purl.org/dc/elements/1.1/creator": {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/living-lab-01",
+      "@type": [
+        "owl:NamedIndividual",
+        "dct:Location"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period",
+      "@type": [
+        "owl:NamedIndividual",
+        "dct:PeriodOfTime"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab",
+      "dct:title": {
+        "@value": "E-health Living Lab",
+        "@type": "rdfs:Literal"
+      },
+      "dct:hasPart": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue"
+      },
+      "dct:publisher": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      },
+      "dct:language": {
+        "@value": "English",
+        "@type": "rdfs:Literal"
+      },
+      "@type": [
+        "Self-Listing",
+        "owl:NamedIndividual"
+      ],
+      "dct:rights": "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/",
+      "dct:issued": {
+        "@value": "2024-01-01",
+        "@type": "rdfs:Literal"
+      },
+      "belongsTo": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      },
+      "hasOffering": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001"
+      },
+      "dct:description": {
+        "@value": "Self-listing for the ehealth-living-lab data provision",
+        "@type": "rdfs:Literal"
+      },
+      "dct:modified": {
+        "@value": "2024-01-02",
+        "@type": "rdfs:Literal"
+      },
+      "dct:creator": {
         "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
       }
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue",
+      "@type": [
+        "owl:NamedIndividual",
+        "dcat:Catalog"
+      ]
     },
     {
       "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP",
@@ -59,25 +117,164 @@ Offering provided by CVSSP living lab for ehealth monitoring.
       ]
     },
     {
-      "@id": "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab",
-      "belongsTo": {
-        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001",
+      "hasOfferingContract": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-contract"
+      },
+      "dct:issued": {
+        "@value": "2024-01-02",
+        "@type": "rdfs:Literal"
+      },
+      "dct:language": {
+        "@value": "English",
+        "@type": "rdfs:Literal"
+      },
+      "hasAsset": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001"
+      },
+      "dct:title": {
+        "@value": "Wearable data for Subject 001",
+        "@type": "rdfs:Literal"
+      },
+      "dct:temporal": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period"
+      },
+      "@type": [
+        "owl:NamedIndividual",
+        "Offering"
+      ],
+      "dcat:temporalResolution": {
+        "@value": "P6H",
+        "@type": "xsd:duration"
       },
       "dct:publisher": {
         "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
       },
+      "dct:description": {
+        "@value": "This offering provides data assets with data originating from wearable sensors on smart watches",
+        "@type": "rdfs:Literal"
+      },
+      "dcat:dataset": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001"
+      },
       "dct:creator": {
         "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
+      },
+      "dct:created": {
+        "@value": "2024-01-01",
+        "@type": "rdfs:Literal"
+      },
+      "dct:isPartOf": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab"
+      },
+      "http://xmlns.com/foaf/0.1/homepage": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage"
       }
     },
     {
-      "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001",
-      "dct:publisher": {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://xmlns.com/foaf/0.1/Document"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001",
+      "hasAssetQuality": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality"
+      },
+      "http://purl.org/dc/elements/1.1/identifier": {
+        "@value": "cvssp-livinglab-wearable-steps-001",
+        "@type": "rdfs:Literal"
+      },
+      "http://purl.org/dc/elements/1.1/creator": {
         "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
       },
-      "dct:creator": {
-        "@id": "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
-      }
+      "http://purl.org/dc/elements/1.1/title": {
+        "@value": "Steps Dataset for Subject 001",
+        "@type": "rdfs:Literal"
+      },
+      "http://purl.org/dc/elements/1.1/description": {
+        "@value": "This dataset captures data from step counter on wearable smart watch for subject 001",
+        "@type": "rdfs:Literal"
+      },
+      "@type": [
+        "owl:NamedIndividual",
+        "https://w3id.org/sedimark/vocab#DataAsset"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality",
+      "@type": [
+        "owl:NamedIndividual",
+        "AssetQuality"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/agreement-001",
+      "references": {
+        "@id": "https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001"
+      },
+      "@type": [
+        "owl:NamedIndividual",
+        "Agreement"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-contract",
+      "@type": [
+        "owl:NamedIndividual",
+        "OfferingContract"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage",
+      "@type": [
+        "owl:NamedIndividual",
+        "http://xmlns.com/foaf/0.1/Document"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc",
+      "dct:rights": {
+        "@value": "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/",
+        "@type": "rdfs:Literal"
+      },
+      "dct:license": {
+        "@value": "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/",
+        "@type": "rdfs:Literal"
+      },
+      "@type": [
+        "owl:NamedIndividual",
+        "dct:LicenseDocument"
+      ]
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account",
+      "http://xmlns.com/foaf/0.1/accountName": {
+        "@language": "en",
+        "@value": ""
+      },
+      "@type": [
+        "owl:NamedIndividual",
+        "http://xmlns.com/foaf/0.1/OnlineAccount"
+      ]
+    },
+    {
+      "@id": "https://creativecommons.org/licenses/by/4.0/",
+      "rdfs:label": {
+        "@value": "ontology license",
+        "@type": "rdfs:Literal"
+      },
+      "@type": "owl:NamedIndividual"
+    },
+    {
+      "@id": "https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email",
+      "@type": "owl:NamedIndividual"
+    },
+    {
+      "@id": "https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png",
+      "@type": "owl:NamedIndividual"
     }
   ],
   "@context": {
