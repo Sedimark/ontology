@@ -290,7 +290,7 @@ Offering provided by CVSSP living lab for ehealth monitoring.
   }
 }
 ```
-## SPARQL Query Example:
+## SPARQL Query Example (1):
 
 ```sparql
 prefix sedi: <https://w3id.org/sedimark/ontology#>
@@ -316,18 +316,113 @@ SELECT * WHERE {
 
 ```
 
-### Example Result:
+- Result (CSV):
 
-#### Table  
-| participant                                   | selflisting                                                | localCat                                                       | offering                                                      | asset                                                   | assetquality                                                    | tempRes |
-| --------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- | ------- |
-| https://sedimark.surrey.ac.uk/ecosystem/CVSSP | https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab | https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue | https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001 | https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality | P6H     |
-
-#### CSV  
 ```csv
 participant,selflisting,localCat,offering,asset,assetquality,tempRes
 https://sedimark.surrey.ac.uk/ecosystem/CVSSP,https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab,https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue,https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality,P6H
 ```
+## SPARQL Query Example (2): Participant information
+```sparql
+prefix sedi: <https://w3id.org/sedimark/ontology#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dct: <http://purl.org/dc/terms/>
+
+SELECT * WHERE {
+   ?participant a sedi:Participant .   
+   ?participant ?p ?o .
+}
+```
+- Result (CSV):
+
+```csv
+participant,p,o
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://w3id.org/sedimark/ontology#Participant
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://purl.org/dc/terms/description,""
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://xmlns.com/foaf/0.1/account,https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://xmlns.com/foaf/0.1/homepage,https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://xmlns.com/foaf/0.1/openid,https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,https://w3id.org/sedimark/ontology#hasSelf-Listing,https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,http://xmlns.com/foaf/0.1/name,""
+https://sedimark.surrey.ac.uk/ecosystem/CVSSP,https://purl.org/dc/terms/description,""
+
+```
+
+## SPARQL Query Example (3): Offering information
+```sparql
+prefix sedi: <https://w3id.org/sedimark/ontology#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dct: <http://purl.org/dc/terms/>
+
+SELECT * WHERE {
+   ?offering a sedi:Offering .   
+   ?offering ?p ?o .
+}
+```
+
+- Result (CSV):
+
+```csv
+offering,p,o
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://w3id.org/sedimark/ontology#Offering
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/issued,2024-01-02
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/description,This offering provides data assets with data originating from wearable sensors on smart watches
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/created,2024-01-01
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/creator,https://sedimark.surrey.ac.uk/ecosystem/CVSSP
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/isPartOf,https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/language,English
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/publisher,https://sedimark.surrey.ac.uk/ecosystem/CVSSP
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/temporal,https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://purl.org/dc/terms/title,Wearable data for Subject 001
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://www.w3.org/ns/dcat#dataset,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://xmlns.com/foaf/0.1/homepage,https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,https://w3id.org/sedimark/ontology#hasAsset,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,https://w3id.org/sedimark/ontology#hasOfferingContract,https://sedimark.surrey.ac.uk/ecosystem/wearable-contract
+https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001,http://www.w3.org/ns/dcat#temporalResolution,P6H
+```
+
+## SPARQL Query Example (4): Asset information
+
+```sparql
+prefix sedi: <https://w3id.org/sedimark/ontology#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix xml: <http://www.w3.org/XML/1998/namespace>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dct: <http://purl.org/dc/terms/>
+
+SELECT * WHERE {
+   ?dataAsset a sedi:DataAsset .   
+   ?dataAsset ?p ?o .
+}
+```
+
+- Result (CSV):
+
+```csv
+dataAsset,p,o
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,https://w3id.org/sedimark/vocab#DataAsset
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,http://www.w3.org/1999/02/22-rdf-syntax-ns#type,http://www.w3.org/2002/07/owl#NamedIndividual
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,http://purl.org/dc/elements/1.1/description,This dataset captures data from step counter on wearable smart watch for subject 001
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,http://purl.org/dc/elements/1.1/title,Steps Dataset for Subject 001
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,http://purl.org/dc/elements/1.1/creator,https://sedimark.surrey.ac.uk/ecosystem/CVSSP
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,http://purl.org/dc/elements/1.1/identifier,cvssp-livinglab-wearable-steps-001
+https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001,https://w3id.org/sedimark/ontology#hasAssetQuality,https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality
+```  
 
 ## Licence
 This is licensed under a Creative Commons Attribution 4.0 International License.
