@@ -23,6 +23,7 @@
 
 This model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SEDIMARK Marketplace Information Model - Ontology</dc:title>
+        <terms:contributor>Maroua Bahri (INRIA)</terms:contributor>
         <terms:creator>Jorge Lanza (Universidad de Cantabria)</terms:creator>
         <terms:creator>Juan Ramon Santana (Universidad de Cantabria)</terms:creator>
         <terms:creator>Luis Sanchez (Universidad de Cantabria)</terms:creator>
@@ -32,6 +33,7 @@ This model is supported by existing proposals by similar initiatives and is buil
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
         <terms:publisher rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace</terms:publisher>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">sedi-o</vann:preferredNamespacePrefix>
+        <schema:citation>SEDIMARK Marketplace Information Model - SEDIMARK EU Project</schema:citation>
         <schema:funding xml:lang="en">https://cordis.europa.eu/project/id/101070074</schema:funding>
         <schema:funding xml:lang="en">https://gtr.ukri.org/projects?ref=10043699</schema:funding>
         <schema:logo rdf:resource="https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png"/>
@@ -239,12 +241,6 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
-        <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</terms:description>
-        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
-        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
-        <rdfs:label xml:lang="en">Contributor</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
     </owl:AnnotationProperty>
     
@@ -603,6 +599,13 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://schema.org/citation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
     
 
 
@@ -2034,6 +2037,86 @@ This model is supported by existing proposals by similar initiatives and is buil
     
 
 
+    <!-- https://w3id.org/sedimark/vocab#algorithm -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#algorithm">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#category -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#category">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#execution -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#execution">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#handlesStream -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#handlesStream">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#inputFormat -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#inputFormat">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#inputParameters -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#inputParameters">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#outputFormat -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#outputFormat">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/sedimark/vocab#serialization -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/sedimark/vocab#serialization">
+        <rdfs:domain rdf:resource="https://w3id.org/sedimark/vocab#AIModelAsset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2896,14 +2979,13 @@ This model is supported by existing proposals by similar initiatives and is buil
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-01</terms:modified>
         <terms:publisher rdf:resource="https://sedimark.eglobalmark.com/ecosystem/participant-egm"/>
         <terms:spatial rdf:resource="https://sws.geonames.org/6299418/"/>
-        <terms:temporal>
-            <rdf:Description rdf:nodeID="genid42">
-                <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
-                <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-01</dcat:endDate>
-                <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcat:startDate>
-            </rdf:Description>
-        </terms:temporal>
+        <terms:temporal rdf:nodeID="genid42"/>
     </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid42">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-01</dcat:endDate>
+        <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcat:startDate>
+    </rdf:Description>
     
 
 
@@ -2922,14 +3004,13 @@ This model is supported by existing proposals by similar initiatives and is buil
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-10</terms:modified>
         <terms:publisher rdf:resource="https://sedimark.eglobalmark.com/ecosystem/participant-egm"/>
         <terms:spatial rdf:resource="https://sws.geonames.org/6299418/"/>
-        <terms:temporal>
-            <rdf:Description rdf:nodeID="genid43">
-                <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
-                <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-01</dcat:endDate>
-                <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcat:startDate>
-            </rdf:Description>
-        </terms:temporal>
+        <terms:temporal rdf:nodeID="genid43"/>
     </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid43">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-01</dcat:endDate>
+        <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</dcat:startDate>
+    </rdf:Description>
     
 
 
@@ -2945,14 +3026,13 @@ This model is supported by existing proposals by similar initiatives and is buil
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-02</terms:modified>
         <terms:publisher rdf:resource="https://sedimark.eglobalmark.com/ecosystem/participant-egm"/>
         <terms:spatial rdf:resource="https://sws.geonames.org/12319223/"/>
-        <terms:temporal>
-            <rdf:Description rdf:nodeID="genid44">
-                <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
-                <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-02</dcat:endDate>
-                <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-02</dcat:startDate>
-            </rdf:Description>
-        </terms:temporal>
+        <terms:temporal rdf:nodeID="genid44"/>
     </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid44">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-02</dcat:endDate>
+        <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-02</dcat:startDate>
+    </rdf:Description>
     
 
 
@@ -2968,14 +3048,13 @@ This model is supported by existing proposals by similar initiatives and is buil
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-02</terms:modified>
         <terms:publisher rdf:resource="https://sedimark.eglobalmark.com/ecosystem/participant-egm"/>
         <terms:spatial rdf:resource="https://sws.geonames.org/12319223/"/>
-        <terms:temporal>
-            <rdf:Description rdf:nodeID="genid45">
-                <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
-                <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-02</dcat:endDate>
-                <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-02</dcat:startDate>
-            </rdf:Description>
-        </terms:temporal>
+        <terms:temporal rdf:nodeID="genid45"/>
     </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid45">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-02</dcat:endDate>
+        <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-02</dcat:startDate>
+    </rdf:Description>
     
 
 
@@ -3593,6 +3672,14 @@ https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
         <terms:description xml:lang="en">Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-02-15</terms:issued>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+        <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
         <dcam:rangeIncludes rdf:resource="http://purl.org/dc/terms/Agent"/>
         <terms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</terms:description>
@@ -3704,6 +3791,6 @@ https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
 
 
 
-<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
 
 

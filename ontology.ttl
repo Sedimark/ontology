@@ -4,13 +4,14 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/sedimark/ontology> .
+@base <https://w3id.org/sedimark/ontology#> .
 
 <https://w3id.org/sedimark/ontology> rdf:type owl:Ontology ;
                                       <http://purl.org/dc/elements/1.1/description> """The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.
 
 This model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative."""^^rdfs:Literal ;
                                       <http://purl.org/dc/elements/1.1/title> "SEDIMARK Marketplace Information Model - Ontology"^^rdfs:Literal ;
+                                      <http://purl.org/dc/terms/contributor> "Maroua Bahri (INRIA)" ;
                                       <http://purl.org/dc/terms/creator> "Jorge Lanza (Universidad de Cantabria)" ,
                                                                          "Juan Ramon Santana (Universidad de Cantabria)" ,
                                                                          "Luis Sanchez (Universidad de Cantabria)" ,
@@ -20,6 +21,7 @@ This model is supported by existing proposals by similar initiatives and is buil
                                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> ;
                                       <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^rdfs:Literal ;
                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-o"^^rdfs:Literal ;
+                                      <http://schema.org/citation> "SEDIMARK Marketplace Information Model - SEDIMARK EU Project" ;
                                       <http://schema.org/funding> "https://cordis.europa.eu/project/id/101070074"@en ,
                                                                   "https://gtr.ukri.org/projects?ref=10043699"@en ;
                                       <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> ;
@@ -146,12 +148,6 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 ###  http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty ;
-                                       <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> ;
-                                       <http://purl.org/dc/terms/description> "The guidelines for using names of persons or organizations as creators apply to contributors."@en ;
-                                       <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                       rdfs:comment "An entity responsible for making contributions to the resource."@en ;
-                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                       rdfs:label "Contributor"@en ;
                                        rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/contributor> .
 
 
@@ -399,6 +395,10 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 ###  http://purl.org/vocab/vann/usageNote
 <http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/citation
+<http://schema.org/citation> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/funding
@@ -1321,6 +1321,54 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  https://purl.org/dc/terms/title
 <https://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/sedimark/vocab#algorithm
+<https://w3id.org/sedimark/vocab#algorithm> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                            rdfs:range xsd:string .
+
+
+###  https://w3id.org/sedimark/vocab#category
+<https://w3id.org/sedimark/vocab#category> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                           rdfs:range xsd:string .
+
+
+###  https://w3id.org/sedimark/vocab#execution
+<https://w3id.org/sedimark/vocab#execution> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                            rdfs:range xsd:string .
+
+
+###  https://w3id.org/sedimark/vocab#handlesStream
+<https://w3id.org/sedimark/vocab#handlesStream> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                                rdfs:range xsd:boolean .
+
+
+###  https://w3id.org/sedimark/vocab#inputFormat
+<https://w3id.org/sedimark/vocab#inputFormat> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                              rdfs:range xsd:string .
+
+
+###  https://w3id.org/sedimark/vocab#inputParameters
+<https://w3id.org/sedimark/vocab#inputParameters> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                                  rdfs:range xsd:string .
+
+
+###  https://w3id.org/sedimark/vocab#outputFormat
+<https://w3id.org/sedimark/vocab#outputFormat> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                               rdfs:range xsd:string .
+
+
+###  https://w3id.org/sedimark/vocab#serialization
+<https://w3id.org/sedimark/vocab#serialization> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/sedimark/vocab#AIModelAsset> ;
+                                                rdfs:range xsd:string .
 
 
 #################################################################
@@ -2393,6 +2441,14 @@ _:genid47 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
                                                  <http://purl.org/dc/terms/issued> "2003-02-15"^^xsd:date .
 
 
+<http://purl.org/dc/terms/contributor> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> ;
+                                       <http://purl.org/dc/terms/description> "The guidelines for using names of persons or organizations as creators apply to contributors."@en ;
+                                       <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
+                                       rdfs:comment "An entity responsible for making contributions to the resource."@en ;
+                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                       rdfs:label "Contributor"@en .
+
+
 <http://purl.org/dc/terms/creator> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> ;
                                    <http://purl.org/dc/terms/description> "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
                                    <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
@@ -2500,4 +2556,4 @@ _:genid47 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
                                    rdfs:label "sample"@en .
 
 
-###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
