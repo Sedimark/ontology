@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "cs", "ar", "ja", "el", "en", "it", "fr", "da", "es", "undefined" ],
+    "languages" : [ "cs", "ar", "el", "ja", "en", "it", "fr", "da", "es", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "https://w3id.org/sedimark/ontology", "http://www.w3.org/2001/XMLSchema", "http://purl.org/linked-data/cube", "http://www.w3.org/ns/dcat", "http://www.w3.org/2006/vcard/ns", "https://purl.org/dc/terms", "http://www.w3.org/ns/odrl/2", "https://w3id.org/sedimark/vocab", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/eis/vocab/daq", "http://www.w3.org/ns/dqv", "http://purl.org/dc/terms", "http://www.w3.org/2008/05/skos", "http://xmlns.com/foaf/0.1", "http://www.w3.org/ns/adms", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
       "undefined" : "SEDIMARK Marketplace Information Model - Ontology"
@@ -18,10 +18,21 @@
         "value" : "https://creativecommons.org/licenses/by/4.0",
         "type" : "iri"
       } ],
+      "funding" : [ {
+        "identifier" : "funding",
+        "language" : "en",
+        "value" : "https://cordis.europa.eu/project/id/101070074",
+        "type" : "label"
+      }, {
+        "identifier" : "funding",
+        "language" : "en",
+        "value" : "https://gtr.ukri.org/projects?ref=10043699",
+        "type" : "label"
+      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Juan Ramon Santana (Universidad de Cantabria)",
+        "value" : "Luis Sanchez (Universidad de Cantabria)",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -31,28 +42,17 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "Tarek Elsaleh (University of Surrey)",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "Pablo Sotres (Universidad de Cantabria)",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Luis Sanchez (Universidad de Cantabria)",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Tarek Elsaleh (University of Surrey)",
-        "type" : "label"
-      } ],
-      "funding" : [ {
-        "identifier" : "funding",
-        "language" : "en",
-        "value" : "https://gtr.ukri.org/projects?ref=10043699",
-        "type" : "label"
-      }, {
-        "identifier" : "funding",
-        "language" : "en",
-        "value" : "https://cordis.europa.eu/project/id/101070074",
+        "value" : "Juan Ramon Santana (Universidad de Cantabria)",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -73,17 +73,23 @@
         "value" : "sedi-o",
         "type" : "label"
       } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png",
+        "type" : "iri"
+      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace",
         "type" : "label"
       } ],
-      "logo" : [ {
-        "identifier" : "logo",
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
         "language" : "undefined",
-        "value" : "https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png",
-        "type" : "iri"
+        "value" : "https://github.com/Sedimark/ontology",
+        "type" : "label"
       } ],
       "issued" : [ {
         "identifier" : "issued",
@@ -125,7 +131,7 @@
     "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "28",
     "type" : "owl:Class"
   }, {
     "id" : "30",
@@ -134,7 +140,7 @@
     "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
     "id" : "18",
@@ -146,10 +152,10 @@
     "id" : "66",
     "type" : "owl:Class"
   }, {
-    "id" : "67",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
     "id" : "84",
@@ -203,13 +209,13 @@
     "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "123",
+    "id" : "125",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
     "id" : "133",
@@ -311,10 +317,10 @@
     "id" : "138",
     "type" : "owl:unionOf"
   }, {
-    "id" : "165",
+    "id" : "168",
     "type" : "owl:Class"
   }, {
-    "id" : "167",
+    "id" : "166",
     "type" : "owl:unionOf"
   }, {
     "id" : "70",
@@ -362,10 +368,10 @@
     "id" : "75",
     "type" : "owl:Thing"
   }, {
-    "id" : "80",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "80",
     "type" : "owl:Class"
   }, {
     "id" : "184",
@@ -380,7 +386,7 @@
     "id" : "188",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "60",
+    "id" : "58",
     "type" : "rdfs:Literal"
   }, {
     "id" : "55",
@@ -398,7 +404,7 @@
     "id" : "42",
     "type" : "owl:Thing"
   }, {
-    "id" : "168",
+    "id" : "167",
     "type" : "owl:Thing"
   }, {
     "id" : "45",
@@ -452,13 +458,13 @@
     "id" : "186",
     "type" : "owl:Class"
   }, {
-    "id" : "125",
+    "id" : "124",
     "type" : "owl:Class"
   }, {
     "id" : "9",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "29",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "240",
@@ -552,25 +558,24 @@
     "attributes" : [ "external" ],
     "id" : "20"
   }, {
-    "iri" : "http://www.w3.org/ns/odrl/2/Offer",
-    "baseIri" : "http://www.w3.org/ns/odrl/2",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Offer"
-    },
-    "subClasses" : [ "26" ],
-    "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "16" ]
-  }, {
     "iri" : "http://www.w3.org/ns/dcat#Resource",
     "baseIri" : "http://www.w3.org/ns/dcat",
     "instances" : 0,
     "annotations" : {
       "changeNote" : [ {
         "identifier" : "changeNote",
+        "language" : "es",
+        "value" : "Nueva clase agregada en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
         "language" : "cs",
         "value" : "Nová t?ída p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova classe aggiunta in DCAT 2.0.",
         "type" : "label"
       }, {
         "identifier" : "changeNote",
@@ -582,31 +587,16 @@
         "language" : "en",
         "value" : "New class added in DCAT 2.0.",
         "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "es",
-        "value" : "Nueva clase agregada en DCAT 2.0.",
-        "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "it",
-        "value" : "Nuova classe aggiunta in DCAT 2.0.",
-        "type" : "label"
       } ],
       "definition" : [ {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "Recurso publicado o curado por un agente único.",
-        "type" : "label"
-      }, {
         "identifier" : "definition",
         "language" : "it",
         "value" : "Risorsa pubblicata o curata da un singolo agente.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "da",
-        "value" : "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.",
+        "language" : "cs",
+        "value" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -615,19 +605,29 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "cs",
-        "value" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
+        "language" : "da",
+        "value" : "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "Recurso publicado o curado por un agente único.",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "cs",
-        "value" : "T?ída všech katalogizovaných zdroj?, nadt?ída dcat:Dataset, dcat:DataService, dcat:Catalog a všech ostatních ?len? dcat:Catalog. Tato t?ída nese vlastnosti spole?né všem katalogizovaným zdroj?m v?etn? datových sad a datových služeb. Je siln? doporu?eno používat specifi?t?jší podt?ídy, pokud je to možné. P?i popisu zdroje, který není ani dcat:Dataset, ani dcat:DataService se doporu?uje vytvo?it odpovídající podt?ídu dcat:Resrouce a nebo použít dcat:Resource s vlastností dct:type pro ur?ení konkrétního typu.",
+        "language" : "it",
+        "value" : "La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si raccomanda vivamente di utilizzare una sottoclasse più specifica. Quando si descrive una risorsa che non è un dcat:Dataset o dcat:DataService, si raccomanda di creare una sottoclasse di dcat:Resource appropriata, o utilizzare dcat:Resource con la proprietà dct:type per indicare il tipo specifico.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dct:type property to indicate the specific type.",
+        "language" : "es",
+        "value" : "La clase de todos los recursos catalogados, la superclase de dcat:Dataset, dcat:DataService, dcat:Catalog y cualquier otro miembro de un dcat:Catalog. Esta clase tiene propiedades comunes a todos los recursos catalogados, incluyendo conjuntos de datos y servicios de datos. Se recomienda fuertemente que se use una clase más específica. Cuando se describe un recurso que no es un dcat:Dataset o dcat:DataService, se recomienda crear una sub-clase apropiada de dcat:Resource, o usar dcat:Resource con la propiedad dct:type to indicar el tipo específico.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder dataset og datatjenester. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -641,33 +641,28 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "it",
-        "value" : "dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un'applicazione per cataloghi di altri tipi di risorse.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "La clase de todos los recursos catalogados, la superclase de dcat:Dataset, dcat:DataService, dcat:Catalog y cualquier otro miembro de un dcat:Catalog. Esta clase tiene propiedades comunes a todos los recursos catalogados, incluyendo conjuntos de datos y servicios de datos. Se recomienda fuertemente que se use una clase más específica. Cuando se describe un recurso que no es un dcat:Dataset o dcat:DataService, se recomienda crear una sub-clase apropiada de dcat:Resource, o usar dcat:Resource con la propiedad dct:type to indicar el tipo específico.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "dcat:Resource es un punto de extensión que permite la definición de cualquier tipo de catálogo. Se pueden definir subclases adicionales en perfil de DCAT o una aplicación para catálogos de otro tipo de recursos.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "da",
-        "value" : "Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder dataset og datatjenester. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
         "language" : "en",
         "value" : "dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional subclasses may be defined in a DCAT profile or application for catalogs of other kinds of resources.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dct:type property to indicate the specific type.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
         "language" : "it",
-        "value" : "La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si raccomanda vivamente di utilizzare una sottoclasse più specifica. Quando si descrive una risorsa che non è un dcat:Dataset o dcat:DataService, si raccomanda di creare una sottoclasse di dcat:Resource appropriata, o utilizzare dcat:Resource con la proprietà dct:type per indicare il tipo specifico.",
+        "value" : "dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un'applicazione per cataloghi di altri tipi di risorse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "T?ída všech katalogizovaných zdroj?, nadt?ída dcat:Dataset, dcat:DataService, dcat:Catalog a všech ostatních ?len? dcat:Catalog. Tato t?ída nese vlastnosti spole?né všem katalogizovaným zdroj?m v?etn? datových sad a datových služeb. Je siln? doporu?eno používat specifi?t?jší podt?ídy, pokud je to možné. P?i popisu zdroje, který není ani dcat:Dataset, ani dcat:DataService se doporu?uje vytvo?it odpovídající podt?ídu dcat:Resrouce a nebo použít dcat:Resource s vlastností dct:type pro ur?ení konkrétního typu.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "dcat:Resource es un punto de extensión que permite la definición de cualquier tipo de catálogo. Se pueden definir subclases adicionales en perfil de DCAT o una aplicación para catálogos de otro tipo de recursos.",
         "type" : "label"
       } ]
     },
@@ -679,7 +674,7 @@
       "da" : "Katalogiseret ressource",
       "es" : "Recurso catalogado"
     },
-    "subClasses" : [ "1", "28", "29" ],
+    "subClasses" : [ "1", "26", "27" ],
     "comment" : {
       "cs" : "Zdroj publikovaný ?i ?ízený jediným ?initelem.",
       "en" : "Resource published or curated by a single agent.",
@@ -688,7 +683,18 @@
       "es" : "Recurso publicado o curado por un agente único."
     },
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/Offer",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Offer"
+    },
+    "subClasses" : [ "29" ],
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "http://www.w3.org/2006/vcard/ns#Individual",
     "baseIri" : "http://www.w3.org/2006/vcard/ns",
@@ -715,7 +721,7 @@
       "IRI-based" : "PersonalProfileDocument"
     },
     "attributes" : [ "external" ],
-    "id" : "48",
+    "id" : "50",
     "superClasses" : [ "9" ]
   }, {
     "iri" : "http://www.w3.org/ns/dcat#Distribution",
@@ -728,36 +734,40 @@
         "value" : "http://www.w3.org/TR/vocab-dcat/",
         "type" : "iri"
       } ],
-      "altLabel" : [ {
-        "identifier" : "altLabel",
-        "language" : "da",
-        "value" : "Datadistribution",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "da",
-        "value" : "Datarepræsentation",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "da",
-        "value" : "Datamanifestation",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "da",
-        "value" : "Dataudstilling",
-        "type" : "label"
-      } ],
       "definition" : [ {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Konkrétní reprezentace datové sady. Datová sada m?že být dostupná v r?zných serializacích, které se mohou navzájem lišit r?znými zp?soby, mimo jiné p?irozeným jazykem, media-typem ?i formátem, schematickou organizací, ?asovým a prostorovým rozlišením, úrovní detailu ?i profily (které mohou specifikovat n?které ?i všechny tyto rozdíly).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+        "type" : "label"
+      }, {
         "identifier" : "definition",
         "language" : "es",
         "value" : "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores).",
         "type" : "label"
       }, {
         "identifier" : "definition",
+        "language" : "da",
+        "value" : "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "el",
         "value" : "?????????? ??? ???????????? ????????? ????? ???? ??????? ?????????. ???? ?????? ????????? ?????? ?? ????? ????????? ?? ???????????? ??????, ?? ?????? ????? ?????? ?? ???????????? ???????????? ?????? ??????? ? ??????????? ?????? ????????. ???????????? ???????? ???????????????? ??? ????????????? ?????? ?????? CSV, ??? API ? ??? RSS feed.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -769,46 +779,32 @@
         "language" : "ar",
         "value" : "??? ???? ?????? ???????? ???? ?????? ????. ????? ?????? ?? ???? ?? ???? ????? ?????? ? ????? ??????.  ??? ???? ?????? ?? ????? ?????? ???? ?? ?????? ?????? ??? ???????? ?? ????? ??? ???.",
         "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "cs",
-        "value" : "Konkrétní reprezentace datové sady. Datová sada m?že být dostupná v r?zných serializacích, které se mohou navzájem lišit r?znými zp?soby, mimo jiné p?irozeným jazykem, media-typem ?i formátem, schematickou organizací, ?asovým a prostorovým rozlišením, úrovní detailu ?i profily (které mohou specifikovat n?které ?i všechny tyto rozdíly).",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "it",
-        "value" : "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "fr",
-        "value" : "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
         "language" : "da",
-        "value" : "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).",
+        "value" : "Datadistribution",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Dataudstilling",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datamanifestation",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "Datarepræsentation",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "cs",
-        "value" : "Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skute?né metod? p?ístupu k dat?m, tj. zda jsou p?ímo ke stažení, skrze API ?i p?es webovou stránku. Použití vlastnosti dcat:downloadURL indikuje p?ímo stažitelné distribuce.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.",
+        "language" : "el",
+        "value" : "???? ?????????? ??? ?????? ????????????? ???? ??????? ????????? ??? ??? ??????? ?????? ???? ??? ??????????? ?????? ????????? ??? ????????, ?? ????? ????? ?????????????, ???? API ? ???? ???? ???????????. ? ????? ??? ????????? dcat:downloadURL ??????? ???? ????? ?????????????? ????????.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -817,8 +813,23 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "el",
-        "value" : "???? ?????????? ??? ?????? ????????????? ???? ??????? ????????? ??? ??? ??????? ?????? ???? ??? ??????????? ?????? ????????? ??? ????????, ?? ????? ????? ?????????????, ???? API ? ???? ???? ???????????. ? ????? ??? ????????? dcat:downloadURL ??????? ???? ????? ?????????????? ????????.",
+        "language" : "en",
+        "value" : "This represents a general availability of a dataset it implies no information about the actual access method of the data, i.e. whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "?????????????????????????????????????????????????????????????API????????????????????????????dcat:downloadURL???????????????????????????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Esta clase representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Toto popisuje obecnou dostupnost datové sady. Neimplikuje žádnou informaci o skute?né metod? p?ístupu k dat?m, tj. zda jsou p?ímo ke stažení, skrze API ?i p?es webovou stránku. Použití vlastnosti dcat:downloadURL indikuje p?ímo stažitelné distribuce.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -830,19 +841,14 @@
         "language" : "fr",
         "value" : "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information sur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web.",
         "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "ja",
-        "value" : "?????????????????????????????????????????????????????????????API????????????????????????????dcat:downloadURL???????????????????????????????",
-        "type" : "label"
       } ]
     },
     "label" : {
       "cs" : "Distribuce",
       "ar" : "???????",
       "IRI-based" : "Distribution",
-      "ja" : "??",
       "el" : "???????",
+      "ja" : "??",
       "en" : "Distribution",
       "it" : "Distribuzione",
       "fr" : "Distribution",
@@ -883,22 +889,6 @@
     "attributes" : [ "external" ],
     "id" : "66"
   }, {
-    "iri" : "https://w3id.org/sedimark/ontology#Agreement",
-    "baseIri" : "https://w3id.org/sedimark/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Agreement"
-    },
-    "individuals" : [ {
-      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/agreement-001",
-      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
-      "labels" : {
-        "IRI-based" : "agreement-001"
-      }
-    } ],
-    "id" : "67",
-    "superClasses" : [ "68" ]
-  }, {
     "iri" : "http://www.w3.org/2008/05/skos#Concept",
     "baseIri" : "http://www.w3.org/2008/05/skos",
     "instances" : 0,
@@ -928,6 +918,22 @@
     },
     "attributes" : [ "external" ],
     "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/sedimark/ontology#Agreement",
+    "baseIri" : "https://w3id.org/sedimark/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agreement"
+    },
+    "individuals" : [ {
+      "iri" : "https://sedimark.surrey.ac.uk/ecosystem/agreement-001",
+      "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "labels" : {
+        "IRI-based" : "agreement-001"
+      }
+    } ],
+    "id" : "67",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "http://purl.org/dc/terms/FileFormat",
     "baseIri" : "http://purl.org/dc/terms",
@@ -1044,17 +1050,17 @@
           "value" : "2024-01-02",
           "type" : "label"
         } ],
-        "publisher" : [ {
-          "identifier" : "publisher",
-          "language" : "undefined",
-          "value" : "https://sedimark.eglobalmark.com/ecosystem/participant-egm",
-          "type" : "iri"
-        } ],
         "modified" : [ {
           "identifier" : "modified",
           "language" : "undefined",
           "value" : "2024-05-02",
           "type" : "label"
+        } ],
+        "publisher" : [ {
+          "identifier" : "publisher",
+          "language" : "undefined",
+          "value" : "https://sedimark.eglobalmark.com/ecosystem/participant-egm",
+          "type" : "iri"
         } ],
         "language" : [ {
           "identifier" : "language",
@@ -1118,17 +1124,17 @@
           "value" : "http://purl.org/linked-data/sdmx/2009/code#freq-D",
           "type" : "iri"
         } ],
-        "issued" : [ {
-          "identifier" : "issued",
-          "language" : "undefined",
-          "value" : "2024-01-01",
-          "type" : "label"
-        } ],
         "spatial" : [ {
           "identifier" : "spatial",
           "language" : "undefined",
           "value" : "https://sws.geonames.org/6299418/",
           "type" : "iri"
+        } ],
+        "issued" : [ {
+          "identifier" : "issued",
+          "language" : "undefined",
+          "value" : "2024-01-01",
+          "type" : "label"
         } ],
         "temporal" : [ {
           "identifier" : "temporal",
@@ -1156,28 +1162,28 @@
           "value" : "2024-01-02",
           "type" : "label"
         } ],
-        "publisher" : [ {
-          "identifier" : "publisher",
-          "language" : "undefined",
-          "value" : "https://sedimark.eglobalmark.com/ecosystem/participant-egm",
-          "type" : "iri"
-        } ],
         "modified" : [ {
           "identifier" : "modified",
           "language" : "undefined",
           "value" : "2024-05-02",
           "type" : "label"
         } ],
-        "language" : [ {
-          "identifier" : "language",
+        "publisher" : [ {
+          "identifier" : "publisher",
           "language" : "undefined",
-          "value" : "http://id.loc.gov/vocabulary/iso639-1/en",
+          "value" : "https://sedimark.eglobalmark.com/ecosystem/participant-egm",
           "type" : "iri"
         } ],
         "accrualPeriodicity" : [ {
           "identifier" : "accrualPeriodicity",
           "language" : "undefined",
           "value" : "http://purl.org/linked-data/sdmx/2009/code#freq-D",
+          "type" : "iri"
+        } ],
+        "language" : [ {
+          "identifier" : "language",
+          "language" : "undefined",
+          "value" : "http://id.loc.gov/vocabulary/iso639-1/en",
           "type" : "iri"
         } ],
         "spatial" : [ {
@@ -1224,7 +1230,7 @@
         "title" : [ {
           "identifier" : "title",
           "language" : "undefined",
-          "value" : "Steps Dataset for Subject 001",
+          "value" : "Steps Count Dataset for Subject 001",
           "type" : "label"
         } ]
       },
@@ -1234,7 +1240,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "95",
-    "superClasses" : [ "1", "29" ]
+    "superClasses" : [ "1", "27" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/OnlineAccount",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -1326,7 +1332,7 @@
         "title" : [ {
           "identifier" : "title",
           "language" : "undefined",
-          "value" : "Steps 001 Provider",
+          "value" : "Steps Count 001 Provider",
           "type" : "label"
         } ]
       },
@@ -1383,7 +1389,13 @@
         "prefLabel" : [ {
           "identifier" : "prefLabel",
           "language" : "undefined",
-          "value" : "A set of domains to classify Offerings and Assets",
+          "value" : "sedimark themes",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "undefined",
+          "value" : "A set of domains to classify Offerings and Assets with the SEDIMARK marketplace",
           "type" : "label"
         } ]
       },
@@ -1653,6 +1665,17 @@
     "individuals" : [ {
       "iri" : "https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning",
       "baseIri" : "https://sedimark.surrey.ac.uk/ecosystem",
+      "description" : {
+        "undefined" : "Morning period for health monitoring"
+      },
+      "annotations" : {
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "morning monitoring period",
+          "type" : "label"
+        } ]
+      },
       "labels" : {
         "IRI-based" : "period-health-monitoring-morning"
       }
@@ -1671,7 +1694,7 @@
       "IRI-based" : "Ticket"
     },
     "attributes" : [ "external" ],
-    "id" : "123",
+    "id" : "125",
     "superClasses" : [ "16" ]
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#AssetQuality",
@@ -1690,16 +1713,16 @@
         "IRI-based" : "quality-station-0001-water-flow-accuracy"
       }
     }, {
-      "iri" : "https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness",
-      "baseIri" : "https://sedimark.eglobalmark.com/ecosystem",
-      "labels" : {
-        "IRI-based" : "quality-station-0001-water-level-completeness"
-      }
-    }, {
       "iri" : "https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness",
       "baseIri" : "https://sedimark.eglobalmark.com/ecosystem",
       "labels" : {
         "IRI-based" : "quality-station-0001-water-flow-completeness"
+      }
+    }, {
+      "iri" : "https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness",
+      "baseIri" : "https://sedimark.eglobalmark.com/ecosystem",
+      "labels" : {
+        "IRI-based" : "quality-station-0001-water-level-completeness"
       }
     }, {
       "iri" : "https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count",
@@ -1708,7 +1731,7 @@
         "IRI-based" : "quality-wearable-001-steps-count"
       }
     } ],
-    "id" : "50",
+    "id" : "49",
     "superClasses" : [ "80" ]
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#OfferingContract",
@@ -1724,8 +1747,8 @@
         "IRI-based" : "contract-wearable-data"
       }
     } ],
-    "id" : "26",
-    "superClasses" : [ "25" ]
+    "id" : "29",
+    "superClasses" : [ "28" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Attribution",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -1773,7 +1796,7 @@
       "IRI-based" : "Asset",
       "en" : "Asset"
     },
-    "subClasses" : [ "4", "125" ],
+    "subClasses" : [ "4", "124" ],
     "attributes" : [ "external" ],
     "id" : "5"
   }, {
@@ -2015,18 +2038,18 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "es",
+        "value" : "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "ja",
         "value" : "???????????????????????????????????????",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "fr",
-        "value" : "Une collection élaborée de métadonnées sur les jeux de données.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "ar",
-        "value" : "?????? ?? ??????? ????? ????????",
+        "language" : "en",
+        "value" : "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -2035,18 +2058,13 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
+        "language" : "fr",
+        "value" : "Une collection élaborée de métadonnées sur les jeux de données.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "da",
         "value" : "En samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog).",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "el",
-        "value" : "??? ??????????? ??????? ????????????? ???? ??????? ?????????.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -2055,19 +2073,34 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).",
+        "language" : "el",
+        "value" : "??? ??????????? ??????? ????????????? ???? ??????? ?????????.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "ar",
+        "value" : "?????? ?? ??????? ????? ????????",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "ja",
-        "value" : "???????????????????????????1??????????????????",
+        "language" : "da",
+        "value" : "Et webbaseret datakatalog repræsenteres typisk ved en enkelt instans af denne klasse.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "A web-based data catalog is typically represented as a single instance of this class.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
         "language" : "it",
         "value" : "Normalmente, un catalogo di dati nel web viene rappresentato come una singola istanza di questa classe.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "???????????????????????????1??????????????????",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -2081,18 +2114,8 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "A web-based data catalog is typically represented as a single instance of this class.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
         "language" : "cs",
         "value" : "Webový datový katalog je typicky reprezentován jako jedna instance této t?ídy.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "da",
-        "value" : "Et webbaseret datakatalog repræsenteres typisk ved en enkelt instans af denne klasse.",
         "type" : "label"
       } ]
     },
@@ -2100,8 +2123,8 @@
       "cs" : "Katalog",
       "ar" : "???? ????? ????????",
       "IRI-based" : "Catalog",
-      "ja" : "????",
       "el" : "?????????",
+      "ja" : "????",
       "en" : "Catalog",
       "it" : "Catalogo",
       "fr" : "Catalogue",
@@ -2115,7 +2138,7 @@
         "IRI-based" : "surrey-local-catalogue"
       }
     } ],
-    "subClasses" : [ "24", "125" ],
+    "subClasses" : [ "24", "124" ],
     "comment" : {
       "cs" : "?ízená kolekce metadat o datových sadách a datových službách",
       "ar" : "?????? ?? ??????? ????? ????????",
@@ -2129,7 +2152,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "35",
-    "superClasses" : [ "29" ]
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://schema.org/CreativeWork",
     "equivalent" : [ "9" ],
@@ -2201,12 +2224,12 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "165"
+    "id" : "168"
   }, {
     "instances" : 0,
     "union" : [ "14", "5" ],
     "attributes" : [ "union", "anonymous" ],
-    "id" : "167"
+    "id" : "166"
   }, {
     "instances" : 0,
     "union" : [ "163", "16" ],
@@ -2312,16 +2335,16 @@
           "value" : "http://id.loc.gov/vocabulary/iso639-1/en",
           "type" : "iri"
         } ],
-        "title" : [ {
-          "identifier" : "title",
-          "language" : "undefined",
-          "value" : "E-health Living Lab",
-          "type" : "label"
-        } ],
         "issued" : [ {
           "identifier" : "issued",
           "language" : "undefined",
           "value" : "2024-01-01",
+          "type" : "label"
+        } ],
+        "title" : [ {
+          "identifier" : "title",
+          "language" : "undefined",
+          "value" : "E-health Living Lab",
           "type" : "label"
         } ]
       },
@@ -2347,17 +2370,17 @@
           "value" : "http://id.loc.gov/vocabulary/iso639-1/en",
           "type" : "iri"
         } ],
-        "spatial" : [ {
-          "identifier" : "spatial",
-          "language" : "undefined",
-          "value" : "https://sws.geonames.org/3017382/",
-          "type" : "iri"
-        } ],
         "title" : [ {
           "identifier" : "title",
           "language" : "undefined",
           "value" : "Hydrometric Stations in France",
           "type" : "label"
+        } ],
+        "spatial" : [ {
+          "identifier" : "spatial",
+          "language" : "undefined",
+          "value" : "https://sws.geonames.org/3017382/",
+          "type" : "iri"
         } ]
       },
       "labels" : {
@@ -2431,6 +2454,16 @@
       "undefined" : "Thing"
     }
   }, {
+    "iri" : "http://www.w3.org/ns/dcat#DataService",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataService"
+    },
+    "attributes" : [ "external" ],
+    "id" : "26",
+    "superClasses" : [ "25" ]
+  }, {
     "iri" : "http://www.w3.org/ns/dqv#QualityMeasurement",
     "baseIri" : "http://www.w3.org/ns/dqv",
     "instances" : 0,
@@ -2446,23 +2479,13 @@
       "IRI-based" : "QualityMeasurement",
       "en" : "Quality Measurement"
     },
-    "subClasses" : [ "50" ],
+    "subClasses" : [ "49" ],
     "comment" : {
       "en" : "Represents the evaluation of a given dataset (or dataset distribution) against a specific quality metric."
     },
     "attributes" : [ "external" ],
     "id" : "80",
     "superClasses" : [ "11" ]
-  }, {
-    "iri" : "http://www.w3.org/ns/dcat#DataService",
-    "baseIri" : "http://www.w3.org/ns/dcat",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DataService"
-    },
-    "attributes" : [ "external" ],
-    "id" : "28",
-    "superClasses" : [ "27" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "184",
@@ -2498,7 +2521,7 @@
       "IRI-based" : "Policy",
       "en" : "Policy"
     },
-    "subClasses" : [ "185", "123", "86", "111", "63", "68", "25" ],
+    "subClasses" : [ "185", "125", "86", "111", "63", "68", "28" ],
     "attributes" : [ "external" ],
     "id" : "16"
   }, {
@@ -2510,7 +2533,7 @@
     },
     "subClasses" : [ "0", "95", "186", "6" ],
     "id" : "1",
-    "superClasses" : [ "27" ]
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "188",
@@ -2520,7 +2543,7 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "60",
+    "id" : "58",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2565,7 +2588,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "168",
+    "id" : "167",
     "label" : {
       "undefined" : "Thing"
     }
@@ -2720,7 +2743,7 @@
       "IRI-based" : "Party",
       "en" : "Party"
     },
-    "union" : [ "106", "90", "114", "152", "198", "112", "165", "30" ],
+    "union" : [ "106", "90", "114", "152", "198", "112", "168", "30" ],
     "subClasses" : [ "13", "220" ],
     "attributes" : [ "union", "external" ],
     "id" : "14"
@@ -2891,16 +2914,16 @@
           "value" : "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab",
           "type" : "iri"
         } ],
-        "issued" : [ {
-          "identifier" : "issued",
-          "language" : "undefined",
-          "value" : "2024-01-02",
-          "type" : "label"
-        } ],
         "title" : [ {
           "identifier" : "title",
           "language" : "undefined",
           "value" : "Wearable data for Subject 001",
+          "type" : "label"
+        } ],
+        "issued" : [ {
+          "identifier" : "issued",
+          "language" : "undefined",
+          "value" : "2024-01-02",
           "type" : "label"
         } ],
         "temporal" : [ {
@@ -2914,7 +2937,7 @@
         "IRI-based" : "offering-person-wearable-001"
       }
     } ],
-    "id" : "125",
+    "id" : "124",
     "superClasses" : [ "5", "35" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
@@ -2959,7 +2982,7 @@
         "undefined" : "ontology license"
       }
     } ],
-    "subClasses" : [ "48", "134" ],
+    "subClasses" : [ "50", "134" ],
     "comment" : {
       "undefined" : "A document."
     },
@@ -2974,8 +2997,8 @@
     },
     "subClasses" : [ "95", "35" ],
     "attributes" : [ "external" ],
-    "id" : "29",
-    "superClasses" : [ "27" ]
+    "id" : "27",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.w3.org/ns/dcat#CatalogRecord",
     "baseIri" : "http://www.w3.org/ns/dcat",
@@ -3036,7 +3059,7 @@
     "id" : "44",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
+    "id" : "48",
     "type" : "owl:objectProperty"
   }, {
     "id" : "51",
@@ -3049,10 +3072,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "57",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "59",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "61",
     "type" : "owl:datatypeProperty"
@@ -3120,7 +3143,7 @@
     "id" : "121",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "124",
+    "id" : "123",
     "type" : "owl:objectProperty"
   }, {
     "id" : "126",
@@ -3162,7 +3185,7 @@
     "id" : "143",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
+    "id" : "60",
     "type" : "owl:objectProperty"
   }, {
     "id" : "147",
@@ -3186,7 +3209,7 @@
     "id" : "162",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "166",
+    "id" : "165",
     "type" : "owl:objectProperty"
   }, {
     "id" : "169",
@@ -3198,7 +3221,7 @@
     "id" : "173",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "175",
+    "id" : "174",
     "type" : "owl:objectProperty"
   }, {
     "id" : "176",
@@ -3429,7 +3452,7 @@
     "id" : "264",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "174",
+    "id" : "175",
     "type" : "owl:objectProperty"
   }, {
     "id" : "265",
@@ -3461,7 +3484,7 @@
       "IRI-based" : "mappingRelation"
     },
     "domain" : "3",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "2"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
@@ -3471,7 +3494,7 @@
       "IRI-based" : "workInfoHomepage"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "7"
   }, {
     "iri" : "http://www.w3.org/ns/dqv#isMeasurementOf",
@@ -3485,7 +3508,7 @@
     "comment" : {
       "en" : "Indicates the metric being observed."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "10"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/assignerOf",
@@ -3495,7 +3518,7 @@
       "IRI-based" : "assignerOf"
     },
     "domain" : "14",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "15"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#compressFormat",
@@ -3505,7 +3528,7 @@
       "IRI-based" : "compressFormat"
     },
     "domain" : "18",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "17"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#hasSelf-Listing",
@@ -3525,7 +3548,7 @@
       "IRI-based" : "packageFormat"
     },
     "domain" : "18",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "31"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/page",
@@ -3536,7 +3559,7 @@
     },
     "domain" : "8",
     "subproperty" : [ "33" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "32"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#catalog",
@@ -3547,7 +3570,7 @@
     },
     "superproperty" : [ "36" ],
     "domain" : "35",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "34"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#distribution",
@@ -3557,7 +3580,7 @@
       "IRI-based" : "distribution"
     },
     "domain" : "19",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "37"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#endpointDescription",
@@ -3566,18 +3589,8 @@
     "annotations" : {
       "changeNote" : [ {
         "identifier" : "changeNote",
-        "language" : "en",
-        "value" : "New property in DCAT 2.0.",
-        "type" : "label"
-      }, {
-        "identifier" : "changeNote",
         "language" : "da",
         "value" : "Ny egenskab i DCAT 2.0.",
-        "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "it",
-        "value" : "Nuova proprietà in DCAT 2.0.",
         "type" : "label"
       }, {
         "identifier" : "changeNote",
@@ -3589,11 +3602,21 @@
         "language" : "cs",
         "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
         "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà in DCAT 2.0.",
+        "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A description of the service end-point, including its operations, parameters etc.",
+        "language" : "da",
+        "value" : "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -3602,24 +3625,34 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "cs",
-        "value" : "Popis p?ístupového bodu služby v?etn? operací, parametr? apod.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "it",
         "value" : "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "da",
-        "value" : "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.",
+        "language" : "en",
+        "value" : "A description of the service end-point, including its operations, parameters etc.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Popis p?ístupového bodu služby v?etn? operací, parametr? apod.",
         "type" : "label"
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "cs",
-        "value" : "Popis p?ístupového bodu m?že být vyjád?en ve strojov? ?itelné form?, nap?íklad jako popis OpenAPI (Swagger), odpov?? služby OGC getCapabilities, pomocí slovníku SPARQL Service Description, jako OpenSearch ?i WSDL document, jako popis API dle slovníku Hydra, a nebo textov? nebo jiným neformálním zp?sobem, pokud není možno použít formální reprezentaci.",
+        "language" : "en",
+        "value" : "An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description, an OGC GetCapabilities response, a SPARQL Service Description, an OpenSearch or WSDL document, a Hydra API description, else in text or some other informal mode if a formal representation is not possible.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "En beskrivelse af et endpoint kan udtrykkes i et maskinlæsbart format, såsom OpenAPI (Swagger)-beskrivelser, et OGC GetCapabilities svar, en SPARQL tjenestebeskrivelse, en OpenSearch- eller et WSDL-dokument, en Hydra-API-beskrivelse, eller i tekstformat eller i et andet uformelt format, hvis en formel repræsentation ikke er mulig.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Una descrizione dell'endpoint può essere espressa in un formato leggibile dalla macchina, come una descrizione OpenAPI (Swagger), una risposta GetCapabilities OGC, una descrizione del servizio SPARQL, un documento OpenSearch o WSDL, una descrizione API Hydra, o con del testo o qualche altra modalità informale se una rappresentazione formale non è possibile.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -3633,18 +3666,13 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "La descripción del endpoint brinda detalles específicos de la instancia del endpoint, mientras que dct:conformsTo se usa para indicar el estándar general o especificación que implementa el endpoint.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
         "language" : "en",
         "value" : "The endpoint description gives specific details of the actual endpoint instance, while dct:conformsTo is used to indicate the general standard or specification that the endpoint implements.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description, an OGC GetCapabilities response, a SPARQL Service Description, an OpenSearch or WSDL document, a Hydra API description, else in text or some other informal mode if a formal representation is not possible.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "it",
-        "value" : "Una descrizione dell'endpoint può essere espressa in un formato leggibile dalla macchina, come una descrizione OpenAPI (Swagger), una risposta GetCapabilities OGC, una descrizione del servizio SPARQL, un documento OpenSearch o WSDL, una descrizione API Hydra, o con del testo o qualche altra modalità informale se una rappresentazione formale non è possibile.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -3653,18 +3681,13 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "da",
-        "value" : "En beskrivelse af et endpoint kan udtrykkes i et maskinlæsbart format, såsom OpenAPI (Swagger)-beskrivelser, et OGC GetCapabilities svar, en SPARQL tjenestebeskrivelse, en OpenSearch- eller et WSDL-dokument, en Hydra-API-beskrivelse, eller i tekstformat eller i et andet uformelt format, hvis en formel repræsentation ikke er mulig.",
+        "language" : "cs",
+        "value" : "Popis p?ístupového bodu m?že být vyjád?en ve strojov? ?itelné form?, nap?íklad jako popis OpenAPI (Swagger), odpov?? služby OGC getCapabilities, pomocí slovníku SPARQL Service Description, jako OpenSearch ?i WSDL document, jako popis API dle slovníku Hydra, a nebo textov? nebo jiným neformálním zp?sobem, pokud není možno použít formální reprezentaci.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
         "language" : "es",
         "value" : "Una descripción del endpoint del servicio puede expresarse en un formato que la máquina puede interpretar, tal como una descripción basada en OpenAPI (Swagger), una respuesta OGC GetCapabilities, una descripción de un servicio SPARQL, un documento OpenSearch o WSDL, una descripción con la Hydra API, o en texto u otro modo informal si la representación formal no es posible.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "La descripción del endpoint brinda detalles específicos de la instancia del endpoint, mientras que dct:conformsTo se usa para indicar el estándar general o especificación que implementa el endpoint.",
         "type" : "label"
       } ]
     },
@@ -3676,7 +3699,7 @@
       "da" : "endpointbeskrivelse",
       "es" : "descripción del end-point del servicio"
     },
-    "domain" : "28",
+    "domain" : "26",
     "comment" : {
       "cs" : "Popis p?ístupového bodu služby v?etn? operací, parametr? apod.",
       "en" : "A description of the service end-point, including its operations, parameters etc.",
@@ -3684,7 +3707,7 @@
       "da" : "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.",
       "es" : "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "38"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/name",
@@ -3744,18 +3767,18 @@
     },
     "domain" : "45",
     "subproperty" : [ "47" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "44"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#hasAssetQuality",
     "baseIri" : "https://w3id.org/sedimark/ontology",
-    "range" : "50",
+    "range" : "49",
     "label" : {
       "IRI-based" : "hasAssetQuality"
     },
     "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "49"
+    "id" : "48"
   }, {
     "iri" : "https://w3id.org/sedimark/vocab#handlesStream",
     "baseIri" : "https://w3id.org/sedimark/vocab",
@@ -3774,7 +3797,7 @@
       "IRI-based" : "hasTopConcept"
     },
     "domain" : "46",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "53"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#byteSize",
@@ -3787,6 +3810,16 @@
     "attributes" : [ "external", "datatype" ],
     "id" : "54"
   }, {
+    "iri" : "https://purl.org/dc/terms/created",
+    "baseIri" : "https://purl.org/dc/terms",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "created"
+    },
+    "domain" : "42",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "57"
+  }, {
     "iri" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "range" : "9",
@@ -3794,18 +3827,8 @@
       "IRI-based" : "isPrimaryTopicOf"
     },
     "domain" : "8",
-    "subproperty" : [ "58", "33" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "57"
-  }, {
-    "iri" : "https://purl.org/dc/terms/created",
-    "baseIri" : "https://purl.org/dc/terms",
-    "range" : "60",
-    "label" : {
-      "IRI-based" : "created"
-    },
-    "domain" : "42",
-    "attributes" : [ "external", "datatype" ],
+    "subproperty" : [ "60", "33" ],
+    "attributes" : [ "object", "external" ],
     "id" : "59"
   }, {
     "iri" : "https://purl.org/dc/terms/identifier",
@@ -3825,7 +3848,7 @@
       "IRI-based" : "hasTopConcept"
     },
     "domain" : "65",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "64"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/function",
@@ -3835,7 +3858,7 @@
       "IRI-based" : "function"
     },
     "domain" : "70",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "69"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#belongsTo",
@@ -3867,7 +3890,7 @@
     "comment" : {
       "en" : "Links to a sample of an Asset (which is itself an Asset)."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "72"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/account",
@@ -3877,7 +3900,7 @@
       "IRI-based" : "account"
     },
     "domain" : "75",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "74"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#service",
@@ -3888,7 +3911,7 @@
     },
     "superproperty" : [ "36" ],
     "domain" : "35",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "77"
   }, {
     "iri" : "http://www.w3.org/ns/dqv#computedOn",
@@ -3903,7 +3926,7 @@
     "comment" : {
       "en" : "Refers to the resource (e.g., a dataset, a linkset, a graph, a set of triples) on which the quality measurement is performed. In the DQV context, this property is generally expected to be used in statements in which objects are instances of dcat:Dataset or dcat:Distribution."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "79"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/target",
@@ -3913,7 +3936,7 @@
       "IRI-based" : "target"
     },
     "domain" : "83",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "82"
   }, {
     "iri" : "https://purl.org/dc/terms/description",
@@ -3933,7 +3956,7 @@
       "IRI-based" : "tipjar"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "91"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#theme",
@@ -3954,13 +3977,8 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "fr",
-        "value" : "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "La categoría principal del recurso. Un recurso puede tener varios temas.",
+        "language" : "ar",
+        "value" : "??????? ??????? ?????? ????????. ????? ???????? ???? ?? ???? ???? ?? ????? ????? ????.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -3969,23 +3987,23 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
+        "language" : "da",
+        "value" : "Et centralt emne for ressourcen. En ressource kan have flere centrale emner.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fr",
+        "value" : "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "it",
         "value" : "La categoria principale della risorsa. Una risorsa può avere più temi.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "ar",
-        "value" : "??????? ??????? ?????? ????????. ????? ???????? ???? ?? ???? ???? ?? ????? ????? ????.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "ja",
         "value" : "???????????????????????????????????????",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "da",
-        "value" : "Et centralt emne for ressourcen. En ressource kan have flere centrale emner.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -3997,6 +4015,11 @@
         "language" : "cs",
         "value" : "Hlavní téma zdroje. Zdroj m?že mít více témat.",
         "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "es",
+        "value" : "La categoría principal del recurso. Un recurso puede tener varios temas.",
+        "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
@@ -4006,18 +4029,13 @@
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
+        "language" : "ja",
+        "value" : "???????????????????skos:Concept?????????????????????????????????skos:ConceptScheme?????????",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
         "language" : "fr",
         "value" : "Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en un skos:ConceptScheme décrivant toutes les catégories et ses relations dans le catalogue.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "cs",
-        "value" : "Sada instancí t?ídy skos:Concept použitá pro kategorizaci zdroj? je organizována do schématu koncept? skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -4031,8 +4049,8 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "ja",
-        "value" : "???????????????????skos:Concept?????????????????????????????????skos:ConceptScheme?????????",
+        "language" : "it",
+        "value" : "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -4041,8 +4059,13 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "it",
-        "value" : "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo.",
+        "language" : "en",
+        "value" : "The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Sada instancí t?ídy skos:Concept použitá pro kategorizaci zdroj? je organizována do schématu koncept? skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy.",
         "type" : "label"
       } ]
     },
@@ -4050,8 +4073,8 @@
       "cs" : "téma",
       "ar" : "???????",
       "IRI-based" : "theme",
-      "ja" : "???/?????",
       "el" : "????",
+      "ja" : "???/?????",
       "en" : "theme",
       "it" : "tema",
       "fr" : "thème",
@@ -4062,15 +4085,15 @@
     "comment" : {
       "cs" : "Hlavní téma zdroje. Zdroj m?že mít více témat.",
       "ar" : "??????? ??????? ?????? ????????. ????? ???????? ???? ?? ???? ???? ?? ????? ????? ????.",
-      "el" : "? ????? ????????? ??? ??????? ?????????. ??? ?????? ????????? ??????? ?? ???? ???????? ??????.",
       "ja" : "???????????????????????????????????????",
+      "el" : "? ????? ????????? ??? ??????? ?????????. ??? ?????? ????????? ??????? ?? ???? ???????? ??????.",
       "en" : "A main category of the resource. A resource can have multiple themes.",
       "it" : "La categoria principale della risorsa. Una risorsa può avere più temi.",
       "fr" : "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.",
       "da" : "Et centralt emne for ressourcen. En ressource kan have flere centrale emner.",
       "es" : "La categoría principal del recurso. Un recurso puede tener varios temas."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "92"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/relation",
@@ -4080,7 +4103,7 @@
       "IRI-based" : "relation"
     },
     "domain" : "97",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "96"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/inheritFrom",
@@ -4090,7 +4113,7 @@
       "IRI-based" : "inheritFrom"
     },
     "domain" : "16",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "98"
   }, {
     "iri" : "http://www.w3.org/ns/dqv#inDimension",
@@ -4112,7 +4135,7 @@
     "comment" : {
       "en" : "Represents the dimensions a quality metric, certificate and annotation allow a measurement of."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "99"
   }, {
     "iri" : "https://w3id.org/sedimark/vocab#inputFormat",
@@ -4131,13 +4154,8 @@
     "annotations" : {
       "changeNote" : [ {
         "identifier" : "changeNote",
-        "language" : "es",
-        "value" : "Nueva propiedad agregada en DCAT 2.0.",
-        "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "it",
-        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
         "type" : "label"
       }, {
         "identifier" : "changeNote",
@@ -4151,14 +4169,29 @@
         "type" : "label"
       }, {
         "identifier" : "changeNote",
-        "language" : "cs",
-        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "language" : "es",
+        "value" : "Nueva propiedad agregada en DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
         "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "es",
+        "value" : "El comienzo del período",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "en",
         "value" : "The start of the period",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "L'inizio del periodo",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -4170,16 +4203,6 @@
         "language" : "cs",
         "value" : "Za?átek doby trvání",
         "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "it",
-        "value" : "L'inizio del periodo",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "es",
-        "value" : "El comienzo del período",
-        "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
@@ -4189,8 +4212,13 @@
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el comienzo de un período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear).",
+        "language" : "da",
+        "value" : "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af startdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear).",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Il range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare l'inizio di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear).",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -4204,13 +4232,8 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "da",
-        "value" : "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af startdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear).",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "it",
-        "value" : "Il range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare l'inizio di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear).",
+        "language" : "es",
+        "value" : "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el comienzo de un período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear).",
         "type" : "label"
       } ]
     },
@@ -4242,7 +4265,7 @@
       "IRI-based" : "hasPolicy"
     },
     "domain" : "5",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "115"
   }, {
     "iri" : "https://w3id.org/sedimark/vocab#execution",
@@ -4262,7 +4285,7 @@
       "IRI-based" : "topic"
     },
     "domain" : "9",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "118"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/sha1",
@@ -4281,23 +4304,23 @@
     "label" : {
       "IRI-based" : "hasAsset"
     },
-    "domain" : "125",
+    "domain" : "124",
     "attributes" : [ "object" ],
-    "id" : "124"
+    "id" : "123"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#servesDataset",
     "baseIri" : "http://www.w3.org/ns/dcat",
-    "range" : "29",
+    "range" : "27",
     "annotations" : {
       "changeNote" : [ {
         "identifier" : "changeNote",
-        "language" : "en",
-        "value" : "New property in DCAT 2.0.",
+        "language" : "it",
+        "value" : "Nuova proprietà in DCAT 2.0.",
         "type" : "label"
       }, {
         "identifier" : "changeNote",
-        "language" : "es",
-        "value" : "Nueva propiedad agregada en DCAT 2.0.",
+        "language" : "en",
+        "value" : "New property in DCAT 2.0.",
         "type" : "label"
       }, {
         "identifier" : "changeNote",
@@ -4306,19 +4329,14 @@
         "type" : "label"
       }, {
         "identifier" : "changeNote",
-        "language" : "it",
-        "value" : "Nuova proprietà in DCAT 2.0.",
+        "language" : "es",
+        "value" : "Nueva propiedad agregada en DCAT 2.0.",
         "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "Una colección de datos que este Servicio de Datos puede distribuir.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "A collection of data that this DataService can distribute.",
+        "language" : "it",
+        "value" : "Una raccolta di dati che questo DataService può distribuire.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -4327,16 +4345,26 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "cs",
-        "value" : "Kolekce dat, kterou je tato Datová služba schopna poskytnout.",
+        "language" : "en",
+        "value" : "A collection of data that this DataService can distribute.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "it",
-        "value" : "Una raccolta di dati che questo DataService può distribuire.",
+        "language" : "es",
+        "value" : "Una colección de datos que este Servicio de Datos puede distribuir.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Kolekce dat, kterou je tato Datová služba schopna poskytnout.",
         "type" : "label"
       } ],
       "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "da",
+        "value" : "ekspederer",
+        "type" : "label"
+      }, {
         "identifier" : "altLabel",
         "language" : "da",
         "value" : "distribuerer",
@@ -4345,11 +4373,6 @@
         "identifier" : "altLabel",
         "language" : "da",
         "value" : "udstiller",
-        "type" : "label"
-      }, {
-        "identifier" : "altLabel",
-        "language" : "da",
-        "value" : "ekspederer",
         "type" : "label"
       } ]
     },
@@ -4361,7 +4384,7 @@
       "da" : "datatjeneste for datasæt",
       "es" : "provee conjunto de datos"
     },
-    "domain" : "28",
+    "domain" : "26",
     "comment" : {
       "cs" : "Kolekce dat, kterou je tato Datová služba schopna poskytnout.",
       "en" : "A collection of data that this DataService can distribute.",
@@ -4369,7 +4392,7 @@
       "da" : "En samling af data som denne datatjeneste kan distribuere.",
       "es" : "Una colección de datos que este Servicio de Datos puede distribuir."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "126"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasInfluencedBy",
@@ -4380,7 +4403,7 @@
     },
     "domain" : "88",
     "subproperty" : [ "128" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "127"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#themeTaxonomy",
@@ -4390,7 +4413,7 @@
       "IRI-based" : "themeTaxonomy"
     },
     "domain" : "35",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "129"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#record",
@@ -4400,7 +4423,7 @@
       "IRI-based" : "record"
     },
     "domain" : "35",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "130"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
@@ -4410,7 +4433,7 @@
       "IRI-based" : "wasAttributedTo"
     },
     "domain" : "88",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "131"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
@@ -4421,7 +4444,7 @@
     },
     "superproperty" : [ "44" ],
     "domain" : "45",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "47"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#isListedBy",
@@ -4430,7 +4453,7 @@
     "label" : {
       "IRI-based" : "isListedBy"
     },
-    "domain" : "125",
+    "domain" : "124",
     "attributes" : [ "object" ],
     "id" : "132"
   }, {
@@ -4451,7 +4474,7 @@
       "IRI-based" : "constraint"
     },
     "domain" : "138",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "137"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#dataset",
@@ -4462,12 +4485,12 @@
     },
     "superproperty" : [ "36" ],
     "domain" : "35",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "140"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#references",
     "baseIri" : "https://w3id.org/sedimark/ontology",
-    "range" : "125",
+    "range" : "124",
     "label" : {
       "IRI-based" : "references"
     },
@@ -4482,7 +4505,7 @@
       "IRI-based" : "publications"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "142"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/interest",
@@ -4492,7 +4515,7 @@
       "IRI-based" : "interest"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "143"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/openid",
@@ -4516,13 +4539,13 @@
       "IRI-based" : "openid",
       "undefined" : "openid"
     },
-    "superproperty" : [ "57" ],
+    "superproperty" : [ "59" ],
     "domain" : "114",
     "comment" : {
       "undefined" : "An OpenID for an Agent."
     },
-    "attributes" : [ "external", "object", "inverse functional" ],
-    "id" : "58"
+    "attributes" : [ "inverse functional", "object", "external" ],
+    "id" : "60"
   }, {
     "iri" : "https://w3id.org/sedimark/vocab#outputFormat",
     "baseIri" : "https://w3id.org/sedimark/vocab",
@@ -4542,7 +4565,7 @@
       "IRI-based" : "hasDimension"
     },
     "domain" : "146",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "154"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/permission",
@@ -4552,7 +4575,7 @@
       "IRI-based" : "permission"
     },
     "domain" : "16",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "156"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/obligation",
@@ -4562,7 +4585,7 @@
       "IRI-based" : "obligation"
     },
     "domain" : "16",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "157"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#mediaType",
@@ -4572,7 +4595,7 @@
       "IRI-based" : "mediaType"
     },
     "domain" : "18",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "158"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
@@ -4582,7 +4605,7 @@
       "IRI-based" : "primaryTopic"
     },
     "domain" : "9",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "161"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/schoolHomepage",
@@ -4592,18 +4615,18 @@
       "IRI-based" : "schoolHomepage"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "162"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/partOf",
     "baseIri" : "http://www.w3.org/ns/odrl/2",
-    "range" : "168",
+    "range" : "167",
     "label" : {
       "IRI-based" : "partOf"
     },
-    "domain" : "167",
-    "attributes" : [ "external", "object" ],
-    "id" : "166"
+    "domain" : "166",
+    "attributes" : [ "object", "external" ],
+    "id" : "165"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#qualifiedRelation",
     "baseIri" : "http://www.w3.org/ns/dcat",
@@ -4611,8 +4634,8 @@
     "label" : {
       "IRI-based" : "qualifiedRelation"
     },
-    "domain" : "27",
-    "attributes" : [ "external", "object" ],
+    "domain" : "25",
+    "attributes" : [ "object", "external" ],
     "id" : "169"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/assigneeOf",
@@ -4622,8 +4645,18 @@
       "IRI-based" : "assigneeOf"
     },
     "domain" : "14",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "172"
+  }, {
+    "iri" : "http://www.w3.org/ns/odrl/2/conflict",
+    "baseIri" : "http://www.w3.org/ns/odrl/2",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "conflict"
+    },
+    "domain" : "16",
+    "attributes" : [ "object", "external" ],
+    "id" : "173"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedAttribution",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -4670,23 +4703,13 @@
       "IRI-based" : "qualifiedAttribution",
       "undefined" : "qualifiedAttribution"
     },
-    "superproperty" : [ "174" ],
+    "superproperty" : [ "175" ],
     "domain" : "149",
     "comment" : {
       "en" : "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."
     },
-    "attributes" : [ "external", "object" ],
-    "id" : "173"
-  }, {
-    "iri" : "http://www.w3.org/ns/odrl/2/conflict",
-    "baseIri" : "http://www.w3.org/ns/odrl/2",
-    "range" : "150",
-    "label" : {
-      "IRI-based" : "conflict"
-    },
-    "domain" : "16",
-    "attributes" : [ "external", "object" ],
-    "id" : "175"
+    "attributes" : [ "object", "external" ],
+    "id" : "174"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#accessService",
     "baseIri" : "http://www.w3.org/ns/dcat",
@@ -4695,7 +4718,7 @@
       "IRI-based" : "accessService"
     },
     "domain" : "42",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "176"
   }, {
     "iri" : "http://purl.org/eis/vocab/daq#hasMetric",
@@ -4705,8 +4728,18 @@
       "IRI-based" : "hasMetric"
     },
     "domain" : "42",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "177"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "accountServiceHomepage"
+    },
+    "domain" : "76",
+    "attributes" : [ "object", "external" ],
+    "id" : "181"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/logo",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -4733,17 +4766,7 @@
     "comment" : {
       "undefined" : "A logo representing some thing."
     },
-    "attributes" : [ "external", "object", "inverse functional" ],
-    "id" : "181"
-  }, {
-    "iri" : "http://xmlns.com/foaf/0.1/accountServiceHomepage",
-    "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "accountServiceHomepage"
-    },
-    "domain" : "76",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "inverse functional", "object", "external" ],
     "id" : "182"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/accountName",
@@ -4775,7 +4798,7 @@
     "comment" : {
       "en" : "Represents the category a dimension is grouped in."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "155"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/output",
@@ -4785,7 +4808,7 @@
       "IRI-based" : "output"
     },
     "domain" : "180",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "190"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/homepage",
@@ -4809,32 +4832,32 @@
       "IRI-based" : "homepage",
       "undefined" : "homepage"
     },
-    "superproperty" : [ "57", "32" ],
+    "superproperty" : [ "59", "32" ],
     "domain" : "8",
     "comment" : {
       "undefined" : "A homepage for some thing."
     },
-    "attributes" : [ "external", "object", "inverse functional" ],
+    "attributes" : [ "inverse functional", "object", "external" ],
     "id" : "33"
   }, {
     "range" : "35",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "191"
   }, {
     "range" : "120",
     "domain" : "119",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "192"
   }, {
     "range" : "80",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "193"
   }, {
     "range" : "35",
-    "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "194"
   }, {
     "iri" : "http://www.w3.org/ns/dqv#expectedDataType",
@@ -4849,7 +4872,7 @@
   }, {
     "range" : "94",
     "domain" : "146",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "196"
   }, {
     "iri" : "https://purl.org/dc/terms/title",
@@ -4869,7 +4892,7 @@
       "IRI-based" : "hasQualityMeasurement"
     },
     "domain" : "179",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "81"
   }, {
     "iri" : "http://www.w3.org/ns/prov#agent",
@@ -4879,7 +4902,7 @@
       "IRI-based" : "agent"
     },
     "domain" : "88",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "199"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#endpointURL",
@@ -4893,6 +4916,11 @@
         "type" : "label"
       }, {
         "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property in DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
         "language" : "it",
         "value" : "Nuova proprietà in DCAT 2.0.",
         "type" : "label"
@@ -4901,26 +4929,21 @@
         "language" : "es",
         "value" : "Nueva propiedad agregada en DCAT 2.0.",
         "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "en",
-        "value" : "New property in DCAT 2.0.",
-        "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "da",
-        "value" : "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI).",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "cs",
-        "value" : "Ko?enové umíst?ní nebo hlavní p?ístupový bod služby (IRI p?ístupné p?es Web).",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "es",
         "value" : "La posición raíz o end-point principal del servicio (una IRI web).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "it",
+        "value" : "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web).",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "da",
+        "value" : "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI).",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -4929,8 +4952,8 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "it",
-        "value" : "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web).",
+        "language" : "cs",
+        "value" : "Ko?enové umíst?ní nebo hlavní p?ístupový bod služby (IRI p?ístupné p?es Web).",
         "type" : "label"
       } ]
     },
@@ -4942,7 +4965,7 @@
       "da" : "tjenesteendpoint",
       "es" : "end-point del servicio"
     },
-    "domain" : "28",
+    "domain" : "26",
     "comment" : {
       "cs" : "Ko?enové umíst?ní nebo hlavní p?ístupový bod služby (IRI p?ístupné p?es Web).",
       "en" : "The root location or primary endpoint of the service (a web-resolvable IRI).",
@@ -4950,62 +4973,62 @@
       "da" : "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI).",
       "es" : "La posición raíz o end-point principal del servicio (una IRI web)."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "200"
   }, {
     "range" : "94",
     "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "201"
   }, {
     "range" : "11",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "202"
   }, {
     "range" : "107",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "203"
   }, {
     "range" : "85",
     "domain" : "108",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "204"
   }, {
     "range" : "5",
-    "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "205"
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "206"
   }, {
-    "range" : "27",
+    "range" : "28",
     "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "207"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#hasOfferingContract",
     "baseIri" : "https://w3id.org/sedimark/ontology",
-    "range" : "26",
+    "range" : "29",
     "label" : {
       "IRI-based" : "hasOfferingContract"
     },
-    "domain" : "125",
+    "domain" : "124",
     "attributes" : [ "object" ],
     "id" : "208"
   }, {
-    "range" : "27",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "25",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "209"
   }, {
     "range" : "85",
     "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "210"
   }, {
     "iri" : "https://w3id.org/sedimark/vocab#serialization",
@@ -5020,7 +5043,7 @@
   }, {
     "range" : "18",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "212"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/prohibition",
@@ -5030,7 +5053,7 @@
       "IRI-based" : "prohibition"
     },
     "domain" : "16",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "213"
   }, {
     "iri" : "http://www.w3.org/2008/05/skos#semanticRelation",
@@ -5040,7 +5063,7 @@
       "IRI-based" : "semanticRelation"
     },
     "domain" : "3",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "214"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/action",
@@ -5050,7 +5073,7 @@
       "IRI-based" : "action"
     },
     "domain" : "216",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "215"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/holdsAccount",
@@ -5060,7 +5083,7 @@
       "IRI-based" : "holdsAccount"
     },
     "domain" : "75",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "217"
   }, {
     "iri" : "http://www.w3.org/ns/prov#qualifiedGeneration",
@@ -5070,7 +5093,7 @@
       "IRI-based" : "qualifiedGeneration"
     },
     "domain" : "88",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "219"
   }, {
     "iri" : "http://purl.org/dc/terms/hasPart",
@@ -5092,7 +5115,7 @@
     },
     "domain" : "88",
     "subproperty" : [ "34", "77", "140" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "36"
   }, {
     "iri" : "http://www.w3.org/ns/prov#generated",
@@ -5103,7 +5126,7 @@
       "IRI-based" : "generated"
     },
     "domain" : "145",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "221"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/weblog",
@@ -5113,17 +5136,17 @@
       "IRI-based" : "weblog"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "222"
   }, {
     "range" : "25",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "223"
   }, {
     "range" : "20",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/assigner",
@@ -5133,17 +5156,17 @@
       "IRI-based" : "assigner"
     },
     "domain" : "226",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "225"
   }, {
-    "range" : "27",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "25",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "227"
   }, {
     "range" : "20",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "230"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
@@ -5177,12 +5200,12 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
+        "value" : "http://www.w3.org/ns/prov#Generation",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Generation",
+        "value" : "http://www.w3.org/ns/prov#qualifiedGeneration",
         "type" : "iri"
       } ]
     },
@@ -5192,12 +5215,12 @@
     },
     "superproperty" : [ "127" ],
     "domain" : "149",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "128"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#hasOffering",
     "baseIri" : "https://w3id.org/sedimark/ontology",
-    "range" : "125",
+    "range" : "124",
     "label" : {
       "IRI-based" : "hasOffering"
     },
@@ -5207,22 +5230,22 @@
   }, {
     "range" : "9",
     "domain" : "134",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "232"
   }, {
-    "range" : "29",
+    "range" : "27",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "233"
   }, {
-    "range" : "29",
+    "range" : "27",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "234"
   }, {
     "range" : "3",
     "domain" : "144",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "235"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#accessURL",
@@ -5232,7 +5255,7 @@
       "IRI-based" : "accessURL"
     },
     "domain" : "18",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "236"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#endDate",
@@ -5240,16 +5263,6 @@
     "range" : "164",
     "annotations" : {
       "changeNote" : [ {
-        "identifier" : "changeNote",
-        "language" : "cs",
-        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
-        "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "it",
-        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
-        "type" : "label"
-      }, {
         "identifier" : "changeNote",
         "language" : "da",
         "value" : "Ny egenskab i DCAT 2.0.",
@@ -5264,11 +5277,31 @@
         "language" : "es",
         "value" : "Nueva propiedad agregada en DCAT 2.0.",
         "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "cs",
+        "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "it",
+        "value" : "Nuova proprietà aggiunta in DCAT 2.0.",
+        "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "en",
+        "value" : "The end of the period.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "da",
         "value" : "Slutningen på perioden.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "cs",
+        "value" : "Konec doby trvání.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -5280,16 +5313,6 @@
         "language" : "es",
         "value" : "El fin del período.",
         "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "The end of the period.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "cs",
-        "value" : "Konec doby trvání.",
-        "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
@@ -5299,18 +5322,18 @@
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el fin del período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear).",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
         "language" : "da",
         "value" : "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af slutdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear).",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the end of a period. E.g., it can be expressed with a date (xsd:date), a date and time (xsd:dateTime), or a year (xsd:gYear).",
+        "language" : "it",
+        "value" : "La range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare la fine di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear).",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el fin del período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear).",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -5319,8 +5342,8 @@
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "it",
-        "value" : "La range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare la fine di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear).",
+        "language" : "en",
+        "value" : "The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the end of a period. E.g., it can be expressed with a date (xsd:date), a date and time (xsd:dateTime), or a year (xsd:gYear).",
         "type" : "label"
       } ]
     },
@@ -5338,27 +5361,27 @@
   }, {
     "range" : "189",
     "domain" : "3",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "238"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/primaryTopic",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "27",
+    "range" : "25",
     "label" : {
       "IRI-based" : "primaryTopic"
     },
     "domain" : "240",
-    "attributes" : [ "external", "object", "allValues" ],
+    "attributes" : [ "object", "allValues", "external" ],
     "id" : "239"
   }, {
     "range" : "152",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "241"
   }, {
     "range" : "40",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "242"
   }, {
     "iri" : "http://www.w3.org/ns/odrl/2/assignee",
@@ -5368,7 +5391,7 @@
       "IRI-based" : "assignee"
     },
     "domain" : "244",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "243"
   }, {
     "iri" : "http://www.w3.org/ns/prov#activity",
@@ -5378,7 +5401,7 @@
       "IRI-based" : "activity"
     },
     "domain" : "88",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "245"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#downloadURL",
@@ -5388,7 +5411,7 @@
       "IRI-based" : "downloadURL"
     },
     "domain" : "18",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "246"
   }, {
     "iri" : "http://www.w3.org/ns/dcat#temporalResolution",
@@ -5396,11 +5419,6 @@
     "range" : "160",
     "annotations" : {
       "editorialNote" : [ {
-        "identifier" : "editorialNote",
-        "language" : "cs",
-        "value" : "M?že se vyskytnout v popisu Datové sady nebo Distribuce, takže nebyl specifikován defini?ní obor.",
-        "type" : "label"
-      }, {
         "identifier" : "editorialNote",
         "language" : "da",
         "value" : "Kan optræde i forbindelse med beskrivelse af datasættet eller datasætditributionen, så der er ikke angivet et domæne for egenskaben.",
@@ -5410,16 +5428,16 @@
         "language" : "en",
         "value" : "Might appear in the description of a Dataset or a Distribution, so no domain is specified.",
         "type" : "label"
+      }, {
+        "identifier" : "editorialNote",
+        "language" : "cs",
+        "value" : "M?že se vyskytnout v popisu Datové sady nebo Distribuce, takže nebyl specifikován defini?ní obor.",
+        "type" : "label"
       } ],
       "changeNote" : [ {
         "identifier" : "changeNote",
         "language" : "es",
         "value" : "Nueva propiedad añadida en DCAT 2.0.",
-        "type" : "label"
-      }, {
-        "identifier" : "changeNote",
-        "language" : "en",
-        "value" : "New property added in DCAT 2.0.",
         "type" : "label"
       }, {
         "identifier" : "changeNote",
@@ -5430,6 +5448,11 @@
         "identifier" : "changeNote",
         "language" : "cs",
         "value" : "Nová vlastnost p?idaná ve verzi DCAT 2.0.",
+        "type" : "label"
+      }, {
+        "identifier" : "changeNote",
+        "language" : "en",
+        "value" : "New property added in DCAT 2.0.",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -5444,13 +5467,13 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "cs",
-        "value" : "minimální doba trvání rozlišitelná v datové sad?.",
+        "language" : "es",
+        "value" : "período de tiempo mínimo en el conjunto de datos.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "es",
-        "value" : "período de tiempo mínimo en el conjunto de datos.",
+        "language" : "cs",
+        "value" : "minimální doba trvání rozlišitelná v datové sad?.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -5460,38 +5483,8 @@
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "da",
-        "value" : "Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
         "language" : "cs",
         "value" : "R?zná ?asová rozlišení mohou být poskytována jako r?zné distribuce datové sady.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "it",
-        "value" : "Risoluzioni temporali alternative potrebbero essere fornite come diverse distribuzioni di set di dati.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "Distintas distribuciones del conjunto de datos pueden tener resoluciones temporales diferentes.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "cs",
-        "value" : "Pokud je datová sada ?asovou ?adou, m?la by tato vlastnost odpovídat rozestupu položek v ?ad?. Pro ostatní druhy datových sad bude tato vlastnost obvykle indikovat nejmenší ?asovou vzdálenost mezi položkami této datové sady.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "es",
-        "value" : "Si el conjunto de datos es una serie temporal, debe corresponder al espaciado de los elementos de la serie. Para otro tipo de conjuntos de datos, esta propiedad indicará usualmente la menor diferencia de tiempo entre elementos en el dataset.",
-        "type" : "label"
-      }, {
-        "identifier" : "scopeNote",
-        "language" : "da",
-        "value" : "Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
@@ -5507,6 +5500,36 @@
         "identifier" : "scopeNote",
         "language" : "it",
         "value" : "Se il set di dati è una serie temporale, questo dovrebbe corrispondere alla spaziatura degli elementi della serie. Per altri tipi di set di dati, questa proprietà di solito indica la più piccola differenza di tempo tra gli elementi nel set di dati.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "cs",
+        "value" : "Pokud je datová sada ?asovou ?adou, m?la by tato vlastnost odpovídat rozestupu položek v ?ad?. Pro ostatní druhy datových sad bude tato vlastnost obvykle indikovat nejmenší ?asovou vzdálenost mezi položkami této datové sady.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Si el conjunto de datos es una serie temporal, debe corresponder al espaciado de los elementos de la serie. Para otro tipo de conjuntos de datos, esta propiedad indicará usualmente la menor diferencia de tiempo entre elementos en el dataset.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "es",
+        "value" : "Distintas distribuciones del conjunto de datos pueden tener resoluciones temporales diferentes.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "it",
+        "value" : "Risoluzioni temporali alternative potrebbero essere fornite come diverse distribuzioni di set di dati.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.",
+        "type" : "label"
+      }, {
+        "identifier" : "scopeNote",
+        "language" : "da",
+        "value" : "Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner.",
         "type" : "label"
       } ]
     },
@@ -5548,22 +5571,22 @@
     "comment" : {
       "en" : "The status of the Asset in the context of a particular workflow process."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "248"
   }, {
     "range" : "46",
     "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
     "range" : "46",
     "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "250"
   }, {
     "range" : "14",
     "domain" : "220",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "251"
   }, {
     "iri" : "http://www.w3.org/2008/05/skos#topConceptOf",
@@ -5573,17 +5596,17 @@
       "IRI-based" : "topConceptOf"
     },
     "domain" : "3",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "252"
   }, {
     "range" : "14",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "253"
   }, {
     "range" : "9",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "254"
   }, {
     "iri" : "https://w3id.org/sedimark/vocab#inputParameters",
@@ -5598,12 +5621,12 @@
   }, {
     "range" : "68",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "256"
   }, {
     "range" : "1",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "257"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/mbox",
@@ -5631,32 +5654,32 @@
     "comment" : {
       "undefined" : "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox."
     },
-    "attributes" : [ "external", "object", "inverse functional" ],
+    "attributes" : [ "inverse functional", "object", "external" ],
     "id" : "258"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "259"
   }, {
     "range" : "1",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "260"
   }, {
     "range" : "1",
     "domain" : "186",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "261"
   }, {
     "range" : "16",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "262"
   }, {
     "range" : "16",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "263"
   }, {
     "iri" : "http://www.w3.org/ns/dqv#value",
@@ -5680,9 +5703,9 @@
       "IRI-based" : "qualifiedInfluence"
     },
     "domain" : "88",
-    "subproperty" : [ "173" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "174"
+    "subproperty" : [ "174" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "175"
   }, {
     "iri" : "https://w3id.org/sedimark/ontology#isProvidedBy",
     "baseIri" : "https://w3id.org/sedimark/ontology",
@@ -5696,12 +5719,12 @@
   }, {
     "range" : "16",
     "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "266"
   }, {
     "range" : "16",
-    "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "125",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "267"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/workplaceHomepage",
@@ -5711,22 +5734,22 @@
       "IRI-based" : "workplaceHomepage"
     },
     "domain" : "8",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "268"
   }, {
     "range" : "16",
     "domain" : "185",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "269"
   }, {
     "range" : "16",
     "domain" : "111",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "270"
   }, {
     "range" : "16",
     "domain" : "86",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "271"
   } ]
 }

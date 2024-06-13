@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/sedimark/ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/sedimark/ontology","name":"SEDIMARK Marketplace Information Model - Ontology", "headline":"Document describing the ontology https://w3id.org/sedimark/ontology", "dateReleased":"Thu Jun 13 11:01:57 BST 2024", "license":"https://creativecommons.org/licenses/by/4.0", "author":[{"@type":"Person","name":"Jorge Lanza (Universidad de Cantabria)"},{"@type":"Person","name":"Juan Ramon Santana (Universidad de Cantabria)"},{"@type":"Person","name":"Luis Sanchez (Universidad de Cantabria)"},{"@type":"Person","name":"Pablo Sotres (Universidad de Cantabria)"},{"@type":"Person","name":"Tarek Elsaleh (University of Surrey)"}], "contributor":[{"@type":"Person","name":"Maroua Bahri (INRIA)"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/sedimark/ontology","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/sedimark/ontology","name":"SEDIMARK Marketplace Information Model - Ontology", "headline":"Document describing the ontology https://w3id.org/sedimark/ontology", "dateReleased":"Thu Jun 13 17:40:37 BST 2024", "license":"https://creativecommons.org/licenses/by/4.0", "codeRepository":"https://github.com/Sedimark/ontology", "author":[{"@type":"Person","name":"Jorge Lanza (Universidad de Cantabria)"},{"@type":"Person","name":"Juan Ramon Santana (Universidad de Cantabria)"},{"@type":"Person","name":"Luis Sanchez (Universidad de Cantabria)"},{"@type":"Person","name":"Pablo Sotres (Universidad de Cantabria)"},{"@type":"Person","name":"Tarek Elsaleh (University of Surrey)"}], "contributor":[{"@type":"Person","name":"Maroua Bahri (INRIA)"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -89,6 +89,8 @@ $(function(){
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>SEDIMARK Marketplace Information Model - SEDIMARK EU Project</dd>
+<dt>Vocabulary maintained at:</dt>
+<dd><a href="https://github.com/Sedimark/ontology">https://github.com/Sedimark/ontology</a></dd>
 </dl>
 
 <hr/>
@@ -895,6 +897,11 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://schema.org/codeRepository" title="http://schema.org/codeRepository">
+         <span>code Repository</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/ns/prov#component" title="http://www.w3.org/ns/prov#component">
          <span>component</span>
       </a>
@@ -1178,9 +1185,6 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://sedimark.eu/ecosystem/themes" title="https://sedimark.eu/ecosystem/themes">A set of domains to classify Offerings and Assets</a>
-   </li>
-   <li>
       <a href="#https://sedimark.eu/ecosystem/quality/dimension#accuracy"
          title="https://sedimark.eu/ecosystem/quality/dimension#accuracy">Accuracy</a>
    </li>
@@ -1405,6 +1409,9 @@ This ontology has the following classes and properties.</span>
          title="https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count">
          <span>quality wearable 001 steps count</span>
       </a>
+   </li>
+   <li>
+      <a href="#https://sedimark.eu/ecosystem/themes" title="https://sedimark.eu/ecosystem/themes">sedimark themes</a>
    </li>
    <li>
       <a href="#https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue"
@@ -1962,7 +1969,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
     has members
    </dt>
    <dd>
-    <a href="#https://sedimark.eu/ecosystem/themes" title="https://sedimark.eu/ecosystem/themes">A set of domains to classify Offerings and Assets</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://sedimark.eu/ecosystem/themes" title="https://sedimark.eu/ecosystem/themes">sedimark themes</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -4885,6 +4892,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
   <li><a href="#http://www.w3.org/ns/prov#category" title="http://www.w3.org/ns/prov#category"> <span>category</span> </a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#changeNote" title="http://www.w3.org/2004/02/skos/core#changeNote"> <span>change Note</span> </a></li>
   <li><a href="#http://schema.org/citation" title="http://schema.org/citation"> <span>citation</span> </a></li>
+  <li><a href="#http://schema.org/codeRepository" title="http://schema.org/codeRepository"> <span>code Repository</span> </a></li>
   <li><a href="#http://www.w3.org/ns/prov#component" title="http://www.w3.org/ns/prov#component"> <span>component</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/conformsTo" title="http://purl.org/dc/terms/conformsTo">Conforms To</a></li>
   <li><a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor"> <span>contributor</span> </a></li>
@@ -5028,6 +5036,10 @@ This section provides details for each class and property defined by SEDIMARK Ma
  <div class="entity" id="http://schema.org/citation">
   <h3>citation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://schema.org/citation</p>
+ </div>
+ <div class="entity" id="http://schema.org/codeRepository">
+  <h3>code Repository<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://schema.org/codeRepository</p>
  </div>
  <div class="entity" id="http://www.w3.org/ns/prov#component">
   <h3>component<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -6005,7 +6017,6 @@ This section provides details for each class and property defined by SEDIMARK Ma
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
  <h3 id="namedindividuals" class="list">Named Individuals</h3>
  <ul class="hlist">
-  <li><a href="#https://sedimark.eu/ecosystem/themes" title="https://sedimark.eu/ecosystem/themes">A set of domains to classify Offerings and Assets</a></li>
   <li><a href="#https://sedimark.eu/ecosystem/quality/dimension#accuracy" title="https://sedimark.eu/ecosystem/quality/dimension#accuracy">Accuracy</a></li>
   <li><a href="#https://sedimark.eu/ecosystem/metric#accuracy-values" title="https://sedimark.eu/ecosystem/metric#accuracy-values"> <span>accuracy values</span> </a></li>
   <li><a href="#https://sedimark.surrey.ac.uk/ecosystem/agreement-001" title="https://sedimark.surrey.ac.uk/ecosystem/agreement-001"> <span>agreement 001</span> </a></li>
@@ -6047,27 +6058,10 @@ This section provides details for each class and property defined by SEDIMARK Ma
   <li><a href="#https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy" title="https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy"> <span>quality station 0001 water level accuracy</span> </a></li>
   <li><a href="#https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness" title="https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness"> <span>quality station 0001 water level completeness</span> </a></li>
   <li><a href="#https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count" title="https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count"> <span>quality wearable 001 steps count</span> </a></li>
+  <li><a href="#https://sedimark.eu/ecosystem/themes" title="https://sedimark.eu/ecosystem/themes">sedimark themes</a></li>
   <li><a href="#https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue" title="https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue"> <span>surrey local catalogue</span> </a></li>
   <li><a href="#https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc" title="https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc"> <span>wearable data license doc</span> </a></li>
  </ul>
- <div class="entity" id="https://sedimark.eu/ecosystem/themes">
-  <h3>A set of domains to classify Offerings and Assets<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://sedimark.eu/ecosystem/themes</p>
-  <dl class="description">
-   <dt>
-    belongs to
-   </dt>
-   <dd>
-    <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has facts
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A set of domains to classify Offerings and Assets"</span>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="https://sedimark.eu/ecosystem/quality/dimension#accuracy">
   <h3>Accuracy<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://sedimark.eu/ecosystem/quality/dimension#accuracy</p>
@@ -6621,7 +6615,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
     <a href="http://purl.org/dc/terms/creator" target="_blank" title="http://purl.org/dc/terms/creator">Creator</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://sedimark.surrey.ac.uk/ecosystem/CVSSP" target="_blank" title="https://sedimark.surrey.ac.uk/ecosystem/CVSSP">C V S S P</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Self-listing for the ehealth-living-lab data provision"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Self-listing for the ehealth-living-lab data provision"</span>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">Date Issued</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2024-01-01"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
@@ -6639,7 +6633,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
     <a href="http://purl.org/dc/terms/rights" target="_blank" title="http://purl.org/dc/terms/rights">Rights</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="http://creativecommons.org/licenses/by/4.0/legalcode" target="_blank" title="http://creativecommons.org/licenses/by/4.0/legalcode">legalcode</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"E-health Living Lab"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"E-health Living Lab"</span>
    </dd>
   </dl>
  </div>
@@ -6684,7 +6678,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
     <a href="#http://www.w3.org/ns/dcat#temporalResolution" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"P1DT2H"^^<a href="http://www.w3.org/2001/XMLSchema#duration" target="_blank" title="http://www.w3.org/2001/XMLSchema#duration">duration</a> </span>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/created" target="_blank" title="http://purl.org/dc/terms/created">Date Created</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2024-01-01"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/created" target="_blank" title="http://purl.org/dc/terms/created">Date Created</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2024-01-01"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/creator" target="_blank" title="http://purl.org/dc/terms/creator">Creator</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://sedimark.surrey.ac.uk/ecosystem/CVSSP" target="_blank" title="https://sedimark.surrey.ac.uk/ecosystem/CVSSP">C V S S P</a> <sup class="type-ep" title="external property">ep</sup>
@@ -6696,10 +6690,10 @@ This section provides details for each class and property defined by SEDIMARK Ma
     <a href="http://purl.org/dc/terms/isPartOf" target="_blank" title="http://purl.org/dc/terms/isPartOf">Is Part Of</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab" target="_blank" title="https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab">ehealth living lab</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">Date Issued</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2024-01-02"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/issued" target="_blank" title="http://purl.org/dc/terms/issued">Date Issued</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"2024-01-02"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/language" target="_blank" title="http://purl.org/dc/terms/language">Language</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"English"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/language" target="_blank" title="http://purl.org/dc/terms/language">Language</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"English"</span>
    </dd>
    <dd>
     <a href="http://purl.org/dc/terms/license" target="_blank" title="http://purl.org/dc/terms/license">License</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" title="https://creativecommons.org/licenses/by-nd/4.0/">https://creativecommons.org/licenses/by-nd/4.0/</a> <sup class="type-ep" title="external property">ep</sup>
@@ -6711,7 +6705,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
     <a href="http://purl.org/dc/terms/temporal" target="_blank" title="http://purl.org/dc/terms/temporal">Temporal Coverage</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period" target="_blank" title="https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period">health monitoring morning period</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Wearable data for Subject 001"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Wearable data for Subject 001"</span>
    </dd>
   </dl>
  </div>
@@ -6728,9 +6722,6 @@ This section provides details for each class and property defined by SEDIMARK Ma
    <dt>
     has facts
    </dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/dqv#computedOn" title="http://www.w3.org/ns/dqv#computedOn">computed on</a> <sup class="type-op" title="object property">op</sup> <a href="#https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow" title="https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow">provision station 0001 water flow</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
    <dd>
     <a href="#http://xmlns.com/foaf/0.1/accountName" title="http://xmlns.com/foaf/0.1/accountName">account Name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"CVSSP Data Provider"@en</span>
    </dd>
@@ -6835,6 +6826,12 @@ This section provides details for each class and property defined by SEDIMARK Ma
    </dt>
    <dd>
     <a href="#http://www.w3.org/ns/dcat#temporalResolution" title="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"P1DT2H"^^<a href="http://www.w3.org/2001/XMLSchema#duration" target="_blank" title="http://www.w3.org/2001/XMLSchema#duration">duration</a> </span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/description" target="_blank" title="http://purl.org/dc/terms/description">Description</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Morning period for health monitoring"</span>
+   </dd>
+   <dd>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"morning monitoring period"</span>
    </dd>
   </dl>
  </div>
@@ -6978,7 +6975,7 @@ This section provides details for each class and property defined by SEDIMARK Ma
     <a href="http://purl.org/dc/terms/conformsTo" target="_blank" title="http://purl.org/dc/terms/conformsTo">Conforms To</a> <sup class="type-ap" title="annotation property">ap</sup> <a href="https://forge.etsi.org/rep/cim/NGSI-LD/" target="_blank" title="https://forge.etsi.org/rep/cim/NGSI-LD/">https://forge.etsi.org/rep/cim/NGSI-LD/</a> <sup class="type-ep" title="external property">ep</sup>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Steps 001 Provider"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/title" target="_blank" title="http://purl.org/dc/terms/title">Title</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Steps Count 001 Provider"</span>
    </dd>
   </dl>
  </div>
@@ -7078,6 +7075,30 @@ This section provides details for each class and property defined by SEDIMARK Ma
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://sedimark.eu/ecosystem/themes">
+  <h3>sedimark themes<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://sedimark.eu/ecosystem/themes</p>
+  <div class="comment">
+   <span class="markdown">A set of domains to classify Offerings and Assets with the SEDIMARK marketplace</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme" title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"A set of domains to classify Offerings and Assets with the SEDIMARK marketplace"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"sedimark themes"</span>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue">
   <h3>surrey local catalogue<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue</p>
@@ -7104,10 +7125,10 @@ This section provides details for each class and property defined by SEDIMARK Ma
     has facts
    </dt>
    <dd>
-    <a href="http://purl.org/dc/terms/license" target="_blank" title="http://purl.org/dc/terms/license">License</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International. https://creativecommons.org/licenses/by-nd/4.0/"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/license" target="_blank" title="http://purl.org/dc/terms/license">License</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International. https://creativecommons.org/licenses/by-nd/4.0/"</span>
    </dd>
    <dd>
-    <a href="http://purl.org/dc/terms/rights" target="_blank" title="http://purl.org/dc/terms/rights">Rights</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International. https://creativecommons.org/licenses/by-nd/4.0/"^^<a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a> </span>
+    <a href="http://purl.org/dc/terms/rights" target="_blank" title="http://purl.org/dc/terms/rights">Rights</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International. https://creativecommons.org/licenses/by-nd/4.0/"</span>
    </dd>
   </dl>
  </div>

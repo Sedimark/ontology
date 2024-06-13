@@ -1682,6 +1682,9 @@
   "@id" : "http://schema.org/citation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://schema.org/funding",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -4291,8 +4294,11 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "A set of domains to classify Offerings and Assets with the SEDIMARK marketplace"
+  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@value" : "A set of domains to classify Offerings and Assets"
+    "@value" : "sedimark themes"
   } ]
 }, {
   "@id" : "https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png",
@@ -4313,7 +4319,6 @@
     "@id" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "This dataset captures data from step counter on wearable smart watch for subject 001"
   } ],
   "http://purl.org/dc/elements/1.1/identifier" : [ {
@@ -4321,8 +4326,7 @@
     "@value" : "cvssp-livinglab-wearable-steps-001"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "Steps Dataset for Subject 001"
+    "@value" : "Steps Count Dataset for Subject 001"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@id" : "https://sedimark.eglobalmark.com/ecosystem/participant-egm"
@@ -4352,7 +4356,6 @@
     "@id" : "https://sedimark.surrey.ac.uk/ecosystem/CVSSP"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "Self-listing for the ehealth-living-lab data provision"
   } ],
   "http://purl.org/dc/terms/hasPart" : [ {
@@ -4376,7 +4379,6 @@
     "@id" : "http://creativecommons.org/licenses/by/4.0/legalcode"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "E-health Living Lab"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -4398,7 +4400,7 @@
   "@id" : "https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2024-01-01"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
@@ -4412,11 +4414,10 @@
     "@id" : "https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab"
   } ],
   "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2024-01-02"
   } ],
   "http://purl.org/dc/terms/language" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "English"
   } ],
   "http://purl.org/dc/terms/license" : [ {
@@ -4429,7 +4430,6 @@
     "@id" : "https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "Wearable data for Subject 001"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -4456,9 +4456,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/OnlineAccount"
-  } ],
-  "http://www.w3.org/ns/dqv#computedOn" : [ {
-    "@id" : "https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow"
   } ],
   "http://xmlns.com/foaf/0.1/accountName" : [ {
     "@language" : "en",
@@ -4499,6 +4496,12 @@
 }, {
   "@id" : "https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Morning period for health monitoring"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "morning monitoring period"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://purl.org/dc/terms/PeriodOfTime"
   } ],
@@ -4517,8 +4520,7 @@
     "@id" : "https://forge.etsi.org/rep/cim/NGSI-LD/"
   } ],
   "http://purl.org/dc/terms/title" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "@value" : "Steps 001 Provider"
+    "@value" : "Steps Count 001 Provider"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/sedimark/ontology#AssetProvision"
@@ -4545,11 +4547,9 @@
   "@id" : "https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/license" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/"
   } ],
   "http://purl.org/dc/terms/rights" : [ {
-    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -4612,6 +4612,9 @@
   } ],
   "http://schema.org/citation" : [ {
     "@value" : "SEDIMARK Marketplace Information Model - SEDIMARK EU Project"
+  } ],
+  "http://schema.org/codeRepository" : [ {
+    "@value" : "https://github.com/Sedimark/ontology"
   } ],
   "http://schema.org/funding" : [ {
     "@language" : "en",

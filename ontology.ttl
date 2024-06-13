@@ -22,6 +22,7 @@ This model is supported by existing proposals by similar initiatives and is buil
                                       <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^rdfs:Literal ;
                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-o"^^rdfs:Literal ;
                                       <http://schema.org/citation> "SEDIMARK Marketplace Information Model - SEDIMARK EU Project" ;
+                                      <http://schema.org/codeRepository> "https://github.com/Sedimark/ontology" ;
                                       <http://schema.org/funding> "https://cordis.europa.eu/project/id/101070074"@en ,
                                                                   "https://gtr.ukri.org/projects?ref=10043699"@en ;
                                       <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> ;
@@ -399,6 +400,10 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 ###  http://schema.org/citation
 <http://schema.org/citation> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
 
 
 ###  http://schema.org/funding
@@ -2111,7 +2116,8 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
 ###  https://sedimark.eu/ecosystem/themes
 <https://sedimark.eu/ecosystem/themes> rdf:type owl:NamedIndividual ,
                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "A set of domains to classify Offerings and Assets" .
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A set of domains to classify Offerings and Assets with the SEDIMARK marketplace" ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "sedimark themes" .
 
 
 ###  https://sedimark.eu/ecosystem/metric#accuracy-values
@@ -2167,9 +2173,9 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
                                                                                   <https://w3id.org/sedimark/vocab#DataAsset> ;
                                                                          :hasAssetQuality <https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count> ;
                                                                          <http://purl.org/dc/elements/1.1/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                                         <http://purl.org/dc/elements/1.1/description> "This dataset captures data from step counter on wearable smart watch for subject 001"^^rdfs:Literal ;
+                                                                         <http://purl.org/dc/elements/1.1/description> "This dataset captures data from step counter on wearable smart watch for subject 001" ;
                                                                          <http://purl.org/dc/elements/1.1/identifier> "cvssp-livinglab-wearable-steps-001"^^rdfs:Literal ;
-                                                                         <http://purl.org/dc/elements/1.1/title> "Steps Dataset for Subject 001"^^rdfs:Literal ;
+                                                                         <http://purl.org/dc/elements/1.1/title> "Steps Count Dataset for Subject 001" ;
                                                                          <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
 
 
@@ -2190,13 +2196,13 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
                                                                   :belongsTo <https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> ;
                                                                   :hasOffering <https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> ;
                                                                   <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                                  <http://purl.org/dc/terms/description> "Self-listing for the ehealth-living-lab data provision"^^rdfs:Literal ;
+                                                                  <http://purl.org/dc/terms/description> "Self-listing for the ehealth-living-lab data provision" ;
                                                                   <http://purl.org/dc/terms/issued> "2024-01-01"^^xsd:date ;
                                                                   <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
                                                                   <http://purl.org/dc/terms/modified> "2024-01-02"^^xsd:date ;
                                                                   <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
                                                                   <http://purl.org/dc/terms/rights> <http://creativecommons.org/licenses/by/4.0/legalcode> ;
-                                                                  <http://purl.org/dc/terms/title> "E-health Living Lab"^^rdfs:Literal .
+                                                                  <http://purl.org/dc/terms/title> "E-health Living Lab" .
 
 
 ###  https://sedimark.surrey.ac.uk/ecosystem/location-ehealth-testbed-01
@@ -2212,22 +2218,21 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
                                                                        :hasAsset <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> ;
                                                                        :hasOfferingContract <https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data> ;
                                                                        <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^xsd:duration ;
-                                                                       <http://purl.org/dc/terms/created> "2024-01-01"^^rdfs:Literal ;
+                                                                       <http://purl.org/dc/terms/created> "2024-01-01"^^xsd:date ;
                                                                        <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
                                                                        <http://purl.org/dc/terms/description> "This offering provides data assets with data originating from wearable sensors on smart watches"^^rdfs:Literal ;
                                                                        <http://purl.org/dc/terms/isPartOf> <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> ;
-                                                                       <http://purl.org/dc/terms/issued> "2024-01-02"^^rdfs:Literal ;
-                                                                       <http://purl.org/dc/terms/language> "English"^^rdfs:Literal ;
+                                                                       <http://purl.org/dc/terms/issued> "2024-01-02"^^xsd:date ;
+                                                                       <http://purl.org/dc/terms/language> "English" ;
                                                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nd/4.0/> ;
                                                                        <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
                                                                        <http://purl.org/dc/terms/temporal> <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> ;
-                                                                       <http://purl.org/dc/terms/title> "Wearable data for Subject 001"^^rdfs:Literal .
+                                                                       <http://purl.org/dc/terms/title> "Wearable data for Subject 001" .
 
 
 ###  https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp
 <https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> rdf:type owl:NamedIndividual ,
                                                                         <http://xmlns.com/foaf/0.1/OnlineAccount> ;
-                                                               <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> ;
                                                                <http://xmlns.com/foaf/0.1/accountName> "CVSSP Data Provider"@en .
 
 
@@ -2252,7 +2257,9 @@ Exploit new technologies for societal and economic impact."""@en ;
 ###  https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning
 <https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning> rdf:type owl:NamedIndividual ,
                                                                                     <http://purl.org/dc/terms/PeriodOfTime> ;
-                                                                           <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^xsd:duration .
+                                                                           <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^xsd:duration ;
+                                                                           <http://purl.org/dc/terms/description> "Morning period for health monitoring" ;
+                                                                           <http://purl.org/dc/terms/title> "morning monitoring period" .
 
 
 ###  https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count
@@ -2262,7 +2269,7 @@ Exploit new technologies for societal and economic impact."""@en ;
                                                                              <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> ;
                                                                              <http://purl.org/dc/elements/1.1/description> "Data Asset provision for Wearable Steps count for subject 001 from the ehealth living lab"@en ;
                                                                              <http://purl.org/dc/terms/conformsTo> <https://forge.etsi.org/rep/cim/NGSI-LD/> ;
-                                                                             <http://purl.org/dc/terms/title> "Steps 001 Provider"^^rdfs:Literal .
+                                                                             <http://purl.org/dc/terms/title> "Steps Count 001 Provider" .
 
 
 ###  https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count
@@ -2279,9 +2286,9 @@ Exploit new technologies for societal and economic impact."""@en ;
 <https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc> rdf:type owl:NamedIndividual ,
                                                                              <http://purl.org/dc/terms/LicenseDocument> ;
                                                                     <http://purl.org/dc/terms/license> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
-https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal ;
+https://creativecommons.org/licenses/by-nd/4.0/""" ;
                                                                     <http://purl.org/dc/terms/rights> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
-https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
+https://creativecommons.org/licenses/by-nd/4.0/""" .
 
 
 ###  https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities

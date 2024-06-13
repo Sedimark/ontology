@@ -34,6 +34,7 @@ This model is supported by existing proposals by similar initiatives and is buil
         <terms:publisher rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace</terms:publisher>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">sedi-o</vann:preferredNamespacePrefix>
         <schema:citation>SEDIMARK Marketplace Information Model - SEDIMARK EU Project</schema:citation>
+        <schema:codeRepository>https://github.com/Sedimark/ontology</schema:codeRepository>
         <schema:funding xml:lang="en">https://cordis.europa.eu/project/id/101070074</schema:funding>
         <schema:funding xml:lang="en">https://gtr.ukri.org/projects?ref=10043699</schema:funding>
         <schema:logo rdf:resource="https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png"/>
@@ -606,6 +607,13 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 
     <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
+    
+
+
+    <!-- http://schema.org/codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
     
 
 
@@ -3231,7 +3239,8 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
 
     <owl:NamedIndividual rdf:about="https://sedimark.eu/ecosystem/themes">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <skos:prefLabel>A set of domains to classify Offerings and Assets</skos:prefLabel>
+        <skos:definition>A set of domains to classify Offerings and Assets with the SEDIMARK marketplace</skos:definition>
+        <skos:prefLabel>sedimark themes</skos:prefLabel>
     </owl:NamedIndividual>
     
 
@@ -3322,9 +3331,9 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
         <rdf:type rdf:resource="https://w3id.org/sedimark/vocab#DataAsset"/>
         <hasAssetQuality rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count"/>
         <dc:creator rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
-        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This dataset captures data from step counter on wearable smart watch for subject 001</dc:description>
+        <dc:description>This dataset captures data from step counter on wearable smart watch for subject 001</dc:description>
         <dc:identifier rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">cvssp-livinglab-wearable-steps-001</dc:identifier>
-        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Steps Dataset for Subject 001</dc:title>
+        <dc:title>Steps Count Dataset for Subject 001</dc:title>
         <terms:publisher rdf:resource="https://sedimark.eglobalmark.com/ecosystem/participant-egm"/>
     </owl:NamedIndividual>
     
@@ -3357,13 +3366,13 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
         <belongsTo rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp"/>
         <hasOffering rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001"/>
         <terms:creator rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
-        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Self-listing for the ehealth-living-lab data provision</terms:description>
+        <terms:description>Self-listing for the ehealth-living-lab data provision</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</terms:issued>
         <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/en"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-02</terms:modified>
         <terms:publisher rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
         <terms:rights rdf:resource="http://creativecommons.org/licenses/by/4.0/legalcode"/>
-        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">E-health Living Lab</terms:title>
+        <terms:title>E-health Living Lab</terms:title>
     </owl:NamedIndividual>
     
 
@@ -3387,16 +3396,16 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
         <hasAsset rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count"/>
         <hasOfferingContract rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data"/>
         <dcat:temporalResolution rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1DT2H</dcat:temporalResolution>
-        <terms:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-01-01</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-01</terms:created>
         <terms:creator rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
         <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This offering provides data assets with data originating from wearable sensors on smart watches</terms:description>
         <terms:isPartOf rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab"/>
-        <terms:issued rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2024-01-02</terms:issued>
-        <terms:language rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">English</terms:language>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-02</terms:issued>
+        <terms:language>English</terms:language>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-nd/4.0/"/>
         <terms:publisher rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/CVSSP"/>
         <terms:temporal rdf:resource="https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period"/>
-        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wearable data for Subject 001</terms:title>
+        <terms:title>Wearable data for Subject 001</terms:title>
     </owl:NamedIndividual>
     
 
@@ -3406,7 +3415,6 @@ EGM supports its clients thanks to its permanent innovation approach and its ope
 
     <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/OnlineAccount"/>
-        <dqv:computedOn rdf:resource="https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow"/>
         <foaf:accountName xml:lang="en">CVSSP Data Provider</foaf:accountName>
     </owl:NamedIndividual>
     
@@ -3440,6 +3448,8 @@ Exploit new technologies for societal and economic impact.</terms:description>
     <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning">
         <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
         <dcat:temporalResolution rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1DT2H</dcat:temporalResolution>
+        <terms:description>Morning period for health monitoring</terms:description>
+        <terms:title>morning monitoring period</terms:title>
     </owl:NamedIndividual>
     
 
@@ -3453,7 +3463,7 @@ Exploit new technologies for societal and economic impact.</terms:description>
         <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/ld+json"/>
         <dc:description xml:lang="en">Data Asset provision for Wearable Steps count for subject 001 from the ehealth living lab</dc:description>
         <terms:conformsTo rdf:resource="https://forge.etsi.org/rep/cim/NGSI-LD/"/>
-        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Steps 001 Provider</terms:title>
+        <terms:title>Steps Count 001 Provider</terms:title>
     </owl:NamedIndividual>
     
 
@@ -3481,9 +3491,9 @@ Exploit new technologies for societal and economic impact.</terms:description>
 
     <owl:NamedIndividual rdf:about="https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc">
         <rdf:type rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
-        <terms:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+        <terms:license>This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
 https://creativecommons.org/licenses/by-nd/4.0/</terms:license>
-        <terms:rights rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+        <terms:rights>This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
 https://creativecommons.org/licenses/by-nd/4.0/</terms:rights>
     </owl:NamedIndividual>
     
