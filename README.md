@@ -10,7 +10,7 @@ This model is supported by existing proposals by similar initiatives and is buil
 ![image](https://github.com/Sedimark/ontology/assets/47256078/500b801f-fb95-4b32-bed8-68506b99506f)
 
 ## Properties
-![image](https://github.com/Sedimark/ontology/assets/47256078/cacb6d9d-1b8d-422e-a19d-fa35e5faf9bf)
+![image](https://github.com/Sedimark/ontology/assets/47256078/abdbd9e9-6005-4ead-ba81-53eed55d9577)
 
 ## Instantiation Example:
 Offering provided by CVSSP living lab for ehealth monitoring.
