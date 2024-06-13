@@ -7,8 +7,7 @@ This model is supported by existing proposals by similar initiatives and is buil
 ## Core Concepts 
 
 ### Classes
-![image](https://github.com/Sedimark/ontology/assets/47256078/84d0caf1-0101-4c81-a3e5-404893345fa2)
-
+![image](https://github.com/Sedimark/ontology/assets/47256078/500b801f-fb95-4b32-bed8-68506b99506f)
 
 ## Properties
 ![image](https://github.com/Sedimark/ontology/assets/47256078/cacb6d9d-1b8d-422e-a19d-fa35e5faf9bf)
