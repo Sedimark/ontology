@@ -1,10 +1,19 @@
-<https://w3id.org/sedimark/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/sedimark/ontology#> <http://purl.org/dc/elements/1.1/description> "The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.\n\nThis model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/sedimark/ontology#> <http://purl.org/dc/elements/1.1/title> "SEDIMARK Marketplace Ontology"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/sedimark/ontology#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/sedimark/ontology#> <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/sedimark/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-ont"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/sedimark/ontology#> <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> .
+<https://w3id.org/sedimark/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/elements/1.1/description> "The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.\n\nThis model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative."^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/elements/1.1/title> "SEDIMARK Marketplace Information Model - Ontology"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/creator> "Jorge Lanza (Universidad de Cantabria)" .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/creator> "Juan Ramon Santana (Universidad de Cantabria)" .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/creator> "Luis Sanchez (Universidad de Cantabria)" .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/creator> "Pablo Sotres (Universidad de Cantabria)" .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/creator> "Tarek Elsaleh (University of Surrey)" .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/issued> "2023-12-31"@en .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> .
+<https://w3id.org/sedimark/ontology> <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sedimark/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-o"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/sedimark/ontology> <http://schema.org/funding> "https://cordis.europa.eu/project/id/101070074"@en .
+<https://w3id.org/sedimark/ontology> <http://schema.org/funding> "https://gtr.ukri.org/projects?ref=10043699"@en .
+<https://w3id.org/sedimark/ontology> <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> .
+<https://w3id.org/sedimark/ontology> <http://schema.org/url> "https://sedimark.eu/"@en .
 # 
 # 
 # #################################################################
@@ -135,12 +144,6 @@
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/dc/terms/creator> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> .
-<http://purl.org/dc/terms/creator> <http://purl.org/dc/terms/description> "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en .
-<http://purl.org/dc/terms/creator> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource."@en .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
 <http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/creator> .
 <http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/contributor> .
 # 
@@ -212,11 +215,6 @@
 # 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
-<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance of the resource."@en .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
-<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/date> .
 <http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
@@ -344,8 +342,20 @@
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/funding
+<http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/image
+<http://schema.org/image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://schema.org/logo
 <http://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -362,14 +372,17 @@
 # http://www.w3.org/2004/02/skos/core#editorialNote
 <http://www.w3.org/2004/02/skos/core#editorialNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2004/02/skos/core#note
 <http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2008/05/skos#definition
-<http://www.w3.org/2008/05/skos#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/ns/prov#category
 <http://www.w3.org/ns/prov#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -418,6 +431,32 @@
 <http://purl.org/dc/terms/hasPart> <http://purl.org/dc/terms/description> "This property is intended to be used with non-literal values. This property is an inverse property of Is Part Of."@en .
 <http://purl.org/dc/terms/hasPart> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
+# http://purl.org/eis/vocab/daq#hasDimension
+<http://purl.org/eis/vocab/daq#hasDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/eis/vocab/daq#hasDimension> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/dqv#inCategory> .
+# 
+# http://purl.org/eis/vocab/daq#hasMetric
+<http://purl.org/eis/vocab/daq#hasMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:genid1 <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/eis/vocab/daq#hasMetric> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/dqv#inDimension> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "is in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#inScheme> .
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
 # http://www.w3.org/2008/05/skos#hasTopConcept
 <http://www.w3.org/2008/05/skos#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2008/05/skos#hasTopConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2008/05/skos#Concept> .
@@ -449,9 +488,19 @@
 <http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
 <http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
 # 
+# http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # http://www.w3.org/ns/dcat#accessURL
 <http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/dcat#accessService> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/dcat#endpointURL> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.w3.org/ns/dcat#catalog
 <http://www.w3.org/ns/dcat#catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -476,6 +525,64 @@
 <http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
 # 
+# http://www.w3.org/ns/dcat#endpointDescription
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the service end-point, including its operations, parameters etc."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Popis přístupového bodu služby včetně operací, parametrů apod."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "descripción del end-point del servicio"@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "description of service end-point"@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "descrizione dell'endpoint del servizio"@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "endpointbeskrivelse"@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2000/01/rdf-schema#label> "popis přístupového bodu služby"@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "A description of the service end-point, including its operations, parameters etc."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "Popis přístupového bodu služby včetně operací, parametrů apod."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc.."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#definition> "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description, an OGC GetCapabilities response, a SPARQL Service Description, an OpenSearch or WSDL document, a Hydra API description, else in text or some other informal mode if a formal representation is not possible."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "En beskrivelse af et endpoint kan udtrykkes i et maskinlæsbart format, såsom OpenAPI (Swagger)-beskrivelser, et OGC GetCapabilities svar, en SPARQL tjenestebeskrivelse, en OpenSearch- eller et WSDL-dokument, en Hydra-API-beskrivelse, eller i tekstformat eller i et andet uformelt format, hvis en formel repræsentation ikke er mulig."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Endpointbeskrivelsen giver specifikke oplysninger om den konkrete endpointinstans, mens dct:conformsTo anvendes til at indikere den overordnede standard eller specifikation som endpointet er i overensstemmelse med."@da .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "La descripción del endpoint brinda detalles específicos de la instancia del endpoint, mientras que dct:conformsTo se usa para indicar el estándar general o especificación que implementa el endpoint."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "La descrizione dell'endpoint fornisce dettagli specifici dell'istanza dell'endpoint reale, mentre dct:conformsTo viene utilizzato per indicare lo standard o le specifiche implementate dall'endpoint."@it .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Popis přístupového bodu dává specifické detaily jeho konkrétní instance, zatímco dct:conformsTo indikuje obecný standard či specifikaci kterou přístupový bod implementuje."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Popis přístupového bodu může být vyjádřen ve strojově čitelné formě, například jako popis OpenAPI (Swagger), odpověď služby OGC getCapabilities, pomocí slovníku SPARQL Service Description, jako OpenSearch či WSDL document, jako popis API dle slovníku Hydra, a nebo textově nebo jiným neformálním způsobem, pokud není možno použít formální reprezentaci."@cs .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "The endpoint description gives specific details of the actual endpoint instance, while dct:conformsTo is used to indicate the general standard or specification that the endpoint implements."@en .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Una descripción del endpoint del servicio puede expresarse en un formato que la máquina puede interpretar, tal como una descripción basada en OpenAPI (Swagger), una respuesta OGC GetCapabilities, una descripción de un servicio SPARQL, un documento OpenSearch o WSDL, una descripción con la Hydra API, o en texto u otro modo informal si la representación formal no es posible."@es .
+<http://www.w3.org/ns/dcat#endpointDescription> <http://www.w3.org/2004/02/skos/core#scopeNote> "Una descrizione dell'endpoint può essere espressa in un formato leggibile dalla macchina, come una descrizione OpenAPI (Swagger), una risposta GetCapabilities OGC, una descrizione del servizio SPARQL, un documento OpenSearch o WSDL, una descrizione API Hydra, o con del testo o qualche altra modalità informale se una rappresentazione formale non è possibile."@it .
+# 
+# http://www.w3.org/ns/dcat#endpointURL
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "La posición raíz o end-point principal del servicio (una IRI web)."@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#comment> "The root location or primary endpoint of the service (a web-resolvable IRI)."@en .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "end-point del servicio"@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "end-point del servizio"@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "přístupový bod služby"@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "service end-point"@en .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2000/01/rdf-schema#label> "tjenesteendpoint"@da .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "La posición raíz o end-point principal del servicio (una IRI web)."@es .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da .
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/2004/02/skos/core#definition> "The root location or primary endpoint of the service (a web-resolvable IRI)."@en .
+# 
 # http://www.w3.org/ns/dcat#mediaType
 <http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
@@ -492,38 +599,141 @@
 <http://www.w3.org/ns/dcat#record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/dcat#record> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Catalog> .
 # 
+# http://www.w3.org/ns/dcat#servesDataset
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#DataService> .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data that this DataService can distribute."@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "En samling af data som denne datatjeneste kan distribuere."@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Una colección de datos que este Servicio de Datos puede distribuir."@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "Una raccolta di dati che questo DataService può distribuire."@it .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "datatjeneste for datasæt"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "poskytuje datovou sadu"@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "provee conjunto de datos"@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "serve set di dati"@it .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2000/01/rdf-schema#label> "serves dataset"@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#altLabel> "distribuerer"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#altLabel> "ekspederer"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#altLabel> "udstiller"@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "A collection of data that this DataService can distribute."@en .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "En samling af data som denne datatjeneste kan distribuere."@da .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "Una colección de datos que este Servicio de Datos puede distribuir."@es .
+<http://www.w3.org/ns/dcat#servesDataset> <http://www.w3.org/2004/02/skos/core#definition> "Una raccolta di dati che questo DataService può distribuire."@it .
+# 
 # http://www.w3.org/ns/dcat#service
 <http://www.w3.org/ns/dcat#service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/dcat#service> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/hasPart> .
 <http://www.w3.org/ns/dcat#service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Catalog> .
 # 
+# http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "A main category of the resource. A resource can have multiple themes."@en .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Hlavní téma zdroje. Zdroj může mít více témat."@cs .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "La categoria principale della risorsa. Una risorsa può avere più temi."@it .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "La categoría principal del recurso. Un recurso puede tener varios temas."@es .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#comment> "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/TR/vocab-dcat/> .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "emne"@da .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "tema"@es .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "tema"@it .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "theme"@en .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "thème"@fr .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "téma"@cs .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "Θέμα"@el .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "التصنيف"@ar .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2000/01/rdf-schema#label> "テーマ/カテゴリー"@ja .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#altLabel> "tema"@da .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "A main category of the resource. A resource can have multiple themes."@en .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "Hlavní téma zdroje. Zdroj může mít více témat."@cs .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "La categoria principale della risorsa. Una risorsa può avere più temi."@it .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "La categoría principal del recurso. Un recurso puede tener varios temas."@es .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#definition> "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending."@en .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo."@es .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo."@it .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sada instancí třídy skos:Concept použitá pro kategorizaci zdrojů je organizována do schématu konceptů skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy."@cs .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget."@da .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog."@en .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en un skos:ConceptScheme décrivant toutes les catégories et ses relations dans le catalogue."@fr .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο."@el .
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/2004/02/skos/core#scopeNote> "データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。"@ja .
+# 
 # http://www.w3.org/ns/dcat#themeTaxonomy
 <http://www.w3.org/ns/dcat#themeTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/dcat#themeTaxonomy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Catalog> .
 # 
+# http://www.w3.org/ns/dqv#computedOn
+<http://www.w3.org/ns/dqv#computedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dqv#computedOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/dqv#hasQualityMeasurement> .
+<http://www.w3.org/ns/dqv#computedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://www.w3.org/ns/dqv#computedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/dqv#computedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the resource (e.g., a dataset, a linkset, a graph, a set of triples) on which the quality measurement is performed. In the DQV context, this property is generally expected to be used in statements in which objects are instances of dcat:Dataset or dcat:Distribution."@en .
+<http://www.w3.org/ns/dqv#computedOn> <http://www.w3.org/2000/01/rdf-schema#label> "computed on"@en .
+# 
+# http://www.w3.org/ns/dqv#hasQualityMeasurement
+<http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+# 
+# http://www.w3.org/ns/dqv#inCategory
+<http://www.w3.org/ns/dqv#inCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dqv#inCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dqv#Dimension> .
+<http://www.w3.org/ns/dqv#inCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dqv#Category> .
+<http://www.w3.org/ns/dqv#inCategory> <http://purl.org/vocab/vann/usageNote> "Categories are meant to systematically organize dimensions. The Data Quality Vocabulary defines no specific cardinality constraints for dqv:inCategory, since distinct quality frameworks might have different perspectives over a dimension. A dimension may therefore be associated to more than one category. However, those who define new quality metrics should try to avoid this as much as possible and assign only one category to the dimensions they define."@en .
+<http://www.w3.org/ns/dqv#inCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the category a dimension is grouped in."@en .
+<http://www.w3.org/ns/dqv#inCategory> <http://www.w3.org/2000/01/rdf-schema#label> "in category"@en .
+# 
+# http://www.w3.org/ns/dqv#inDimension
+<http://www.w3.org/ns/dqv#inDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dqv#inDimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dqv#Dimension> .
+<http://www.w3.org/ns/dqv#inDimension> <http://purl.org/vocab/vann/usageNote> "Dimensions are meant to systematically organize metrics, quality certificates and quality annotations. The Data Quality Vocabulary defines no specific cardinality constraints for dqv:inDimension, since distinct quality frameworks might have different perspectives over a metric. A metric may therefore be associated to more than one dimension. However, those who define new quality metrics should try to avoid this as much as possible and assign only one dimension to the metrics they define. More than one dimension can be indicated for each quality annotation or certificate."@en .
+<http://www.w3.org/ns/dqv#inDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the dimensions a quality metric, certificate and annotation allow a measurement of."@en .
+<http://www.w3.org/ns/dqv#inDimension> <http://www.w3.org/2000/01/rdf-schema#label> "in dimension"@en .
+# 
+# http://www.w3.org/ns/dqv#isMeasurementOf
+<http://www.w3.org/ns/dqv#isMeasurementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/dqv#isMeasurementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/linked-data/cube#Observation> .
+<http://www.w3.org/ns/dqv#isMeasurementOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dqv#Metric> .
+<http://www.w3.org/ns/dqv#isMeasurementOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the metric being observed."@en .
+<http://www.w3.org/ns/dqv#isMeasurementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is measurement of"@en .
+# 
 # http://www.w3.org/ns/odrl/2/action
 <http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.w3.org/ns/odrl/2/assignee
 <http://www.w3.org/ns/odrl/2/assignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/assignee> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/assignee> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/odrl/2/assignee> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Party> .
 # 
 # http://www.w3.org/ns/odrl/2/assigneeOf
@@ -533,15 +743,15 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.w3.org/ns/odrl/2/assigner
 <http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/odrl/2/assigner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Party> .
 # 
 # http://www.w3.org/ns/odrl/2/assignerOf
@@ -555,27 +765,27 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.w3.org/ns/odrl/2/constraint
 <http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.w3.org/ns/odrl/2/function
 <http://www.w3.org/ns/odrl/2/function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/function> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/function> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/odrl/2/function> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Party> .
 # 
 # http://www.w3.org/ns/odrl/2/hasPolicy
@@ -598,15 +808,15 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/partOf
 <http://www.w3.org/ns/odrl/2/partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/partOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Party> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Asset> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/partOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Asset> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Party> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.w3.org/ns/odrl/2/permission
 <http://www.w3.org/ns/odrl/2/permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -618,28 +828,28 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/relation
 <http://www.w3.org/ns/odrl/2/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/relation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/relation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/odrl/2/relation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Asset> .
 # 
 # http://www.w3.org/ns/odrl/2/target
 <http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/2002/07/owl#unionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Policy> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Rule> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Asset> .
 # 
 # http://www.w3.org/ns/prov#activity
@@ -674,26 +884,26 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/prov#wasAttributedTo
 <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedAttribution> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedAttribution> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#agent> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
-<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedGeneration> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#qualifiedGeneration> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#activity> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasGeneratedBy" .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#category> "starting-point" .
@@ -835,6 +1045,16 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <https://w3id.org/sedimark/ontology#hasSelf-Listing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sedimark/ontology#Participant> .
 <https://w3id.org/sedimark/ontology#hasSelf-Listing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sedimark/ontology#Self-Listing> .
 # 
+# https://w3id.org/sedimark/ontology#isListedBy
+<https://w3id.org/sedimark/ontology#isListedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sedimark/ontology#isListedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sedimark/ontology#Offering> .
+<https://w3id.org/sedimark/ontology#isListedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sedimark/ontology#Self-Listing> .
+# 
+# https://w3id.org/sedimark/ontology#isProvidedBy
+<https://w3id.org/sedimark/ontology#isProvidedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sedimark/ontology#isProvidedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sedimark/ontology#Asset> .
+<https://w3id.org/sedimark/ontology#isProvidedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/sedimark/ontology#AssetProvision> .
+# 
 # https://w3id.org/sedimark/ontology#references
 <https://w3id.org/sedimark/ontology#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/sedimark/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/sedimark/ontology#Agreement> .
@@ -855,6 +1075,57 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://www.w3.org/ns/dcat#byteSize
 <http://www.w3.org/ns/dcat#byteSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3.org/ns/dcat#byteSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+# 
+# http://www.w3.org/ns/dcat#endDate
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di fine"@it .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "datum konce"@cs .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "fecha final"@es .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "slutdato"@da .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#altLabel> "sluttidspunkt"@da .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#definition> "El fin del período."@es .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#definition> "Konec doby trvání."@cs .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#definition> "La fine del periodo."@it .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#definition> "Slutningen på perioden."@da .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#definition> "The end of the period."@en .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el fin del período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear)."@es .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "La range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare la fine di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear)."@it .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé úrovně časového rozlišení pro specifikaci konce doby trvání. Ten může být kupříkladu vyjádřen datumem (xsd:date), datumem a časem (xsd:dateTime) či rokem (xsd:gYear)."@cs .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af slutdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear)."@da .
+<http://www.w3.org/ns/dcat#endDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the end of a period. E.g., it can be expressed with a date (xsd:date), a date and time (xsd:dateTime), or a year (xsd:gYear)."@en .
+# 
+# http://www.w3.org/ns/dcat#startDate
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/PeriodOfTime> .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "data di inizio"@it .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "datum začátku"@cs .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date"@en .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "startdato"@da .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#altLabel> "starttidspunkt"@da .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Nueva propiedad agregada en DCAT 2.0."@es .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Nuova proprietà aggiunta in DCAT 2.0."@it .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#changeNote> "Ny egenskab tilføjet i DCAT 2.0."@da .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#definition> "El comienzo del período"@es .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#definition> "L'inizio del periodo"@it .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#definition> "Start på perioden."@da .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#definition> "The start of the period"@en .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#definition> "Začátek doby trvání"@cs .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el comienzo de un período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear)."@es .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Il range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare l'inizio di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear)."@it .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé úrovně časového rozlišení pro specifikaci začátku doby trvání. Ten může být kupříkladu vyjádřen datumem (xsd:date), datumem a časem (xsd:dateTime) či rokem (xsd:gYear)."@cs .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af startdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear)."@da .
+<http://www.w3.org/ns/dcat#startDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the start of a period. E.g., it can be expressed with a date (xsd:date), a date and time (xsd:dateTime), or a year (xsd:gYear)."@en .
 # 
 # http://www.w3.org/ns/dcat#temporalResolution
 <http://www.w3.org/ns/dcat#temporalResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -891,6 +1162,16 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://www.w3.org/ns/dcat#temporalResolution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Různá časová rozlišení mohou být poskytována jako různé distribuce datové sady."@cs .
 <http://www.w3.org/ns/dcat#temporalResolution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Se il set di dati è una serie temporale, questo dovrebbe corrispondere alla spaziatura degli elementi della serie. Per altri tipi di set di dati, questa proprietà di solito indica la più piccola differenza di tempo tra gli elementi nel set di dati."@it .
 <http://www.w3.org/ns/dcat#temporalResolution> <http://www.w3.org/2004/02/skos/core#scopeNote> "Si el conjunto de datos es una serie temporal, debe corresponder al espaciado de los elementos de la serie. Para otro tipo de conjuntos de datos, esta propiedad indicará usualmente la menor diferencia de tiempo entre elementos en el dataset."@es .
+# 
+# http://www.w3.org/ns/dqv#expectedDataType
+<http://www.w3.org/ns/dqv#expectedDataType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dqv#expectedDataType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dqv#Metric> .
+# 
+# http://www.w3.org/ns/dqv#value
+<http://www.w3.org/ns/dqv#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/dqv#value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://www.w3.org/ns/dqv#value> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to values computed by metric."@en .
+<http://www.w3.org/ns/dqv#value> <http://www.w3.org/2000/01/rdf-schema#label> "value"@en .
 # 
 # http://xmlns.com/foaf/0.1/accountName
 <http://xmlns.com/foaf/0.1/accountName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -938,6 +1219,11 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/dc/terms/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@en .
 # 
+# http://purl.org/dc/terms/FileFormat
+<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/FileFormat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaType> .
+<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
 # http://purl.org/dc/terms/LicenseDocument
 <http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/LicenseDocument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/RightsStatement> .
@@ -966,6 +1252,18 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
+# http://purl.org/dc/terms/MediaType
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaTypeOrExtent> .
+<http://purl.org/dc/terms/MediaType> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#comment> "A file format or physical medium."@en .
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/MediaType> <http://www.w3.org/2000/01/rdf-schema#label> "Media Type"@en .
+# 
+# http://purl.org/dc/terms/MediaTypeOrExtent
+<http://purl.org/dc/terms/MediaTypeOrExtent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/MediaTypeOrExtent> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
 # http://purl.org/dc/terms/PeriodOfTime
 <http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> .
@@ -974,12 +1272,21 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#label> "Period of Time"@en .
 # 
+# http://purl.org/dc/terms/PhysicalMedium
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/PhysicalMedium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/MediaType> .
+<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/description> "Examples include paper, canvas, or DVD."@en .
+<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
 # http://purl.org/dc/terms/RightsStatement
 <http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/dc/terms/RightsStatement> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#comment> "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en .
 <http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
 <http://purl.org/dc/terms/RightsStatement> <http://www.w3.org/2000/01/rdf-schema#label> "Rights Statement"@en .
+# 
+# http://purl.org/linked-data/cube#Observation
+<http://purl.org/linked-data/cube#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://schema.org/CreativeWork
 <http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -994,8 +1301,21 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # http://www.w3.org/2000/01/rdf-schema#Resource
 <http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Collection> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/02/skos/core> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Concept Scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2004/02/skos/core#example> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept scheme may be defined to include concepts from different sources."@en .
 # 
 # http://www.w3.org/2006/vcard/ns#Agent
 <http://www.w3.org/2006/vcard/ns#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1016,7 +1336,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://www.w3.org/2008/05/skos#Concept> <http://purl.org/dc/terms/issued> "2008-05-xx" .
 <http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2008/05/skos> .
 <http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept"@en .
-<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2008/05/skos#definition> "An abstract idea or notion; a unit of thought."@en .
+<http://www.w3.org/2008/05/skos#Concept> <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
 # 
 # http://www.w3.org/2008/05/skos#ConceptScheme
 <http://www.w3.org/2008/05/skos#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1025,7 +1345,7 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
 <http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en .
-<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). "@da .
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog)."@da .
 <http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es .
 <http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it .
 <http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/2000/01/rdf-schema#comment> "Une collection élaborée de métadonnées sur les jeux de données"@fr .
@@ -1063,10 +1383,10 @@ _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 # 
 # http://www.w3.org/ns/dcat#CatalogRecord
 <http://www.w3.org/ns/dcat#CatalogRecord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/dcat#CatalogRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/dcat#Resource> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/primaryTopic> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/dcat#CatalogRecord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/primaryTopic> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/ns/dcat#Resource> .
 # 
 # http://www.w3.org/ns/dcat#DataService
 <http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1152,6 +1472,30 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.w3.org/ns/dcat#Resource> <http://www.w3.org/2004/02/skos/core#scopeNote> "dcat:Resource je bod pro rozšíření umožňující definici různých druhů katalogů. Další podtřídy lze definovat v profilech DCAT či aplikacích pro katalogy zdrojů jiných druhů."@cs .
 <http://www.w3.org/ns/dcat#Resource> <http://www.w3.org/2004/02/skos/core#scopeNote> "dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un'applicazione per cataloghi di altri tipi di risorse."@it .
 # 
+# http://www.w3.org/ns/dqv#Category
+<http://www.w3.org/ns/dqv#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dqv#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/dqv#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a group of quality dimensions in which a common type of information is used as quality indicator."@en .
+<http://www.w3.org/ns/dqv#Category> <http://www.w3.org/2000/01/rdf-schema#label> "Category"@en .
+# 
+# http://www.w3.org/ns/dqv#Dimension
+<http://www.w3.org/ns/dqv#Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dqv#Dimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/dqv#Dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents criteria relevant for assessing quality. Each quality dimension must have one or more metric to measure it. A dimension is linked with a category using the dqv:inCategory property."@en .
+<http://www.w3.org/ns/dqv#Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension"@en .
+# 
+# http://www.w3.org/ns/dqv#Metric
+<http://www.w3.org/ns/dqv#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dqv#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a standard to measure a quality dimension. An observation (instance of dqv:QualityMeasurement) assigns a value in a given unit to a Metric."@en .
+<http://www.w3.org/ns/dqv#Metric> <http://www.w3.org/2000/01/rdf-schema#label> "Metric"@en .
+# 
+# http://www.w3.org/ns/dqv#QualityMeasurement
+<http://www.w3.org/ns/dqv#QualityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dqv#QualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/linked-data/cube#Observation> .
+<http://www.w3.org/ns/dqv#QualityMeasurement> <http://purl.org/vocab/vann/usageNote> "The unit of measure in quality measurement should be specified through the property sdmx-attribute:unitMeasure as recommended by RDF Data Cube. The Ontology of units of Measure (OM) by Rijgersberg Et Al provides a list of HTTP dereferenceable unit of measures, which can be exploited as values for sdmx-attribute:unitMeasure."@en .
+<http://www.w3.org/ns/dqv#QualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the evaluation of a given dataset (or dataset distribution) against a specific quality metric."@en .
+<http://www.w3.org/ns/dqv#QualityMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Quality Measurement"@en .
+# 
 # http://www.w3.org/ns/odrl/2/Agreement
 <http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/odrl/2/Agreement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Policy> .
@@ -1177,33 +1521,33 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.w3.org/ns/odrl/2/Party
 <http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Organization> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Individual> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Agent> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Person> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid33 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Organization> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/Person> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Agent> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Individual> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/vcard/ns#Organization> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Agent> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Organization> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
 <http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#label> "Party"@en .
 <http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2004/02/skos/core#definition> "An entity or a collection of entities that undertake Roles in a Rule."@en .
@@ -1272,18 +1616,6 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://xmlns.com/foaf/0.1/OnlineAccount> <http://www.w3.org/2000/01/rdf-schema#label> "Online Account" .
 <http://xmlns.com/foaf/0.1/OnlineAccount> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
-# http://xmlns.com/foaf/0.1/OnlineChatAccount
-<http://xmlns.com/foaf/0.1/OnlineChatAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/OnlineChatAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/OnlineAccount> .
-# 
-# http://xmlns.com/foaf/0.1/OnlineEcommerceAccount
-<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/OnlineAccount> .
-# 
-# http://xmlns.com/foaf/0.1/OnlineGamingAccount
-<http://xmlns.com/foaf/0.1/OnlineGamingAccount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/OnlineGamingAccount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/OnlineAccount> .
-# 
 # http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -1305,8 +1637,13 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/sedimark/ontology#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/sedimark/ontology#Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
 # 
+# https://w3id.org/sedimark/ontology#AssetProvision
+<https://w3id.org/sedimark/ontology#AssetProvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sedimark/ontology#AssetProvision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Distribution> .
+# 
 # https://w3id.org/sedimark/ontology#AssetQuality
 <https://w3id.org/sedimark/ontology#AssetQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/sedimark/ontology#AssetQuality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dqv#QualityMeasurement> .
 <https://w3id.org/sedimark/ontology#AssetQuality> <http://purl.org/dc/elements/1.1/description> "Quality metrics associated with Asset"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # https://w3id.org/sedimark/ontology#Offering
@@ -1320,8 +1657,7 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/sedimark/ontology#Participant
 <https://w3id.org/sedimark/ontology#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/sedimark/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Organization> .
-<https://w3id.org/sedimark/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<https://w3id.org/sedimark/ontology#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Party> .
 # 
 # https://w3id.org/sedimark/ontology#Self-Listing
 <https://w3id.org/sedimark/ontology#Self-Listing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1353,176 +1689,359 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-# https://creativecommons.org/licenses/by/4.0/
-<https://creativecommons.org/licenses/by/4.0/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://creativecommons.org/licenses/by/4.0/> <http://www.w3.org/2000/01/rdf-schema#label> "ontology license"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# http://www.w3.org/ns/dqv#precision
+<http://www.w3.org/ns/dqv#precision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/ns/dqv#precision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+# 
+# https://creativecommons.org/licenses/by/4.0
+<https://creativecommons.org/licenses/by/4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://creativecommons.org/licenses/by/4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+<https://creativecommons.org/licenses/by/4.0> <http://www.w3.org/2000/01/rdf-schema#label> "ontology license"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://sedimark.eglobalmark.com/connector/self-listing/homepage
+<https://sedimark.eglobalmark.com/connector/self-listing/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/vocab#DataAsset> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://www.w3.org/ns/dcat#theme> <https://sedimark.eu/ecosystem/theme#hydrometry> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <https://w3id.org/sedimark/ontology#hasAssetQuality> <https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <https://w3id.org/sedimark/ontology#isProvidedBy> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/issued> "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/modified> "2024-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/6299418/> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> <http://purl.org/dc/terms/temporal> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+_:genid42 <http://www.w3.org/ns/dcat#endDate> "2024-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid42 <http://www.w3.org/ns/dcat#startDate> "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/vocab#DataAsset> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://www.w3.org/ns/dcat#theme> <https://sedimark.eu/ecosystem/theme#hydrometry> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <https://w3id.org/sedimark/ontology#hasAssetQuality> <https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <https://w3id.org/sedimark/ontology#isProvidedBy> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/created> "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/modified> "2024-05-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/6299418/> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> <http://purl.org/dc/terms/temporal> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+_:genid43 <http://www.w3.org/ns/dcat#endDate> "2024-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid43 <http://www.w3.org/ns/dcat#startDate> "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/vocab#DataAsset> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/created> "2024-01-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/modified> "2024-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/12319223/> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> <http://purl.org/dc/terms/temporal> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+_:genid44 <http://www.w3.org/ns/dcat#endDate> "2024-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid44 <http://www.w3.org/ns/dcat#startDate> "2024-01-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/vocab#DataAsset> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/created> "2024-01-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/modified> "2024-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/12319223/> .
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> <http://purl.org/dc/terms/temporal> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+_:genid45 <http://www.w3.org/ns/dcat#endDate> "2024-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid45 <http://www.w3.org/ns/dcat#startDate> "2024-01-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Self-Listing> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://xmlns.com/foaf/0.1/homepage> <https://sedimark.eglobalmark.com/connector/self-listing/homepage> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <https://w3id.org/sedimark/ontology#hasOffering> <https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <https://w3id.org/sedimark/ontology#hasOffering> <https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://purl.org/dc/terms/description> "Self-listing for Offerings reflecting data from Hydrometric Stations in France sensing water level (H) and flow (Q) observations, banked every 5 to 60 minutes" .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/EGM> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/3017382/> .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://purl.org/dc/terms/title> "Hydrometric Stations in France" .
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrometric Stations in France" .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Offering> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <https://w3id.org/sedimark/ontology#hasAsset> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <https://w3id.org/sedimark/ontology#hasAsset> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://purl.org/dc/terms/description> "Offering for hydrometric data from Hydrometric Station 0001. Assets include water level dataset and water flow dataset." .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/EGM> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://purl.org/dc/terms/title> "Hydrometric Station 0001" .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrometric Station 0001" .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Offering> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <https://w3id.org/sedimark/ontology#hasAsset> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <https://w3id.org/sedimark/ontology#hasAsset> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://purl.org/dc/terms/description> "Offering for hydrometric data from Hydrometric Station 0002. Assets include water level dataset and water flow dataset." .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/EGM> .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://purl.org/dc/terms/title> "Hydrometric Station 0001" .
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> <http://www.w3.org/2000/01/rdf-schema#label> "Hydrometric Station 0001" .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/participant-egm
+<https://sedimark.eglobalmark.com/ecosystem/participant-egm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/participant-egm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Participant> .
+<https://sedimark.eglobalmark.com/ecosystem/participant-egm> <https://w3id.org/sedimark/ontology#hasSelf-Listing> <https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> .
+<https://sedimark.eglobalmark.com/ecosystem/participant-egm> <http://purl.org/dc/terms/description> "EGM is an SME based in Nantes and Sophia-Antipolis (France) which creates, produces and provides scalable and interoperable solutions, to collect and exchange information connecting the physical world to the digital world, in order to allow private and public actors to optimize and improve their services.\nEGM supports its clients thanks to its permanent innovation approach and its operational know-how of the data life cycle, from acquisition to data processing, including edge processing, IoT networks, semantics and data science." .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetProvision> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> <http://www.w3.org/ns/dcat#byteSize> "1000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> <http://purl.org/dc/terms/title> "NGSI-LD distribution of hydrometric water flow data for station 0001" .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetProvision> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> <http://www.w3.org/ns/dcat#byteSize> "2000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> <http://purl.org/dc/terms/title> "NGSI-LD distribution of hydrometric water level data for station 0001" .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetProvision> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow> <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow> <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow> <http://www.w3.org/ns/dcat#byteSize> "5000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetProvision> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level> <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level> <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> .
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level> <http://www.w3.org/ns/dcat#byteSize> "6000"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetQuality> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy> <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy> <http://www.w3.org/ns/dqv#isMeasurementOf> <https://sedimark.eu/ecosystem/metric#accuracy-values> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy> <http://www.w3.org/ns/dqv#value> "90.1"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetQuality> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> <http://www.w3.org/ns/dqv#isMeasurementOf> <https://sedimark.eu/ecosystem/metric#completeness-values> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> <http://www.w3.org/ns/dqv#value> "0.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy> <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> .
+# 
+# https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetQuality> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> <http://www.w3.org/ns/dqv#isMeasurementOf> <https://sedimark.eu/ecosystem/metric#completeness-values> .
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> <http://www.w3.org/ns/dqv#value> "0.75"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://sedimark.eglobalmark.com/ngsi-ld/v1/entities
+<https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> .
+<https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> <http://www.w3.org/2000/01/rdf-schema#label> "hydrometric-ngsi-ld-broker" .
+# 
+# https://sedimark.eu/ecosystem/themes
+<https://sedimark.eu/ecosystem/themes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/themes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://sedimark.eu/ecosystem/themes> <http://www.w3.org/2004/02/skos/core#prefLabel> "A set of domains to classify Offerings and Assets" .
+# 
+# https://sedimark.eu/ecosystem/metric#accuracy-values
+<https://sedimark.eu/ecosystem/metric#accuracy-values> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/metric#accuracy-values> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<https://sedimark.eu/ecosystem/metric#accuracy-values> <http://www.w3.org/ns/dqv#inCategory> <https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> .
+# 
+# https://sedimark.eu/ecosystem/metric#completeness-values
+<https://sedimark.eu/ecosystem/metric#completeness-values> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/metric#completeness-values> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<https://sedimark.eu/ecosystem/metric#completeness-values> <http://www.w3.org/ns/dqv#inDimension> <https://sedimark.eu/ecosystem/quality/dimension#completeness> .
+<https://sedimark.eu/ecosystem/metric#completeness-values> <http://www.w3.org/2004/02/skos/core#definition> "Ratio between the real values and null values in data points" .
+# 
+# https://sedimark.eu/ecosystem/quality/category#inherentDataQuality
+<https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+# 
+# https://sedimark.eu/ecosystem/quality/dimension#accuracy
+<https://sedimark.eu/ecosystem/quality/dimension#accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/quality/dimension#accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<https://sedimark.eu/ecosystem/quality/dimension#accuracy> <http://www.w3.org/2004/02/skos/core#definition> "Percentage of data points that are found accurate" .
+<https://sedimark.eu/ecosystem/quality/dimension#accuracy> <http://www.w3.org/2004/02/skos/core#prefLabel> "Accuracy" .
+# 
+# https://sedimark.eu/ecosystem/quality/dimension#completeness
+<https://sedimark.eu/ecosystem/quality/dimension#completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/quality/dimension#completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<https://sedimark.eu/ecosystem/quality/dimension#completeness> <http://www.w3.org/ns/dqv#inCategory> <https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> .
+<https://sedimark.eu/ecosystem/quality/dimension#completeness> <http://www.w3.org/2004/02/skos/core#definition> "Completeness refers to the degree to which all valid data points are present in a particular data asset" .
+# 
+# https://sedimark.eu/ecosystem/theme#hydrometry
+<https://sedimark.eu/ecosystem/theme#hydrometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.eu/ecosystem/theme#hydrometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://sedimark.eu/ecosystem/theme#hydrometry> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrometry" .
 # 
 # https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png
 <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/CVSSP
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Participant> .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://xmlns.com/foaf/0.1/account> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account> .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://xmlns.com/foaf/0.1/homepage> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://xmlns.com/foaf/0.1/openid> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile> .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <https://w3id.org/sedimark/ontology#hasSelf-Listing> <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://xmlns.com/foaf/0.1/name> ""@en .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <https://purl.org/dc/terms/description> ""@en .
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> <http://purl.org/dc/terms/description> ""^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-# 
 # https://sedimark.surrey.ac.uk/ecosystem/agreement-001
 <https://sedimark.surrey.ac.uk/ecosystem/agreement-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://sedimark.surrey.ac.uk/ecosystem/agreement-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Agreement> .
-<https://sedimark.surrey.ac.uk/ecosystem/agreement-001> <https://w3id.org/sedimark/ontology#references> <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> .
+<https://sedimark.surrey.ac.uk/ecosystem/agreement-001> <https://w3id.org/sedimark/ontology#references> <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/vocab#DataAsset> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <https://w3id.org/sedimark/ontology#hasAssetQuality> <https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://purl.org/dc/elements/1.1/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://purl.org/dc/elements/1.1/description> "This dataset captures data from step counter on wearable smart watch for subject 001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://purl.org/dc/elements/1.1/identifier> "cvssp-livinglab-wearable-steps-001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://purl.org/dc/elements/1.1/title> "Steps Dataset for Subject 001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+# https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data
+<https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#OfferingContract> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/OnlineAccount> .
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account> <http://xmlns.com/foaf/0.1/accountName> ""@en .
+# https://sedimark.surrey.ac.uk/ecosystem/endpoint-description-wearable-001
+<https://sedimark.surrey.ac.uk/ecosystem/endpoint-description-wearable-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/endpoint-description-wearable-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+# https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Self-Listing> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/hasPart> <https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <https://w3id.org/sedimark/ontology#belongsTo> <https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <https://w3id.org/sedimark/ontology#hasOffering> <https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/description> "Self-listing for the ehealth-living-lab data provision"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/issued> "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/modified> "2024-01-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/rights> <http://creativecommons.org/licenses/by/4.0/legalcode> .
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> <http://purl.org/dc/terms/title> "E-health Living Lab"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Self-Listing> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/hasPart> <https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <https://w3id.org/sedimark/ontology#belongsTo> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <https://w3id.org/sedimark/ontology#hasOffering> <https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/description> "Self-listing for the ehealth-living-lab data provision"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/issued> "2024-01-01"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/language> "English"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/modified> "2024-01-02"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/rights> "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/" .
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> <http://purl.org/dc/terms/title> "E-health Living Lab"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# https://sedimark.surrey.ac.uk/ecosystem/location-ehealth-testbed-01
+<https://sedimark.surrey.ac.uk/ecosystem/location-ehealth-testbed-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/location-ehealth-testbed-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period
-<https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
-<https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> <http://www.w3.org/ns/dcat#temporalResolution> "P6H"^^<http://www.w3.org/2001/XMLSchema#duration> .
+# https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Offering> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://www.w3.org/ns/dcat#dataset> <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://xmlns.com/foaf/0.1/homepage> <https://www.surrey.ac.uk/centre-vision-speech-signal-processing> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <https://w3id.org/sedimark/ontology#hasAsset> <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <https://w3id.org/sedimark/ontology#hasOfferingContract> <https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^<http://www.w3.org/2001/XMLSchema#duration> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/created> "2024-01-01"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/description> "This offering provides data assets with data originating from wearable sensors on smart watches"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/isPartOf> <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/issued> "2024-01-02"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/language> "English"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nd/4.0/> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/temporal> <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> .
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> <http://purl.org/dc/terms/title> "Wearable data for Subject 001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/living-lab-01
-<https://sedimark.surrey.ac.uk/ecosystem/living-lab-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/living-lab-01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+# https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp
+<https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/OnlineAccount> .
+<https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> .
+<https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> <http://xmlns.com/foaf/0.1/accountName> "CVSSP Data Provider"@en .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/vocab#DataAsset> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <https://w3id.org/sedimark/ontology#hasAssetQuality> <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <http://purl.org/dc/elements/1.1/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <http://purl.org/dc/elements/1.1/description> "This dataset captures data from step counter on wearable smart watch for subject 001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <http://purl.org/dc/elements/1.1/identifier> "cvssp-livinglab-wearable-steps-001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> <http://purl.org/dc/elements/1.1/title> "Steps Dataset for Subject 001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Participant> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://xmlns.com/foaf/0.1/account> <https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://xmlns.com/foaf/0.1/homepage> <https://www.surrey.ac.uk/centre-vision-speech-signal-processing> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://xmlns.com/foaf/0.1/mbox> <mailto:t.elsaleh@surrey.ac.uk> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://xmlns.com/foaf/0.1/openid> <https://sedimark.surrey.ac.uk/openid?name=cvssp> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <https://w3id.org/sedimark/ontology#hasSelf-Listing> <https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://xmlns.com/foaf/0.1/name> "Centre for Vision, Speech and Signal Processing"@en .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://purl.org/dc/terms/description> "Research Centre at the University of Surrey, based in Guildford, UK.\nCritical-mass of AI expertise in Audio and Vision.\nAdvance research in AI and machine perception focusing on cross-disciplinary areas including creative technology, healthcare, robotics, security and data.\nApply AI/ML on real-world data in domains such as healthcare, captured from testbeds and living labs.\nSensory data analysis and contextual information extraction.\nExploit new technologies for societal and economic impact."@en .
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> <http://purl.org/dc/terms/title> "Centre for Vision, Speech and Signal Prcoessing" .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetQuality> .
+# https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning
+<https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+<https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning> <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^<http://www.w3.org/2001/XMLSchema#duration> .
+# 
+# https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetProvision> .
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities> .
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> .
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://purl.org/dc/elements/1.1/description> "Data Asset provision for Wearable Steps count for subject 001 from the ehealth living lab"@en .
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://purl.org/dc/terms/conformsTo> <https://forge.etsi.org/rep/cim/NGSI-LD/> .
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> <http://purl.org/dc/terms/title> "Steps 001 Provider"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count
+<https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#AssetQuality> .
 # 
 # https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue
 <https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LicenseDocument> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc> <http://purl.org/dc/terms/license> "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc> <http://purl.org/dc/terms/rights> "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc
+<https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LicenseDocument> .
+<https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc> <http://purl.org/dc/terms/license> "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc> <http://purl.org/dc/terms/rights> "This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.\nhttps://creativecommons.org/licenses/by-nd/4.0/"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/wearable-contract
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#OfferingContract> .
+# https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities
+<https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities> <http://www.w3.org/2000/01/rdf-schema#label> "ehealth-ngsi-ld-broker" .
 # 
-# https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/sedimark/ontology#Offering> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://www.w3.org/ns/dcat#dataset> <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://xmlns.com/foaf/0.1/homepage> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <https://w3id.org/sedimark/ontology#hasAsset> <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <https://w3id.org/sedimark/ontology#hasOfferingContract> <https://sedimark.surrey.ac.uk/ecosystem/wearable-contract> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://www.w3.org/ns/dcat#temporalResolution> "P6H"^^<http://www.w3.org/2001/XMLSchema#duration> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/created> "2024-01-01"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/description> "This offering provides data assets with data originating from wearable sensors on smart watches"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/isPartOf> <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/issued> "2024-01-02"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/language> "English"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/temporal> <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> .
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> <http://purl.org/dc/terms/title> "Wearable data for Subject 001"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# https://sedimark.surrey.ac.uk/openid?name=cvssp
+<https://sedimark.surrey.ac.uk/openid?name=cvssp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://sedimark.surrey.ac.uk/openid?name=cvssp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
 # 
-_:genid39 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid40 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid41 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid42 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid43 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid44 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid45 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid46 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid47 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid48 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid49 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid50 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid51 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid52 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid53 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid54 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid55 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid56 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid57 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid58 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid59 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid60 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid61 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid62 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid63 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid64 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid65 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid66 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid67 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid68 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid69 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid70 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid71 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid72 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid73 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid74 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid75 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid76 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid77 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid78 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid79 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid80 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid81 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid82 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid83 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid84 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid85 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid86 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid87 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid88 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid89 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid90 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid91 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid92 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid93 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid94 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid95 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid96 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid97 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid98 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid99 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
-_:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en .
+# https://www.iana.org/assignments/media-types/application/ld+json
+<https://www.iana.org/assignments/media-types/application/ld+json> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.iana.org/assignments/media-types/application/ld+json> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/MediaType> .
+# 
+# https://www.surrey.ac.uk/centre-vision-speech-signal-processing
+<https://www.surrey.ac.uk/centre-vision-speech-signal-processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.surrey.ac.uk/centre-vision-speech-signal-processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+# 
+# mailto:t.elsaleh@surrey.ac.uk
+<mailto:t.elsaleh@surrey.ac.uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+_:genid46 <http://www.w3.org/ns/dcat#endDate> "2024-05-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid46 <http://www.w3.org/ns/dcat#startDate> "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/PeriodOfTime> .
+_:genid47 <http://www.w3.org/ns/dcat#endDate> "2024-05-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid47 <http://www.w3.org/ns/dcat#startDate> "2024-01-10"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 # 
 # #################################################################
@@ -1542,8 +2061,6 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 # 
 <http://purl.org/dc/terms/DDC> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
-<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-# 
 <http://purl.org/dc/terms/Frequency> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 <http://purl.org/dc/terms/IMT> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -1562,10 +2079,6 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 # 
 <http://purl.org/dc/terms/MESH> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
-<http://purl.org/dc/terms/MediaType> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-# 
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
-# 
 <http://purl.org/dc/terms/MethodOfAccrual> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 <http://purl.org/dc/terms/MethodOfInstruction> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -1573,9 +2086,6 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 <http://purl.org/dc/terms/NLM> <http://purl.org/dc/terms/issued> "2005-06-13"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 <http://purl.org/dc/terms/Period> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
-# 
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/description> "Examples include paper, canvas, or DVD."@en .
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
 <http://purl.org/dc/terms/PhysicalResource> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
@@ -1624,6 +2134,13 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 <http://purl.org/dc/terms/bibliographicCitation> <http://purl.org/dc/terms/description> "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."@en .
 <http://purl.org/dc/terms/bibliographicCitation> <http://purl.org/dc/terms/issued> "2003-02-15"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
+<http://purl.org/dc/terms/creator> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> .
+<http://purl.org/dc/terms/creator> <http://purl.org/dc/terms/description> "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en .
+<http://purl.org/dc/terms/creator> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity responsible for making the resource."@en .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "Creator"@en .
+# 
 <http://purl.org/dc/terms/date> <http://purl.org/dc/terms/description> "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en .
 <http://purl.org/dc/terms/date> <http://purl.org/dc/terms/issued> "2008-01-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 # 
@@ -1655,6 +2172,12 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 # 
 <http://purl.org/dc/terms/isVersionOf> <http://purl.org/dc/terms/description> "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."@en .
 <http://purl.org/dc/terms/isVersionOf> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+# 
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en .
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/issued> "2000-07-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of formal issuance of the resource."@en .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "Date Issued"@en .
 # 
 <http://purl.org/dc/terms/license> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/LicenseDocument> .
 <http://purl.org/dc/terms/license> <http://purl.org/dc/terms/description> "Recommended practice is to identify the license document with a URI. If this is not possible or feasible, a literal value that identifies the license may be provided."@en .
@@ -1695,4 +2218,4 @@ _:genid100 <http://www.w3.org/2000/01/rdf-schema#comment> "This is an entity pos
 <http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
 <http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#label> "sample"@en .
 # 
-# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

@@ -4,17 +4,26 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/sedimark/ontology#> .
+@base <https://w3id.org/sedimark/ontology> .
 
-<https://w3id.org/sedimark/ontology#> rdf:type owl:Ontology ;
-                                       <http://purl.org/dc/elements/1.1/description> """The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.
+<https://w3id.org/sedimark/ontology> rdf:type owl:Ontology ;
+                                      <http://purl.org/dc/elements/1.1/description> """The Marketplace Information Model is an RDFS/OWL-ontology covering the fundamental concepts of SEDIMARK needed for the registration of participants and the discovery and exchange of offerings and assets. This model establishes a common framework to ensure interoperability within a SEDIMARK-based Marketplace.
 
 This model is supported by existing proposals by similar initiatives and is built upon well-known ontologies such as Data Catalog vocabulary (DCAT), Open Digital Rights Language (ODRL), Friend Of A Friend (FOAF) or the Dublin Core Terms (DCT). In particular, the model has its foundations in the proposal shared by the International Data Spaces Protocol, to try to be compatible as much compatible as possible with such an initiative."""^^rdfs:Literal ;
-                                       <http://purl.org/dc/elements/1.1/title> "SEDIMARK Marketplace Ontology"^^rdfs:Literal ;
-                                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                       <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^rdfs:Literal ;
-                                       <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-ont"^^rdfs:Literal ;
-                                       <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> .
+                                      <http://purl.org/dc/elements/1.1/title> "SEDIMARK Marketplace Information Model - Ontology"^^rdfs:Literal ;
+                                      <http://purl.org/dc/terms/creator> "Jorge Lanza (Universidad de Cantabria)" ,
+                                                                         "Juan Ramon Santana (Universidad de Cantabria)" ,
+                                                                         "Luis Sanchez (Universidad de Cantabria)" ,
+                                                                         "Pablo Sotres (Universidad de Cantabria)" ,
+                                                                         "Tarek Elsaleh (University of Surrey)" ;
+                                      <http://purl.org/dc/terms/issued> "2023-12-31"@en ;
+                                      <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0> ;
+                                      <http://purl.org/dc/terms/publisher> "SEDIMARK - SEcure Decentralised Intelligent Data MARKetplace"^^rdfs:Literal ;
+                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "sedi-o"^^rdfs:Literal ;
+                                      <http://schema.org/funding> "https://cordis.europa.eu/project/id/101070074"@en ,
+                                                                  "https://gtr.ukri.org/projects?ref=10043699"@en ;
+                                      <http://schema.org/logo> <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> ;
+                                      <http://schema.org/url> "https://sedimark.eu/"@en .
 
 #################################################################
 #    Annotation properties
@@ -165,12 +174,6 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty ;
-                                   <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> ;
-                                   <http://purl.org/dc/terms/description> "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
-                                   <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
-                                   rdfs:comment "An entity responsible for making the resource."@en ;
-                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                   rdfs:label "Creator"@en ;
                                    rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/creator> ,
                                                       <http://purl.org/dc/terms/contributor> .
 
@@ -250,11 +253,6 @@ This model is supported by existing proposals by similar initiatives and is buil
 
 ###  http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty ;
-                                  <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
-                                  <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
-                                  rdfs:comment "Date of formal issuance of the resource."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                  rdfs:label "Date Issued"@en ;
                                   rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/date> ;
                                   rdfs:range rdfs:Literal .
 
@@ -399,8 +397,24 @@ This model is supported by existing proposals by similar initiatives and is buil
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/funding
+<http://schema.org/funding> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/image
+<http://schema.org/image> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/logo
 <http://schema.org/logo> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/url
+<http://schema.org/url> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
@@ -423,16 +437,20 @@ This model is supported by existing proposals by similar initiatives and is buil
 <http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#note
 <http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2008/05/skos#definition
-<http://www.w3.org/2008/05/skos#definition> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/ns/prov#category
@@ -481,6 +499,39 @@ xsd:duration rdf:type rdfs:Datatype .
                                    <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
 
 
+###  http://purl.org/eis/vocab/daq#hasDimension
+<http://purl.org/eis/vocab/daq#hasDimension> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://www.w3.org/ns/dqv#inCategory> .
+
+
+###  http://purl.org/eis/vocab/daq#hasMetric
+<http://purl.org/eis/vocab/daq#hasMetric> rdf:type owl:ObjectProperty .
+
+[ owl:inverseOf <http://purl.org/eis/vocab/daq#hasMetric> ;
+   rdfs:subPropertyOf <http://www.w3.org/ns/dqv#inDimension>
+ ] .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                               rdfs:label "is in scheme"@en ;
+                                               <http://www.w3.org/2004/02/skos/core#definition> "Relates a resource (for example a concept) to a concept scheme in which it is included."@en ;
+                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept may be a member of more than one concept scheme."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+<http://www.w3.org/2004/02/skos/core#topConceptOf> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                   rdfs:range <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
 ###  http://www.w3.org/2008/05/skos#hasTopConcept
 <http://www.w3.org/2008/05/skos#hasTopConcept> rdf:type owl:ObjectProperty ;
                                                rdfs:range <http://www.w3.org/2008/05/skos#Concept> .
@@ -518,9 +569,16 @@ xsd:duration rdf:type rdfs:Datatype .
                                    rdfs:label "status"@en .
 
 
+###  http://www.w3.org/ns/dcat#accessService
+<http://www.w3.org/ns/dcat#accessService> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/ns/dcat#accessURL
 <http://www.w3.org/ns/dcat#accessURL> rdf:type owl:ObjectProperty ;
-                                      rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
+                                      rdfs:domain <http://www.w3.org/ns/dcat#Distribution> ;
+                                      owl:propertyChainAxiom ( <http://www.w3.org/ns/dcat#accessService>
+                                                               <http://www.w3.org/ns/dcat#endpointURL>
+                                                             ) .
 
 
 ###  http://www.w3.org/ns/dcat#catalog
@@ -551,6 +609,66 @@ xsd:duration rdf:type rdfs:Datatype .
                                         rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
 
 
+###  http://www.w3.org/ns/dcat#endpointDescription
+<http://www.w3.org/ns/dcat#endpointDescription> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.w3.org/ns/dcat#DataService> ;
+                                                rdfs:comment "A description of the service end-point, including its operations, parameters etc."@en ,
+                                                             "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da ,
+                                                             "Popis přístupového bodu služby včetně operací, parametrů apod."@cs ,
+                                                             "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc."@es ,
+                                                             "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it ;
+                                                rdfs:label "descripción del end-point del servicio"@es ,
+                                                           "description of service end-point"@en ,
+                                                           "descrizione dell'endpoint del servizio"@it ,
+                                                           "endpointbeskrivelse"@da ,
+                                                           "popis přístupového bodu služby"@cs ;
+                                                <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en ,
+                                                                                                 "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                                 "Nueva propiedad agregada en DCAT 2.0."@en ,
+                                                                                                 "Nuova proprietà in DCAT 2.0."@it ,
+                                                                                                 "Ny egenskab i DCAT 2.0."@da ;
+                                                <http://www.w3.org/2004/02/skos/core#definition> "A description of the service end-point, including its operations, parameters etc."@en ,
+                                                                                                 "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da ,
+                                                                                                 "Popis přístupového bodu služby včetně operací, parametrů apod."@cs ,
+                                                                                                 "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc.."@es ,
+                                                                                                 "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it ;
+                                                <http://www.w3.org/2004/02/skos/core#scopeNote> "An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description, an OGC GetCapabilities response, a SPARQL Service Description, an OpenSearch or WSDL document, a Hydra API description, else in text or some other informal mode if a formal representation is not possible."@en ,
+                                                                                                "En beskrivelse af et endpoint kan udtrykkes i et maskinlæsbart format, såsom OpenAPI (Swagger)-beskrivelser, et OGC GetCapabilities svar, en SPARQL tjenestebeskrivelse, en OpenSearch- eller et WSDL-dokument, en Hydra-API-beskrivelse, eller i tekstformat eller i et andet uformelt format, hvis en formel repræsentation ikke er mulig."@da ,
+                                                                                                "Endpointbeskrivelsen giver specifikke oplysninger om den konkrete endpointinstans, mens dct:conformsTo anvendes til at indikere den overordnede standard eller specifikation som endpointet er i overensstemmelse med."@da ,
+                                                                                                "La descripción del endpoint brinda detalles específicos de la instancia del endpoint, mientras que dct:conformsTo se usa para indicar el estándar general o especificación que implementa el endpoint."@es ,
+                                                                                                "La descrizione dell'endpoint fornisce dettagli specifici dell'istanza dell'endpoint reale, mentre dct:conformsTo viene utilizzato per indicare lo standard o le specifiche implementate dall'endpoint."@it ,
+                                                                                                "Popis přístupového bodu dává specifické detaily jeho konkrétní instance, zatímco dct:conformsTo indikuje obecný standard či specifikaci kterou přístupový bod implementuje."@cs ,
+                                                                                                "Popis přístupového bodu může být vyjádřen ve strojově čitelné formě, například jako popis OpenAPI (Swagger), odpověď služby OGC getCapabilities, pomocí slovníku SPARQL Service Description, jako OpenSearch či WSDL document, jako popis API dle slovníku Hydra, a nebo textově nebo jiným neformálním způsobem, pokud není možno použít formální reprezentaci."@cs ,
+                                                                                                "The endpoint description gives specific details of the actual endpoint instance, while dct:conformsTo is used to indicate the general standard or specification that the endpoint implements."@en ,
+                                                                                                "Una descripción del endpoint del servicio puede expresarse en un formato que la máquina puede interpretar, tal como una descripción basada en OpenAPI (Swagger), una respuesta OGC GetCapabilities, una descripción de un servicio SPARQL, un documento OpenSearch o WSDL, una descripción con la Hydra API, o en texto u otro modo informal si la representación formal no es posible."@es ,
+                                                                                                "Una descrizione dell'endpoint può essere espressa in un formato leggibile dalla macchina, come una descrizione OpenAPI (Swagger), una risposta GetCapabilities OGC, una descrizione del servizio SPARQL, un documento OpenSearch o WSDL, una descrizione API Hydra, o con del testo o qualche altra modalità informale se una rappresentazione formale non è possibile."@it .
+
+
+###  http://www.w3.org/ns/dcat#endpointURL
+<http://www.w3.org/ns/dcat#endpointURL> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://www.w3.org/ns/dcat#DataService> ;
+                                        rdfs:range rdfs:Resource ;
+                                        rdfs:comment "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs ,
+                                                     "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it ,
+                                                     "La posición raíz o end-point principal del servicio (una IRI web)."@es ,
+                                                     "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da ,
+                                                     "The root location or primary endpoint of the service (a web-resolvable IRI)."@en ;
+                                        rdfs:label "end-point del servicio"@es ,
+                                                   "end-point del servizio"@it ,
+                                                   "přístupový bod služby"@cs ,
+                                                   "service end-point"@en ,
+                                                   "tjenesteendpoint"@da ;
+                                        <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en ,
+                                                                                         "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                         "Nueva propiedad agregada en DCAT 2.0."@es ,
+                                                                                         "Nuova proprietà in DCAT 2.0."@it ;
+                                        <http://www.w3.org/2004/02/skos/core#definition> "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs ,
+                                                                                         "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it ,
+                                                                                         "La posición raíz o end-point principal del servicio (una IRI web)."@es ,
+                                                                                         "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da ,
+                                                                                         "The root location or primary endpoint of the service (a web-resolvable IRI)."@en .
+
+
 ###  http://www.w3.org/ns/dcat#mediaType
 <http://www.w3.org/ns/dcat#mediaType> rdf:type owl:ObjectProperty ;
                                       rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
@@ -571,15 +689,125 @@ xsd:duration rdf:type rdfs:Datatype .
                                    rdfs:domain <http://www.w3.org/ns/dcat#Catalog> .
 
 
+###  http://www.w3.org/ns/dcat#servesDataset
+<http://www.w3.org/ns/dcat#servesDataset> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <http://www.w3.org/ns/dcat#DataService> ;
+                                          rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                                          rdfs:comment "A collection of data that this DataService can distribute."@en ,
+                                                       "En samling af data som denne datatjeneste kan distribuere."@da ,
+                                                       "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs ,
+                                                       "Una colección de datos que este Servicio de Datos puede distribuir."@es ,
+                                                       "Una raccolta di dati che questo DataService può distribuire."@it ;
+                                          rdfs:label "datatjeneste for datasæt"@da ,
+                                                     "poskytuje datovou sadu"@cs ,
+                                                     "provee conjunto de datos"@es ,
+                                                     "serve set di dati"@it ,
+                                                     "serves dataset"@en ;
+                                          <http://www.w3.org/2004/02/skos/core#altLabel> "distribuerer"@da ,
+                                                                                         "ekspederer"@da ,
+                                                                                         "udstiller"@da ;
+                                          <http://www.w3.org/2004/02/skos/core#changeNote> "New property in DCAT 2.0."@en ,
+                                                                                           "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                           "Nueva propiedad agregada en DCAT 2.0."@es ,
+                                                                                           "Nuova proprietà in DCAT 2.0."@it ;
+                                          <http://www.w3.org/2004/02/skos/core#definition> "A collection of data that this DataService can distribute."@en ,
+                                                                                           "En samling af data som denne datatjeneste kan distribuere."@da ,
+                                                                                           "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs ,
+                                                                                           "Una colección de datos que este Servicio de Datos puede distribuir."@es ,
+                                                                                           "Una raccolta di dati che questo DataService può distribuire."@it .
+
+
 ###  http://www.w3.org/ns/dcat#service
 <http://www.w3.org/ns/dcat#service> rdf:type owl:ObjectProperty ;
                                     rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> ;
                                     rdfs:domain <http://www.w3.org/ns/dcat#Catalog> .
 
 
+###  http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> rdf:type owl:ObjectProperty ;
+                                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                  rdfs:comment "A main category of the resource. A resource can have multiple themes."@en ,
+                                               "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da ,
+                                               "Hlavní téma zdroje. Zdroj může mít více témat."@cs ,
+                                               "La categoria principale della risorsa. Una risorsa può avere più temi."@it ,
+                                               "La categoría principal del recurso. Un recurso puede tener varios temas."@es ,
+                                               "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr ,
+                                               "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el ,
+                                               "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar ,
+                                               "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja ;
+                                  rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+                                  rdfs:label "emne"@da ,
+                                             "tema"@es ,
+                                             "tema"@it ,
+                                             "theme"@en ,
+                                             "thème"@fr ,
+                                             "téma"@cs ,
+                                             "Θέμα"@el ,
+                                             "التصنيف"@ar ,
+                                             "テーマ/カテゴリー"@ja ;
+                                  <http://www.w3.org/2004/02/skos/core#altLabel> "tema"@da ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "A main category of the resource. A resource can have multiple themes."@en ,
+                                                                                   "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da ,
+                                                                                   "Hlavní téma zdroje. Zdroj může mít více témat."@cs ,
+                                                                                   "La categoria principale della risorsa. Una risorsa può avere più temi."@it ,
+                                                                                   "La categoría principal del recurso. Un recurso puede tener varios temas."@es ,
+                                                                                   "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr ,
+                                                                                   "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el ,
+                                                                                   "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar ,
+                                                                                   "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja ;
+                                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Status: English Definition text modified by DCAT revision team, all except for Italian and Czech translations are pending."@en ;
+                                  <http://www.w3.org/2004/02/skos/core#scopeNote> "El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo."@es ,
+                                                                                  "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo."@it ,
+                                                                                  "Sada instancí třídy skos:Concept použitá pro kategorizaci zdrojů je organizována do schématu konceptů skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy."@cs ,
+                                                                                  "Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget."@da ,
+                                                                                  "The set of skos:Concepts used to categorize the resources are organized in a skos:ConceptScheme describing all the categories and their relations in the catalog."@en ,
+                                                                                  "Un ensemble de skos:Concepts utilisés pour catégoriser les ressources sont organisés en un skos:ConceptScheme décrivant toutes les catégories et ses relations dans le catalogue."@fr ,
+                                                                                  "Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο."@el ,
+                                                                                  "データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。"@ja .
+
+
 ###  http://www.w3.org/ns/dcat#themeTaxonomy
 <http://www.w3.org/ns/dcat#themeTaxonomy> rdf:type owl:ObjectProperty ;
                                           rdfs:domain <http://www.w3.org/ns/dcat#Catalog> .
+
+
+###  http://www.w3.org/ns/dqv#computedOn
+<http://www.w3.org/ns/dqv#computedOn> rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf <http://www.w3.org/ns/dqv#hasQualityMeasurement> ;
+                                      rdfs:domain <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+                                      rdfs:range rdfs:Resource ;
+                                      rdfs:comment "Refers to the resource (e.g., a dataset, a linkset, a graph, a set of triples) on which the quality measurement is performed. In the DQV context, this property is generally expected to be used in statements in which objects are instances of dcat:Dataset or dcat:Distribution."@en ;
+                                      rdfs:label "computed on"@en .
+
+
+###  http://www.w3.org/ns/dqv#hasQualityMeasurement
+<http://www.w3.org/ns/dqv#hasQualityMeasurement> rdf:type owl:ObjectProperty ;
+                                                 rdfs:range <http://www.w3.org/ns/dqv#QualityMeasurement> .
+
+
+###  http://www.w3.org/ns/dqv#inCategory
+<http://www.w3.org/ns/dqv#inCategory> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://www.w3.org/ns/dqv#Dimension> ;
+                                      rdfs:range <http://www.w3.org/ns/dqv#Category> ;
+                                      <http://purl.org/vocab/vann/usageNote> "Categories are meant to systematically organize dimensions. The Data Quality Vocabulary defines no specific cardinality constraints for dqv:inCategory, since distinct quality frameworks might have different perspectives over a dimension. A dimension may therefore be associated to more than one category. However, those who define new quality metrics should try to avoid this as much as possible and assign only one category to the dimensions they define."@en ;
+                                      rdfs:comment "Represents the category a dimension is grouped in."@en ;
+                                      rdfs:label "in category"@en .
+
+
+###  http://www.w3.org/ns/dqv#inDimension
+<http://www.w3.org/ns/dqv#inDimension> rdf:type owl:ObjectProperty ;
+                                       rdfs:range <http://www.w3.org/ns/dqv#Dimension> ;
+                                       <http://purl.org/vocab/vann/usageNote> "Dimensions are meant to systematically organize metrics, quality certificates and quality annotations. The Data Quality Vocabulary defines no specific cardinality constraints for dqv:inDimension, since distinct quality frameworks might have different perspectives over a metric. A metric may therefore be associated to more than one dimension. However, those who define new quality metrics should try to avoid this as much as possible and assign only one dimension to the metrics they define. More than one dimension can be indicated for each quality annotation or certificate."@en ;
+                                       rdfs:comment "Represents the dimensions a quality metric, certificate and annotation allow a measurement of."@en ;
+                                       rdfs:label "in dimension"@en .
+
+
+###  http://www.w3.org/ns/dqv#isMeasurementOf
+<http://www.w3.org/ns/dqv#isMeasurementOf> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://purl.org/linked-data/cube#Observation> ;
+                                           rdfs:range <http://www.w3.org/ns/dqv#Metric> ;
+                                           rdfs:comment "Indicates the metric being observed."@en ;
+                                           rdfs:label "is measurement of"@en .
 
 
 ###  http://www.w3.org/ns/odrl/2/action
@@ -926,6 +1154,18 @@ xsd:duration rdf:type rdfs:Datatype .
                  rdfs:range :Self-Listing .
 
 
+###  https://w3id.org/sedimark/ontology#isListedBy
+:isListedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Offering ;
+            rdfs:range :Self-Listing .
+
+
+###  https://w3id.org/sedimark/ontology#isProvidedBy
+:isProvidedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :Asset ;
+              rdfs:range :AssetProvision .
+
+
 ###  https://w3id.org/sedimark/ontology#references
 :references rdf:type owl:ObjectProperty ;
             rdfs:domain :Agreement ;
@@ -943,6 +1183,59 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://www.w3.org/ns/dcat#byteSize
 <http://www.w3.org/ns/dcat#byteSize> rdf:type owl:DatatypeProperty ;
                                      rdfs:domain <http://www.w3.org/ns/dcat#Distribution> .
+
+
+###  http://www.w3.org/ns/dcat#endDate
+<http://www.w3.org/ns/dcat#endDate> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://purl.org/dc/terms/PeriodOfTime> ;
+                                    rdfs:range rdfs:Literal ;
+                                    rdfs:label "data di fine"@it ,
+                                               "datum konce"@cs ,
+                                               "end date"@en ,
+                                               "fecha final"@es ,
+                                               "slutdato"@da ;
+                                    <http://www.w3.org/2004/02/skos/core#altLabel> "sluttidspunkt"@da ;
+                                    <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en ,
+                                                                                     "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                     "Nueva propiedad agregada en DCAT 2.0."@es ,
+                                                                                     "Nuova proprietà aggiunta in DCAT 2.0."@it ,
+                                                                                     "Ny egenskab i DCAT 2.0."@da ;
+                                    <http://www.w3.org/2004/02/skos/core#definition> "El fin del período."@es ,
+                                                                                     "Konec doby trvání."@cs ,
+                                                                                     "La fine del periodo."@it ,
+                                                                                     "Slutningen på perioden."@da ,
+                                                                                     "The end of the period."@en ;
+                                    <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el fin del período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear)."@es ,
+                                                                                    "La range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare la fine di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear)."@it ,
+                                                                                    "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé úrovně časového rozlišení pro specifikaci konce doby trvání. Ten může být kupříkladu vyjádřen datumem (xsd:date), datumem a časem (xsd:dateTime) či rokem (xsd:gYear)."@cs ,
+                                                                                    "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af slutdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear)."@da ,
+                                                                                    "The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the end of a period. E.g., it can be expressed with a date (xsd:date), a date and time (xsd:dateTime), or a year (xsd:gYear)."@en .
+
+
+###  http://www.w3.org/ns/dcat#startDate
+<http://www.w3.org/ns/dcat#startDate> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://purl.org/dc/terms/PeriodOfTime> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:label "data di inizio"@it ,
+                                                 "datum začátku"@cs ,
+                                                 "start date"@en ,
+                                                 "startdato"@da ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "starttidspunkt"@da ;
+                                      <http://www.w3.org/2004/02/skos/core#changeNote> "New property added in DCAT 2.0."@en ,
+                                                                                       "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ,
+                                                                                       "Nueva propiedad agregada en DCAT 2.0."@es ,
+                                                                                       "Nuova proprietà aggiunta in DCAT 2.0."@it ,
+                                                                                       "Ny egenskab tilføjet i DCAT 2.0."@da ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "El comienzo del período"@es ,
+                                                                                       "L'inizio del periodo"@it ,
+                                                                                       "Start på perioden."@da ,
+                                                                                       "The start of the period"@en ,
+                                                                                       "Začátek doby trvání"@cs ;
+                                      <http://www.w3.org/2004/02/skos/core#scopeNote> "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintos niveles de precisión temporal para especificar el comienzo de un período. Por ejemplo, puede expresarse como una fecha (xsd:date), una fecha y un tiempo (xsd:dateTime), o un año (xsd:gYear)."@es ,
+                                                                                      "Il range di questa proprietà è volutamente generico, con lo scopo di consentire diversi livelli di precisione temporale per specificare l'inizio di un periodo. Ad esempio, può essere espresso con una data (xsd:date), una data e un'ora (xsd:dateTime), o un anno (xsd:gYear)."@it ,
+                                                                                      "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé úrovně časového rozlišení pro specifikaci začátku doby trvání. Ten může být kupříkladu vyjádřen datumem (xsd:date), datumem a časem (xsd:dateTime) či rokem (xsd:gYear)."@cs ,
+                                                                                      "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af startdatoen for en periode. Den kan eksempelvis udtrykkes som en dato (xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear)."@da ,
+                                                                                      "The range of this property is intentionally generic, with the purpose of allowing different level of temporal precision for specifying the start of a period. E.g., it can be expressed with a date (xsd:date), a date and time (xsd:dateTime), or a year (xsd:gYear)."@en .
 
 
 ###  http://www.w3.org/ns/dcat#temporalResolution
@@ -980,6 +1273,18 @@ xsd:duration rdf:type rdfs:Datatype .
                                                                                                "Různá časová rozlišení mohou být poskytována jako různé distribuce datové sady."@cs ,
                                                                                                "Se il set di dati è una serie temporale, questo dovrebbe corrispondere alla spaziatura degli elementi della serie. Per altri tipi di set di dati, questa proprietà di solito indica la più piccola differenza di tempo tra gli elementi nel set di dati."@it ,
                                                                                                "Si el conjunto de datos es una serie temporal, debe corresponder al espaciado de los elementos de la serie. Para otro tipo de conjuntos de datos, esta propiedad indicará usualmente la menor diferencia de tiempo entre elementos en el dataset."@es .
+
+
+###  http://www.w3.org/ns/dqv#expectedDataType
+<http://www.w3.org/ns/dqv#expectedDataType> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.w3.org/ns/dqv#Metric> .
+
+
+###  http://www.w3.org/ns/dqv#value
+<http://www.w3.org/ns/dqv#value> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <http://www.w3.org/ns/dqv#QualityMeasurement> ;
+                                 rdfs:comment "Refers to values computed by metric."@en ;
+                                 rdfs:label "value"@en .
 
 
 ###  http://xmlns.com/foaf/0.1/accountName
@@ -1031,6 +1336,12 @@ xsd:duration rdf:type rdfs:Datatype .
                                  rdfs:label "Agent"@en .
 
 
+###  http://purl.org/dc/terms/FileFormat
+<http://purl.org/dc/terms/FileFormat> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.org/dc/terms/MediaType> ;
+                                      <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
+
+
 ###  http://purl.org/dc/terms/LicenseDocument
 <http://purl.org/dc/terms/LicenseDocument> rdf:type owl:Class ;
                                            rdfs:subClassOf <http://purl.org/dc/terms/RightsStatement> ;
@@ -1063,6 +1374,20 @@ xsd:duration rdf:type rdfs:Datatype .
                                                         <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
+###  http://purl.org/dc/terms/MediaType
+<http://purl.org/dc/terms/MediaType> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/dc/terms/MediaTypeOrExtent> ;
+                                     <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
+                                     rdfs:comment "A file format or physical medium."@en ;
+                                     rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                     rdfs:label "Media Type"@en .
+
+
+###  http://purl.org/dc/terms/MediaTypeOrExtent
+<http://purl.org/dc/terms/MediaTypeOrExtent> rdf:type owl:Class ;
+                                             <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
+
+
 ###  http://purl.org/dc/terms/PeriodOfTime
 <http://purl.org/dc/terms/PeriodOfTime> rdf:type owl:Class ;
                                         rdfs:subClassOf <http://purl.org/dc/terms/LocationPeriodOrJurisdiction> ;
@@ -1072,12 +1397,23 @@ xsd:duration rdf:type rdfs:Datatype .
                                         rdfs:label "Period of Time"@en .
 
 
+###  http://purl.org/dc/terms/PhysicalMedium
+<http://purl.org/dc/terms/PhysicalMedium> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.org/dc/terms/MediaType> ;
+                                          <http://purl.org/dc/terms/description> "Examples include paper, canvas, or DVD."@en ;
+                                          <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
+
+
 ###  http://purl.org/dc/terms/RightsStatement
 <http://purl.org/dc/terms/RightsStatement> rdf:type owl:Class ;
                                            <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
                                            rdfs:comment "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en ;
                                            rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
                                            rdfs:label "Rights Statement"@en .
+
+
+###  http://purl.org/linked-data/cube#Observation
+<http://purl.org/linked-data/cube#Observation> rdf:type owl:Class .
 
 
 ###  http://schema.org/CreativeWork
@@ -1097,8 +1433,23 @@ xsd:duration rdf:type rdfs:Datatype .
 rdfs:Resource rdf:type owl:Class .
 
 
+###  http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> rdf:type owl:Class ;
+                                                 owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
 ###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              owl:disjointWith <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class ;
+                                                    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> ;
+                                                    rdfs:label "Concept Scheme"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#definition> "A set of concepts, optionally including statements about semantic relationships between those concepts."@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#example> "Thesauri, classification schemes, subject heading lists, taxonomies, 'folksonomies', and other types of controlled vocabulary are all examples of concept schemes. Concept schemes are also embedded in glossaries and terminologies."@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#scopeNote> "A concept scheme may be defined to include concepts from different sources."@en .
 
 
 ###  http://www.w3.org/2006/vcard/ns#Agent
@@ -1124,7 +1475,7 @@ rdfs:Resource rdf:type owl:Class .
                                          <http://purl.org/dc/terms/issued> "2008-05-xx" ;
                                          rdfs:isDefinedBy <http://www.w3.org/2008/05/skos> ;
                                          rdfs:label "Concept"@en ;
-                                         <http://www.w3.org/2008/05/skos#definition> "An abstract idea or notion; a unit of thought."@en .
+                                         <http://www.w3.org/2004/02/skos/core#definition> "An abstract idea or notion; a unit of thought."@en .
 
 
 ###  http://www.w3.org/2008/05/skos#ConceptScheme
@@ -1135,7 +1486,7 @@ rdfs:Resource rdf:type owl:Class .
 <http://www.w3.org/ns/dcat#Catalog> rdf:type owl:Class ;
                                     rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
                                     rdfs:comment "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en ,
-                                                 "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). "@da ,
+                                                 "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog)."@da ,
                                                  "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es ,
                                                  "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it ,
                                                  "Une collection élaborée de métadonnées sur les jeux de données"@fr ,
@@ -1268,6 +1619,34 @@ rdfs:Resource rdf:type owl:Class .
                                                                                      "dcat:Resource è un punto di estensione che consente la definizione di qualsiasi tipo di catalogo. Sottoclassi aggiuntive possono essere definite in un profilo DCAT o in un'applicazione per cataloghi di altri tipi di risorse."@it .
 
 
+###  http://www.w3.org/ns/dqv#Category
+<http://www.w3.org/ns/dqv#Category> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                    rdfs:comment "Represents a group of quality dimensions in which a common type of information is used as quality indicator."@en ;
+                                    rdfs:label "Category"@en .
+
+
+###  http://www.w3.org/ns/dqv#Dimension
+<http://www.w3.org/ns/dqv#Dimension> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                     rdfs:comment "Represents criteria relevant for assessing quality. Each quality dimension must have one or more metric to measure it. A dimension is linked with a category using the dqv:inCategory property."@en ;
+                                     rdfs:label "Dimension"@en .
+
+
+###  http://www.w3.org/ns/dqv#Metric
+<http://www.w3.org/ns/dqv#Metric> rdf:type owl:Class ;
+                                  rdfs:comment "Represents a standard to measure a quality dimension. An observation (instance of dqv:QualityMeasurement) assigns a value in a given unit to a Metric."@en ;
+                                  rdfs:label "Metric"@en .
+
+
+###  http://www.w3.org/ns/dqv#QualityMeasurement
+<http://www.w3.org/ns/dqv#QualityMeasurement> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.org/linked-data/cube#Observation> ;
+                                              <http://purl.org/vocab/vann/usageNote> "The unit of measure in quality measurement should be specified through the property sdmx-attribute:unitMeasure as recommended by RDF Data Cube. The Ontology of units of Measure (OM) by Rijgersberg Et Al provides a list of HTTP dereferenceable unit of measures, which can be exploited as values for sdmx-attribute:unitMeasure."@en ;
+                                              rdfs:comment "Represents the evaluation of a given dataset (or dataset distribution) against a specific quality metric."@en ;
+                                              rdfs:label "Quality Measurement"@en .
+
+
 ###  http://www.w3.org/ns/odrl/2/Agreement
 <http://www.w3.org/ns/odrl/2/Agreement> rdf:type owl:Class ;
                                         rdfs:subClassOf <http://www.w3.org/ns/odrl/2/Policy> .
@@ -1392,21 +1771,6 @@ rdfs:Resource rdf:type owl:Class .
                                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 
-###  http://xmlns.com/foaf/0.1/OnlineChatAccount
-<http://xmlns.com/foaf/0.1/OnlineChatAccount> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://xmlns.com/foaf/0.1/OnlineAccount> .
-
-
-###  http://xmlns.com/foaf/0.1/OnlineEcommerceAccount
-<http://xmlns.com/foaf/0.1/OnlineEcommerceAccount> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/OnlineAccount> .
-
-
-###  http://xmlns.com/foaf/0.1/OnlineGamingAccount
-<http://xmlns.com/foaf/0.1/OnlineGamingAccount> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://xmlns.com/foaf/0.1/OnlineAccount> .
-
-
 ###  http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
 
@@ -1434,8 +1798,14 @@ rdfs:Resource rdf:type owl:Class .
        rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> .
 
 
+###  https://w3id.org/sedimark/ontology#AssetProvision
+:AssetProvision rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/dcat#Distribution> .
+
+
 ###  https://w3id.org/sedimark/ontology#AssetQuality
 :AssetQuality rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/dqv#QualityMeasurement> ;
               <http://purl.org/dc/elements/1.1/description> "Quality metrics associated with Asset"^^rdfs:Literal .
 
 
@@ -1452,8 +1822,7 @@ rdfs:Resource rdf:type owl:Class .
 
 ###  https://w3id.org/sedimark/ontology#Participant
 :Participant rdf:type owl:Class ;
-             rdfs:subClassOf <http://schema.org/Organization> ,
-                             <http://xmlns.com/foaf/0.1/Organization> .
+             rdfs:subClassOf <http://www.w3.org/ns/odrl/2/Party> .
 
 
 ###  https://w3id.org/sedimark/ontology#Self-Listing
@@ -1486,94 +1855,371 @@ rdfs:Resource rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  https://creativecommons.org/licenses/by/4.0/
-<https://creativecommons.org/licenses/by/4.0/> rdf:type owl:NamedIndividual ;
-                                               rdfs:label "ontology license"^^rdfs:Literal .
+###  http://www.w3.org/ns/dqv#precision
+<http://www.w3.org/ns/dqv#precision> rdf:type owl:NamedIndividual ,
+                                              <http://www.w3.org/ns/dqv#Dimension> .
+
+
+###  https://creativecommons.org/licenses/by/4.0
+<https://creativecommons.org/licenses/by/4.0> rdf:type owl:NamedIndividual ,
+                                                       <http://xmlns.com/foaf/0.1/Document> ;
+                                              rdfs:label "ontology license"^^rdfs:Literal .
+
+
+###  https://sedimark.eglobalmark.com/connector/self-listing/homepage
+<https://sedimark.eglobalmark.com/connector/self-listing/homepage> rdf:type owl:NamedIndividual .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> rdf:type owl:NamedIndividual ,
+                                                                                    <https://w3id.org/sedimark/vocab#DataAsset> ;
+                                                                           <http://www.w3.org/ns/dcat#theme> <https://sedimark.eu/ecosystem/theme#hydrometry> ;
+                                                                           :hasAssetQuality <https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> ;
+                                                                           :isProvidedBy <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> ;
+                                                                           <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> ;
+                                                                           <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                           <http://purl.org/dc/terms/issued> "2024-01-01"^^xsd:date ;
+                                                                           <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                           <http://purl.org/dc/terms/modified> "2024-05-01"^^xsd:date ;
+                                                                           <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                           <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/6299418/> ;
+                                                                           <http://purl.org/dc/terms/temporal> _:genid42 .
+
+_:genid42 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
+           <http://www.w3.org/ns/dcat#endDate> "2024-05-01"^^xsd:date ;
+           <http://www.w3.org/ns/dcat#startDate> "2024-01-01"^^xsd:date .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> rdf:type owl:NamedIndividual ,
+                                                                                     <https://w3id.org/sedimark/vocab#DataAsset> ;
+                                                                            <http://www.w3.org/ns/dcat#theme> <https://sedimark.eu/ecosystem/theme#hydrometry> ;
+                                                                            :hasAssetQuality <https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> ;
+                                                                            :isProvidedBy <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> ;
+                                                                            <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> ;
+                                                                            <http://purl.org/dc/terms/created> "2024-01-01"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                            <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                            <http://purl.org/dc/terms/modified> "2024-05-10"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                            <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/6299418/> ;
+                                                                            <http://purl.org/dc/terms/temporal> _:genid43 .
+
+_:genid43 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
+           <http://www.w3.org/ns/dcat#endDate> "2024-05-01"^^xsd:date ;
+           <http://www.w3.org/ns/dcat#startDate> "2024-01-01"^^xsd:date .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> rdf:type owl:NamedIndividual ,
+                                                                                    <https://w3id.org/sedimark/vocab#DataAsset> ;
+                                                                           <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> ;
+                                                                           <http://purl.org/dc/terms/created> "2024-01-02"^^xsd:date ;
+                                                                           <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                           <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                           <http://purl.org/dc/terms/modified> "2024-05-02"^^xsd:date ;
+                                                                           <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                           <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/12319223/> ;
+                                                                           <http://purl.org/dc/terms/temporal> _:genid44 .
+
+_:genid44 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
+           <http://www.w3.org/ns/dcat#endDate> "2024-05-02"^^xsd:date ;
+           <http://www.w3.org/ns/dcat#startDate> "2024-01-02"^^xsd:date .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level
+<https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> rdf:type owl:NamedIndividual ,
+                                                                                     <https://w3id.org/sedimark/vocab#DataAsset> ;
+                                                                            <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-D> ;
+                                                                            <http://purl.org/dc/terms/created> "2024-01-02"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/creator> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                            <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                            <http://purl.org/dc/terms/modified> "2024-05-02"^^xsd:date ;
+                                                                            <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> ;
+                                                                            <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/12319223/> ;
+                                                                            <http://purl.org/dc/terms/temporal> _:genid45 .
+
+_:genid45 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
+           <http://www.w3.org/ns/dcat#endDate> "2024-05-02"^^xsd:date ;
+           <http://www.w3.org/ns/dcat#startDate> "2024-01-02"^^xsd:date .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france
+<https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> rdf:type owl:NamedIndividual ,
+                                                                                          :Self-Listing ;
+                                                                                 <http://xmlns.com/foaf/0.1/homepage> <https://sedimark.eglobalmark.com/connector/self-listing/homepage> ;
+                                                                                 :hasOffering <https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> ,
+                                                                                              <https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> ;
+                                                                                 <http://purl.org/dc/terms/description> "Self-listing for Offerings reflecting data from Hydrometric Stations in France sensing water level (H) and flow (Q) observations, banked every 5 to 60 minutes" ;
+                                                                                 <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                                 <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/EGM> ;
+                                                                                 <http://purl.org/dc/terms/spatial> <https://sws.geonames.org/3017382/> ;
+                                                                                 <http://purl.org/dc/terms/title> "Hydrometric Stations in France" ;
+                                                                                 rdfs:label "Hydrometric Stations in France" .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0001> rdf:type owl:NamedIndividual ,
+                                                                                        :Offering ;
+                                                                               :hasAsset <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-flow> ,
+                                                                                         <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> ;
+                                                                               <http://purl.org/dc/terms/description> "Offering for hydrometric data from Hydrometric Station 0001. Assets include water level dataset and water flow dataset." ;
+                                                                               <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                               <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/EGM> ;
+                                                                               <http://purl.org/dc/terms/title> "Hydrometric Station 0001" ;
+                                                                               rdfs:label "Hydrometric Station 0001" .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002
+<https://sedimark.eglobalmark.com/ecosystem/offering-hydrometric-station-0002> rdf:type owl:NamedIndividual ,
+                                                                                        :Offering ;
+                                                                               :hasAsset <https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-flow> ,
+                                                                                         <https://sedimark.eglobalmark.com/ecosystem/asset-station-0002-water-level> ;
+                                                                               <http://purl.org/dc/terms/description> "Offering for hydrometric data from Hydrometric Station 0002. Assets include water level dataset and water flow dataset." ;
+                                                                               <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                               <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/EGM> ;
+                                                                               <http://purl.org/dc/terms/title> "Hydrometric Station 0001" ;
+                                                                               rdfs:label "Hydrometric Station 0001" .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/participant-egm
+<https://sedimark.eglobalmark.com/ecosystem/participant-egm> rdf:type owl:NamedIndividual ,
+                                                                      :Participant ;
+                                                             :hasSelf-Listing <https://sedimark.eglobalmark.com/ecosystem/listing-hydrometric-stations-france> ;
+                                                             <http://purl.org/dc/terms/description> """EGM is an SME based in Nantes and Sophia-Antipolis (France) which creates, produces and provides scalable and interoperable solutions, to collect and exchange information connecting the physical world to the digital world, in order to allow private and public actors to optimize and improve their services.
+EGM supports its clients thanks to its permanent innovation approach and its operational know-how of the data life cycle, from acquisition to data processing, including edge processing, IoT networks, semantics and data science.""" .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> rdf:type owl:NamedIndividual ,
+                                                                                        :AssetProvision ;
+                                                                               <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> ;
+                                                                               <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> ;
+                                                                               <http://www.w3.org/ns/dcat#byteSize> 1000 ;
+                                                                               <http://purl.org/dc/terms/title> "NGSI-LD distribution of hydrometric water flow data for station 0001" .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-level> rdf:type owl:NamedIndividual ,
+                                                                                         :AssetProvision ;
+                                                                                <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> ;
+                                                                                <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> ;
+                                                                                <http://www.w3.org/ns/dcat#byteSize> 2000 ;
+                                                                                <http://purl.org/dc/terms/title> "NGSI-LD distribution of hydrometric water level data for station 0001" .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-flow> rdf:type owl:NamedIndividual ,
+                                                                                        :AssetProvision ;
+                                                                               <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> ;
+                                                                               <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> ;
+                                                                               <http://www.w3.org/ns/dcat#byteSize> 5000 .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level
+<https://sedimark.eglobalmark.com/ecosystem/provision-station-0002-water-level> rdf:type owl:NamedIndividual ,
+                                                                                         :AssetProvision ;
+                                                                                <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> ;
+                                                                                <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> ;
+                                                                                <http://www.w3.org/ns/dcat#byteSize> 6000 .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-accuracy> rdf:type owl:NamedIndividual ,
+                                                                                               :AssetQuality ;
+                                                                                      <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> ;
+                                                                                      <http://www.w3.org/ns/dqv#isMeasurementOf> <https://sedimark.eu/ecosystem/metric#accuracy-values> ;
+                                                                                      <http://www.w3.org/ns/dqv#value> "90.1"^^xsd:double .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-flow-completeness> rdf:type owl:NamedIndividual ,
+                                                                                                   :AssetQuality ;
+                                                                                          <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> ;
+                                                                                          <http://www.w3.org/ns/dqv#isMeasurementOf> <https://sedimark.eu/ecosystem/metric#completeness-values> ;
+                                                                                          <http://www.w3.org/ns/dqv#value> "0.8"^^xsd:double .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-accuracy> rdf:type owl:NamedIndividual ;
+                                                                                       <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> .
+
+
+###  https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness
+<https://sedimark.eglobalmark.com/ecosystem/quality-station-0001-water-level-completeness> rdf:type owl:NamedIndividual ,
+                                                                                                    :AssetQuality ;
+                                                                                           <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/asset-station-0001-water-level> ;
+                                                                                           <http://www.w3.org/ns/dqv#isMeasurementOf> <https://sedimark.eu/ecosystem/metric#completeness-values> ;
+                                                                                           <http://www.w3.org/ns/dqv#value> "0.75"^^xsd:double .
+
+
+###  https://sedimark.eglobalmark.com/ngsi-ld/v1/entities
+<https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> rdf:type owl:NamedIndividual ,
+                                                                rdfs:Resource ;
+                                                       <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.eglobalmark.com/ngsi-ld/v1/entities> ;
+                                                       rdfs:label "hydrometric-ngsi-ld-broker" .
+
+
+###  https://sedimark.eu/ecosystem/themes
+<https://sedimark.eu/ecosystem/themes> rdf:type owl:NamedIndividual ,
+                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "A set of domains to classify Offerings and Assets" .
+
+
+###  https://sedimark.eu/ecosystem/metric#accuracy-values
+<https://sedimark.eu/ecosystem/metric#accuracy-values> rdf:type owl:NamedIndividual ,
+                                                                <http://www.w3.org/ns/dqv#Metric> ;
+                                                       <http://www.w3.org/ns/dqv#inCategory> <https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> .
+
+
+###  https://sedimark.eu/ecosystem/metric#completeness-values
+<https://sedimark.eu/ecosystem/metric#completeness-values> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.w3.org/ns/dqv#Metric> ;
+                                                           <http://www.w3.org/ns/dqv#inDimension> <https://sedimark.eu/ecosystem/quality/dimension#completeness> ;
+                                                           <http://www.w3.org/2004/02/skos/core#definition> "Ratio between the real values and null values in data points" .
+
+
+###  https://sedimark.eu/ecosystem/quality/category#inherentDataQuality
+<https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.w3.org/ns/dqv#Category> .
+
+
+###  https://sedimark.eu/ecosystem/quality/dimension#accuracy
+<https://sedimark.eu/ecosystem/quality/dimension#accuracy> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.w3.org/ns/dqv#Dimension> ;
+                                                           <http://www.w3.org/2004/02/skos/core#definition> "Percentage of data points that are found accurate" ;
+                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Accuracy" .
+
+
+###  https://sedimark.eu/ecosystem/quality/dimension#completeness
+<https://sedimark.eu/ecosystem/quality/dimension#completeness> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.w3.org/ns/dqv#Dimension> ;
+                                                               <http://www.w3.org/ns/dqv#inCategory> <https://sedimark.eu/ecosystem/quality/category#inherentDataQuality> ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "Completeness refers to the degree to which all valid data points are present in a particular data asset" .
+
+
+###  https://sedimark.eu/ecosystem/theme#hydrometry
+<https://sedimark.eu/ecosystem/theme#hydrometry> rdf:type owl:NamedIndividual ,
+                                                          <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrometry" .
 
 
 ###  https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png
 <https://sedimark.eu/wp-content/uploads/2023/11/sedimark_logo_512x512.png> rdf:type owl:NamedIndividual .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/CVSSP
-<https://sedimark.surrey.ac.uk/ecosystem/CVSSP> rdf:type owl:NamedIndividual ,
-                                                         :Participant ;
-                                                <http://xmlns.com/foaf/0.1/account> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account> ;
-                                                <http://xmlns.com/foaf/0.1/homepage> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> ;
-                                                <http://xmlns.com/foaf/0.1/openid> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile> ;
-                                                :hasSelf-Listing <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> ;
-                                                <http://xmlns.com/foaf/0.1/name> ""@en ;
-                                                <https://purl.org/dc/terms/description> ""@en ;
-                                                <http://purl.org/dc/terms/description> ""^^rdfs:Literal .
-
-
 ###  https://sedimark.surrey.ac.uk/ecosystem/agreement-001
 <https://sedimark.surrey.ac.uk/ecosystem/agreement-001> rdf:type owl:NamedIndividual ,
                                                                  :Agreement ;
-                                                        :references <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> .
+                                                        :references <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-contact-email> rdf:type owl:NamedIndividual .
+###  https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count
+<https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> rdf:type owl:NamedIndividual ,
+                                                                                  <https://w3id.org/sedimark/vocab#DataAsset> ;
+                                                                         :hasAssetQuality <https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count> ;
+                                                                         <http://purl.org/dc/elements/1.1/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
+                                                                         <http://purl.org/dc/elements/1.1/description> "This dataset captures data from step counter on wearable smart watch for subject 001"^^rdfs:Literal ;
+                                                                         <http://purl.org/dc/elements/1.1/identifier> "cvssp-livinglab-wearable-steps-001"^^rdfs:Literal ;
+                                                                         <http://purl.org/dc/elements/1.1/title> "Steps Dataset for Subject 001"^^rdfs:Literal ;
+                                                                         <http://purl.org/dc/terms/publisher> <https://sedimark.eglobalmark.com/ecosystem/participant-egm> .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> rdf:type owl:NamedIndividual ,
-                                                                  <http://xmlns.com/foaf/0.1/Document> .
+###  https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data
+<https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data> rdf:type owl:NamedIndividual ,
+                                                                          :OfferingContract .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-online-account> rdf:type owl:NamedIndividual ,
+###  https://sedimark.surrey.ac.uk/ecosystem/endpoint-description-wearable-001
+<https://sedimark.surrey.ac.uk/ecosystem/endpoint-description-wearable-001> rdf:type owl:NamedIndividual ,
+                                                                                     rdfs:Resource .
+
+
+###  https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed
+<https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> rdf:type owl:NamedIndividual ,
+                                                                           :Self-Listing ;
+                                                                  <http://purl.org/dc/terms/hasPart> <https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue> ;
+                                                                  :belongsTo <https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> ;
+                                                                  :hasOffering <https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> ;
+                                                                  <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
+                                                                  <http://purl.org/dc/terms/description> "Self-listing for the ehealth-living-lab data provision"^^rdfs:Literal ;
+                                                                  <http://purl.org/dc/terms/issued> "2024-01-01"^^xsd:date ;
+                                                                  <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/en> ;
+                                                                  <http://purl.org/dc/terms/modified> "2024-01-02"^^xsd:date ;
+                                                                  <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
+                                                                  <http://purl.org/dc/terms/rights> <http://creativecommons.org/licenses/by/4.0/legalcode> ;
+                                                                  <http://purl.org/dc/terms/title> "E-health Living Lab"^^rdfs:Literal .
+
+
+###  https://sedimark.surrey.ac.uk/ecosystem/location-ehealth-testbed-01
+<https://sedimark.surrey.ac.uk/ecosystem/location-ehealth-testbed-01> rdf:type owl:NamedIndividual ,
+                                                                               <http://purl.org/dc/terms/Location> .
+
+
+###  https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001
+<https://sedimark.surrey.ac.uk/ecosystem/offering-person-wearable-001> rdf:type owl:NamedIndividual ,
+                                                                                :Offering ;
+                                                                       <http://www.w3.org/ns/dcat#dataset> <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> ;
+                                                                       <http://xmlns.com/foaf/0.1/homepage> <https://www.surrey.ac.uk/centre-vision-speech-signal-processing> ;
+                                                                       :hasAsset <https://sedimark.surrey.ac.uk/ecosystem/asset-wearable-001-steps-count> ;
+                                                                       :hasOfferingContract <https://sedimark.surrey.ac.uk/ecosystem/contract-wearable-data> ;
+                                                                       <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^xsd:duration ;
+                                                                       <http://purl.org/dc/terms/created> "2024-01-01"^^rdfs:Literal ;
+                                                                       <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
+                                                                       <http://purl.org/dc/terms/description> "This offering provides data assets with data originating from wearable sensors on smart watches"^^rdfs:Literal ;
+                                                                       <http://purl.org/dc/terms/isPartOf> <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> ;
+                                                                       <http://purl.org/dc/terms/issued> "2024-01-02"^^rdfs:Literal ;
+                                                                       <http://purl.org/dc/terms/language> "English"^^rdfs:Literal ;
+                                                                       <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nd/4.0/> ;
+                                                                       <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
+                                                                       <http://purl.org/dc/terms/temporal> <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> ;
+                                                                       <http://purl.org/dc/terms/title> "Wearable data for Subject 001"^^rdfs:Literal .
+
+
+###  https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp
+<https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> rdf:type owl:NamedIndividual ,
                                                                         <http://xmlns.com/foaf/0.1/OnlineAccount> ;
-                                                               <http://xmlns.com/foaf/0.1/accountName> ""@en .
+                                                               <http://www.w3.org/ns/dqv#computedOn> <https://sedimark.eglobalmark.com/ecosystem/provision-station-0001-water-flow> ;
+                                                               <http://xmlns.com/foaf/0.1/accountName> "CVSSP Data Provider"@en .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile
-<https://sedimark.surrey.ac.uk/ecosystem/cvssp-open-id-profile> rdf:type owl:NamedIndividual ,
-                                                                         <http://xmlns.com/foaf/0.1/Document> .
+###  https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp
+<https://sedimark.surrey.ac.uk/ecosystem/participant-cvssp> rdf:type owl:NamedIndividual ,
+                                                                     :Participant ;
+                                                            <http://xmlns.com/foaf/0.1/account> <https://sedimark.surrey.ac.uk/ecosystem/online-account-cvssp> ;
+                                                            <http://xmlns.com/foaf/0.1/homepage> <https://www.surrey.ac.uk/centre-vision-speech-signal-processing> ;
+                                                            <http://xmlns.com/foaf/0.1/mbox> <mailto:t.elsaleh@surrey.ac.uk> ;
+                                                            <http://xmlns.com/foaf/0.1/openid> <https://sedimark.surrey.ac.uk/openid?name=cvssp> ;
+                                                            :hasSelf-Listing <https://sedimark.surrey.ac.uk/ecosystem/listing-ehealth-testbed> ;
+                                                            <http://xmlns.com/foaf/0.1/name> "Centre for Vision, Speech and Signal Processing"@en ;
+                                                            <http://purl.org/dc/terms/description> """Research Centre at the University of Surrey, based in Guildford, UK.
+Critical-mass of AI expertise in Audio and Vision.
+Advance research in AI and machine perception focusing on cross-disciplinary areas including creative technology, healthcare, robotics, security and data.
+Apply AI/ML on real-world data in domains such as healthcare, captured from testbeds and living labs.
+Sensory data analysis and contextual information extraction.
+Exploit new technologies for societal and economic impact."""@en ;
+                                                            <http://purl.org/dc/terms/title> "Centre for Vision, Speech and Signal Prcoessing" .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab
-<https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> rdf:type owl:NamedIndividual ,
-                                                                      :Self-Listing ;
-                                                             <http://purl.org/dc/terms/hasPart> <https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue> ;
-                                                             :belongsTo <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                             :hasOffering <https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> ;
-                                                             <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                             <http://purl.org/dc/terms/description> "Self-listing for the ehealth-living-lab data provision"^^rdfs:Literal ;
-                                                             <http://purl.org/dc/terms/issued> "2024-01-01"^^rdfs:Literal ;
-                                                             <http://purl.org/dc/terms/language> "English"^^rdfs:Literal ;
-                                                             <http://purl.org/dc/terms/modified> "2024-01-02"^^rdfs:Literal ;
-                                                             <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                             <http://purl.org/dc/terms/rights> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
-https://creativecommons.org/licenses/by-nd/4.0/""" ;
-                                                             <http://purl.org/dc/terms/title> "E-health Living Lab"^^rdfs:Literal .
-
-
-###  https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period
-<https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> rdf:type owl:NamedIndividual ,
+###  https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning
+<https://sedimark.surrey.ac.uk/ecosystem/period-health-monitoring-morning> rdf:type owl:NamedIndividual ,
                                                                                     <http://purl.org/dc/terms/PeriodOfTime> ;
-                                                                           <http://www.w3.org/ns/dcat#temporalResolution> "P6H"^^xsd:duration .
+                                                                           <http://www.w3.org/ns/dcat#temporalResolution> "P1DT2H"^^xsd:duration .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/living-lab-01
-<https://sedimark.surrey.ac.uk/ecosystem/living-lab-01> rdf:type owl:NamedIndividual ,
-                                                                 <http://purl.org/dc/terms/Location> .
+###  https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count
+<https://sedimark.surrey.ac.uk/ecosystem/provision-wearable-001-steps-count> rdf:type owl:NamedIndividual ,
+                                                                                      :AssetProvision ;
+                                                                             <http://www.w3.org/ns/dcat#accessURL> <https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities> ;
+                                                                             <http://www.w3.org/ns/dcat#mediaType> <https://www.iana.org/assignments/media-types/application/ld+json> ;
+                                                                             <http://purl.org/dc/elements/1.1/description> "Data Asset provision for Wearable Steps count for subject 001 from the ehealth living lab"@en ;
+                                                                             <http://purl.org/dc/terms/conformsTo> <https://forge.etsi.org/rep/cim/NGSI-LD/> ;
+                                                                             <http://purl.org/dc/terms/title> "Steps 001 Provider"^^rdfs:Literal .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> rdf:type owl:NamedIndividual ,
-                                                                   <https://w3id.org/sedimark/vocab#DataAsset> ;
-                                                          :hasAssetQuality <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality> ;
-                                                          <http://purl.org/dc/elements/1.1/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                          <http://purl.org/dc/elements/1.1/description> "This dataset captures data from step counter on wearable smart watch for subject 001"^^rdfs:Literal ;
-                                                          <http://purl.org/dc/elements/1.1/identifier> "cvssp-livinglab-wearable-steps-001"^^rdfs:Literal ;
-                                                          <http://purl.org/dc/elements/1.1/title> "Steps Dataset for Subject 001"^^rdfs:Literal .
-
-
-###  https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality
-<https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001-quality> rdf:type owl:NamedIndividual ,
-                                                                           :AssetQuality .
+###  https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count
+<https://sedimark.surrey.ac.uk/ecosystem/quality-wearable-001-steps-count> rdf:type owl:NamedIndividual ,
+                                                                                    :AssetQuality .
 
 
 ###  https://sedimark.surrey.ac.uk/ecosystem/surrey-local-catalogue
@@ -1581,224 +2227,47 @@ https://creativecommons.org/licenses/by-nd/4.0/""" ;
                                                                           <http://www.w3.org/ns/dcat#Catalog> .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-001-license-doc> rdf:type owl:NamedIndividual ,
-                                                                            <http://purl.org/dc/terms/LicenseDocument> ;
-                                                                   <http://purl.org/dc/terms/license> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+###  https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc
+<https://sedimark.surrey.ac.uk/ecosystem/wearable-data-license-doc> rdf:type owl:NamedIndividual ,
+                                                                             <http://purl.org/dc/terms/LicenseDocument> ;
+                                                                    <http://purl.org/dc/terms/license> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
 https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal ;
-                                                                   <http://purl.org/dc/terms/rights> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
+                                                                    <http://purl.org/dc/terms/rights> """This work is licensed under Creative Commons Attribution-NoDerivatives 4.0 International.
 https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/wearable-contract
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-contract> rdf:type owl:NamedIndividual ,
-                                                                     :OfferingContract .
+###  https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities
+<https://sedimark.surrey.ac.uk/ehealth-ll/ngsi-ld/v1/entities> rdf:type owl:NamedIndividual ,
+                                                                        rdfs:Resource ;
+                                                               rdfs:label "ehealth-ngsi-ld-broker" .
 
 
-###  https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001
-<https://sedimark.surrey.ac.uk/ecosystem/wearable-offering-001> rdf:type owl:NamedIndividual ,
-                                                                         :Offering ;
-                                                                <http://www.w3.org/ns/dcat#dataset> <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> ;
-                                                                <http://xmlns.com/foaf/0.1/homepage> <https://sedimark.surrey.ac.uk/ecosystem/cvssp-homepage> ;
-                                                                :hasAsset <https://sedimark.surrey.ac.uk/ecosystem/steps-asset-001> ;
-                                                                :hasOfferingContract <https://sedimark.surrey.ac.uk/ecosystem/wearable-contract> ;
-                                                                <http://www.w3.org/ns/dcat#temporalResolution> "P6H"^^xsd:duration ;
-                                                                <http://purl.org/dc/terms/created> "2024-01-01"^^rdfs:Literal ;
-                                                                <http://purl.org/dc/terms/creator> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                                <http://purl.org/dc/terms/description> "This offering provides data assets with data originating from wearable sensors on smart watches"^^rdfs:Literal ;
-                                                                <http://purl.org/dc/terms/isPartOf> <https://sedimark.surrey.ac.uk/ecosystem/ehealth-living-lab> ;
-                                                                <http://purl.org/dc/terms/issued> "2024-01-02"^^rdfs:Literal ;
-                                                                <http://purl.org/dc/terms/language> "English"^^rdfs:Literal ;
-                                                                <http://purl.org/dc/terms/publisher> <https://sedimark.surrey.ac.uk/ecosystem/CVSSP> ;
-                                                                <http://purl.org/dc/terms/temporal> <https://sedimark.surrey.ac.uk/ecosystem/health-monitoring-morning-period> ;
-                                                                <http://purl.org/dc/terms/title> "Wearable data for Subject 001"^^rdfs:Literal .
+###  https://sedimark.surrey.ac.uk/openid?name=cvssp
+<https://sedimark.surrey.ac.uk/openid?name=cvssp> rdf:type owl:NamedIndividual ,
+                                                           <http://xmlns.com/foaf/0.1/Document> .
 
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
-] .
+###  https://www.iana.org/assignments/media-types/application/ld+json
+<https://www.iana.org/assignments/media-types/application/ld+json> rdf:type owl:NamedIndividual ,
+                                                                            <http://purl.org/dc/terms/MediaType> .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
+###  https://www.surrey.ac.uk/centre-vision-speech-signal-processing
+<https://www.surrey.ac.uk/centre-vision-speech-signal-processing> rdf:type owl:NamedIndividual ,
+                                                                           <http://xmlns.com/foaf/0.1/Document> .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
+###  mailto:t.elsaleh@surrey.ac.uk
+<mailto:t.elsaleh@surrey.ac.uk> rdf:type owl:NamedIndividual .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
+_:genid46 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
+          <http://www.w3.org/ns/dcat#endDate> "2024-05-01"^^xsd:date ;
+          <http://www.w3.org/ns/dcat#startDate> "2024-01-01"^^xsd:date .
 
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
-
-[ rdfs:comment "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."@en
- ] .
+_:genid47 rdf:type <http://purl.org/dc/terms/PeriodOfTime> ;
+           <http://www.w3.org/ns/dcat#endDate> "2024-05-09"^^xsd:date ;
+           <http://www.w3.org/ns/dcat#startDate> "2024-01-10"^^xsd:date .
 
 #################################################################
 #    Annotations
@@ -1817,9 +2286,6 @@ https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
 
 
 <http://purl.org/dc/terms/DDC> <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
-
-
-<http://purl.org/dc/terms/FileFormat> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
 <http://purl.org/dc/terms/Frequency> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
@@ -1849,12 +2315,6 @@ https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
 <http://purl.org/dc/terms/MESH> <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
 
 
-<http://purl.org/dc/terms/MediaType> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
-
-
-<http://purl.org/dc/terms/MediaTypeOrExtent> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
-
-
 <http://purl.org/dc/terms/MethodOfAccrual> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
@@ -1865,10 +2325,6 @@ https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
 
 
 <http://purl.org/dc/terms/Period> <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
-
-
-<http://purl.org/dc/terms/PhysicalMedium> <http://purl.org/dc/terms/description> "Examples include paper, canvas, or DVD."@en ;
-                                          <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
 
 <http://purl.org/dc/terms/PhysicalResource> <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
@@ -1937,6 +2393,14 @@ https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
                                                  <http://purl.org/dc/terms/issued> "2003-02-15"^^xsd:date .
 
 
+<http://purl.org/dc/terms/creator> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/Agent> ;
+                                   <http://purl.org/dc/terms/description> "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
+                                   <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date ;
+                                   rdfs:comment "An entity responsible for making the resource."@en ;
+                                   rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                   rdfs:label "Creator"@en .
+
+
 <http://purl.org/dc/terms/date> <http://purl.org/dc/terms/description> "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en ;
                                 <http://purl.org/dc/terms/issued> "2008-01-14"^^xsd:date .
 
@@ -1978,6 +2442,13 @@ https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
 
 <http://purl.org/dc/terms/isVersionOf> <http://purl.org/dc/terms/description> "Changes in version imply substantive changes in content rather than differences in format. This property is intended to be used with non-literal values. This property is an inverse property of Has Version."@en ;
                                        <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date .
+
+
+<http://purl.org/dc/terms/issued> <http://purl.org/dc/terms/description> "Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty."@en ;
+                                  <http://purl.org/dc/terms/issued> "2000-07-11"^^xsd:date ;
+                                  rdfs:comment "Date of formal issuance of the resource."@en ;
+                                  rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
+                                  rdfs:label "Date Issued"@en .
 
 
 <http://purl.org/dc/terms/license> <http://purl.org/dc/dcam/rangeIncludes> <http://purl.org/dc/terms/LicenseDocument> ;
@@ -2029,4 +2500,4 @@ https://creativecommons.org/licenses/by-nd/4.0/"""^^rdfs:Literal .
                                    rdfs:label "sample"@en .
 
 
-###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
