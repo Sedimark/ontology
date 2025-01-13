@@ -55,15 +55,7 @@ body :
   },
   "spatial": {
     "type": "Property",
-    "value": "myValue"
-  },
-  "wasGeneratedBy": {
-    "type": "Property",
-    "value": "myValue"
-  },
-  "used": {
-    "type": "Property",
-    "value": "myValue"
+    "value": "https://sws.geonames.org/6299418/"
   },
   "startedAtTime": {
     "type": "Property",
@@ -93,14 +85,6 @@ body :
     "type": "Property",
     "value": "https://image.com/my/image"
   },
-  "relatedAsset": {
-    "type": "Property",
-    "value": "myValue"
-  },
-  "processingSteps": {
-    "type": "Property",
-    "value": "myValue"
-  },
   "location": {
     "type": "GeoProperty",
     "value": { // any geoJson
@@ -110,8 +94,7 @@ body :
         1.5
       ]
     }
-  },
-
+  }
 }
 
 ```
