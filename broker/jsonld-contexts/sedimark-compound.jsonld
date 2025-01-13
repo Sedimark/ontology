@@ -1,0 +1,9 @@
+{
+  "@context": [
+    "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-asset.jsonld",
+    "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-ai-model-asset.jsonld",
+    "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-data-asset.jsonld",
+    "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-service-asset.jsonld",
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.8.jsonld"
+  ]
+}
