@@ -58,9 +58,15 @@
     "value": "this is what my endpoint do"
   },
   "geometry": {
-    "type": "Property",
-    "value": "myValue"
-  },
+  "type": "GeoProperty",
+  "value": {
+    "type": "Point",
+    "coordinates": [
+      1.5,
+      1.5
+    ]
+  }
+},
   "image": {
     "type": "Property",
     "value": "https://image.com/my/image"
