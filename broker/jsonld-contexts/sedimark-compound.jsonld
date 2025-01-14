@@ -1,6 +1,7 @@
 {
   "@context": [
     "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-asset.jsonld",
+    "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-participant.jsonld",
     "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-ai-model-asset.jsonld",
     "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-data-asset.jsonld",
     "https://sedimark.github.io/ontology/broker/jsonld-contexts/sedimark-service-asset.jsonld",
