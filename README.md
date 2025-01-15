@@ -12,6 +12,25 @@ This model is supported by existing proposals by similar initiatives and is buil
 ## Properties
 ![image](https://github.com/Sedimark/ontology/assets/47256078/418f9919-d235-465d-9d08-531e91d4d372)
 
+## Namespaces
+
+- SEDIMARK (Marketplace)
+```
+https://w3id.org/sedimark/ontology#
+```
+- DCAT (Data Catalogues)
+```
+"http://www.w3.org/ns/dcat#"
+```
+- DQV (Asset Quality)
+```
+http://www.w3.org/ns/dqv#
+```
+- ODRL (Asset Policies)
+```
+ http://www.w3.org/ns/odrl/2/
+```
+
 ## Instantiation Example:
 Offering provided by CVSSP living lab for ehealth monitoring.
 
