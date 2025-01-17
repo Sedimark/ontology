@@ -1,0 +1,84 @@
+{
+  "id": "urn:ngsi-ld:Asset:MyAssetId",
+  "type": "Asset",
+  "title": {
+    "type": "Property",
+    "value": "my Title"
+  },
+  "creator": {
+    "type": "Relationship",
+    "value": "id:of:the:creator"
+  },
+  "description": {
+    "type": "Property",
+    "value": "my Description"
+  },
+  "publisher": {
+    "type": "Relationship",
+    "value": "id:of:the:publisher"
+  },
+  "issued": {
+    "type": "Property",
+    "value": "2024-09-01T11:00:00.000Z"
+  },
+  "modified": {
+    "type": "Property",
+    "value": "2024-09-01T11:00:00.000Z"
+  },
+  "keyword": {
+    "type": "Property",
+    "value": ["Tag1", "Tag2"]
+  },
+  "license": {
+    "type": "Property",
+    "value": "https://creativecommons.org/licenses/by-nd/4.0/"
+  },
+  "spatial": {
+    "type": "Property",
+    "value": "https://sws.geonames.org/6299418/"
+  },
+  "startedAtTime": {
+    "type": "Property",
+    "value": "2024-01-01T01:00:00.000Z"
+  },
+  "endedAtTime": {
+    "type": "Property",
+    "value": "2024-12-31T23:59:59.000Z"
+  },
+  "version": {
+    "type": "Property",
+    "value": "v1.1"
+  },
+  "endpointURL": {
+    "type": "Property",
+    "value": "https://my.endpoint/url"
+  },
+  "endpointDescription": {
+    "type": "GeoProperty",
+    "value": "this is what my endpoint do"
+  },
+  "geometry": {
+  "type": "GeoProperty",
+  "value": {
+    "type": "Point",
+    "coordinates": [
+      1.5,
+      1.5
+    ]
+  }
+},
+  "image": {
+    "type": "Property",
+    "value": "https://image.com/my/image"
+  },
+  "location": {
+    "type": "GeoProperty",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        1.5,
+        1.5
+      ]
+    }
+  }
+}

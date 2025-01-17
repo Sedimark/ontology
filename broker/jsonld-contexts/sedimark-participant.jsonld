@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "Participant":	"https://sedimark.github.io/ontology#Participant",
+    "description": "http://www.w3.org/ns/dcat#description",
+    "account": "https://sedimark.github.io/ontology#account",
+    "openid": "https://sedimark.github.io/ontology#openid",
+    "mbox": "https://sedimark.github.io/ontology#mbox",
+    "homepage": "https://sedimark.github.io/ontology#homepage",
+  }
+}
