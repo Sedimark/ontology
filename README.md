@@ -7,10 +7,12 @@ This model is supported by existing proposals by similar initiatives and is buil
 ## Core Concepts 
 
 ### Classes
-![image](https://github.com/Sedimark/ontology/assets/47256078/500b801f-fb95-4b32-bed8-68506b99506f)
+![image](/images/sedimark-ontology.png)
+<!-- ![image](https://github.com/Sedimark/ontology/assets/47256078/500b801f-fb95-4b32-bed8-68506b99506f) -->
 
 ## Properties
-![image](https://github.com/Sedimark/ontology/assets/47256078/418f9919-d235-465d-9d08-531e91d4d372)
+![image](/images/sedimark-ontology-properties.png)
+<!-- ![image](https://github.com/Sedimark/ontology/assets/47256078/418f9919-d235-465d-9d08-531e91d4d372) -->
 
 ## Namespaces
 
