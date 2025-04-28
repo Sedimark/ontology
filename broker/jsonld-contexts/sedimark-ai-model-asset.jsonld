@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "AIModelAsset":	"https://sedimark.github.io/ontology#AIModelAsset",
+    "category":	"https://sedimark.github.io/ontology#category",
+    "purpose":	"https://sedimark.github.io/ontology#purpose",
+    "algorithm":	"https://sedimark.github.io/ontology#algorithm",
+    "serialization":	"https://sedimark.github.io/ontology#serialization",
+    "version":	"http://www.w3.org/ns/dcat#version",
+    "execution":	"https://sedimark.github.io/ontology#execution",
+    "size":	"https://sedimark.github.io/ontology#size",
+    "modified":	"https://sedimark.github.io/ontology#modified",
+    "handleStream":	"https://sedimark.github.io/ontology#handleStream",
+    "inputFormat":	"https://sedimark.github.io/ontology#inputFormat",
+    "inputParameters":	"https://sedimark.github.io/ontology#inputParameters",
+    "outputFormat":	"https://sedimark.github.io/ontology#outputFormat",
+    "outputParameters":	"https://sedimark.github.io/ontology#outputParameters",
+    "hasTrainingDataset":	"https://sedimark.github.io/ontology#hasTrainingDataset",
+    "hasArchitecture":	"https://sedimark.github.io/ontology#hasArchitecture",
+    "datasetProcessing":	"https://sedimark.github.io/ontology#datasetProcessing",
+  }
+}

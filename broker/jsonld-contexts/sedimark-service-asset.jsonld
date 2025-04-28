@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "ServiceAsset":	"https://sedimark.github.io/ontology#ServiceAsset",
+    "endpointURL": "http://www.w3.org/ns/dcat#endpointURL",
+    "endpointDescription": "http://www.w3.org/ns/dcat#endpointDescription",
+    "servesDataset":	"http://www.w3.org/ns/dcat#servesDataset",
+    "serviceConfig": "https://sedimark.github.io/ontology#serviceConfig",
+
+  }
+}

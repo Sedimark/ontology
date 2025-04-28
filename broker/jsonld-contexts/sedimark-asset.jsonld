@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "Asset":	"https://sedimark.github.io/ontology#Asset",
+    "title": "http://www.w3.org/ns/dcat#title",
+    "creator": "http://www.w3.org/ns/dcat#creator",
+    "description": "http://www.w3.org/ns/dcat#description",
+    "publisher": "http://www.w3.org/ns/dcat#publisher",
+    "issued": "http://www.w3.org/ns/dcat#issued",
+    "modified": "http://www.w3.org/ns/dcat#modified",
+    "keyword": "http://www.w3.org/ns/dcat#keyword",
+    "license": "http://purl.org/dc/terms/license",
+    "spatial": "http://purl.org/dc/terms/spatial",
+    "wasGeneratedBy": "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "used": "http://www.w3.org/ns/prov#used",
+    "startedAtTime": "http://www.w3.org/ns/prov#startedAtTime",
+    "endedAtTime": "http://www.w3.org/ns/prov#endedAtTime",
+    "version": "http://www.w3.org/ns/dcat#version",
+    "endpointURL": "http://www.w3.org/ns/dcat#endpointURL",
+    "endpointDescription": "http://www.w3.org/ns/dcat#endpointDescription",
+    "geometry": "http://www.w3.org/ns/locn#geometry",
+    "image": "https://sedimark.github.io/ontology#	image",
+    "relatedAsset": "https://sedimark.github.io/ontology#relatedAsset",
+    "processingSteps": "https://sedimark.github.io/ontology#processingSteps"
+  }
+}

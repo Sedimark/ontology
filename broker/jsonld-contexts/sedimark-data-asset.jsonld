@@ -1,0 +1,12 @@
+{
+  "@context": {
+    "DataAsset":	"https://sedimark.github.io/ontology#DataAsset",
+    "temporal":	"http://www.w3.org/ns/dcat#temporal",
+    "startDate":	"http://www.w3.org/ns/dcat#startDate",
+    "endDate":	"http://www.w3.org/ns/dcat#endDate",
+    "temporalResolution":	"http://www.w3.org/ns/dcat#temporalResolution",
+    "size":	"http://www.w3.org/ns/dcat#size",
+    "accrualPeriodicity":	"http://purl.org/dc/terms/accrualPeriodicity",
+    "inSeries":	"http://www.w3.org/ns/dcat#inSeries"
+  }
+}
