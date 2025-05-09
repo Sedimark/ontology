@@ -1,0 +1,112 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sedimark: <https://w3id.org/sedimark/ontology#> .
+
+# Shape to ensure at least one instance of Offering class exists
+sedimark:OfferingExistsShape
+    a sh:NodeShape ;
+    sh:targetClass sedimark:Offering ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "At least one instance of sedimark:Offering must exist." ;
+        sh:select """
+        PREFIX sedimark: <https://w3id.org/sedimark/ontology#>
+            SELECT $this
+            WHERE {
+                FILTER NOT EXISTS {
+                    ?offering a sedimark:Offering .
+                }
+            }
+        """ ;
+    ] .
+
+# Shape for validating Offering instances
+sedimark:OfferingShape
+    a sh:NodeShape ;
+    sh:targetClass sedimark:Offering ;
+    # Offering must have at least one Asset
+    sh:property [
+        sh:path sedimark:hasAsset ;
+        sh:class sedimark:Asset ;
+        sh:minCount 1 ;
+        sh:message "Each Offering must have at least one Asset." ;
+    ] ;
+    # Offering must have at least one OfferingContract
+    sh:property [
+        sh:path sedimark:hasOfferingContract ;
+        sh:class sedimark:OfferingContract ;
+        sh:minCount 1 ;
+        sh:message "Each Offering must have at least one OfferingContract." ;
+    ] ;
+    # Required properties
+    sh:property [
+        sh:path dcat:title ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each Offering must have at least one dcat:title." ;
+    ] ;
+    sh:property [
+        sh:path dcat:description ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each Offering must have at least one dcat:description." ;
+    ] ;
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each Offering must have at least one dcat:keyword." ;
+    ] .
+
+# Shape for validating Asset instances
+sedimark:AssetShape
+    a sh:NodeShape ;
+    sh:targetClass sedimark:Asset ;
+    # Required properties
+    sh:property [
+        sh:path dcat:title ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each Asset must have at least one dcat:title." ;
+    ] ;
+    sh:property [
+        sh:path dcat:description ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each Asset must have at least one dcat:description." ;
+    ] ;
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each Asset must have at least one dcat:keyword." ;
+    ] .
+
+# Shape for validating OfferingContract instances
+sedimark:OfferingContractShape
+    a sh:NodeShape ;
+    sh:targetClass sedimark:OfferingContract ;
+    # Required properties
+    sh:property [
+        sh:path dcat:title ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each OfferingContract must have at least one dcat:title." ;
+    ] ;
+    sh:property [
+        sh:path dcat:description ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each OfferingContract must have at least one dcat:description." ;
+    ] ;
+    sh:property [
+        sh:path dcat:keyword ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Each OfferingContract must have at least one dcat:keyword." ;
+    ] .
