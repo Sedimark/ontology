@@ -160,10 +160,10 @@ sedimark:AssetShape
     
     # Theme property
     sh:property [
-        sh:path dcterms:theme ;
+        sh:path dcat:theme ;
         sh:class skos:Concept ;
         sh:minCount 1 ;
-        sh:message "sedimark:Asset must have at least one dcterms:theme with skos:Concept value" ;
+        sh:message "sedimark:Asset must have at least one dcat:theme with skos:Concept value" ;
     ] ;
     
     # Identifier property
