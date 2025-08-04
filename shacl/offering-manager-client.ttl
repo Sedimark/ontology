@@ -83,7 +83,6 @@ sedimark:OfferingShape
     # Theme taxonomy property
     sh:property [
         sh:path dcat:themeTaxonomy ;
-        sh:class skos:ConceptScheme ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Offering must have at least one dcat:themeTaxonomy with skos:ConceptScheme value" ;
@@ -160,9 +159,8 @@ sedimark:AssetShape
     # Theme property
     sh:property [
         sh:path dcat:theme ;
-        sh:class skos:Concept ;
         sh:minCount 1 ;
-        sh:message "sedimark:Asset must have at least one dcat:theme with skos:Concept value" ;
+        sh:message "sedimark:Asset must have at least one dcat:theme with skos:Concept id" ;
     ] ;
     
     # Identifier property
