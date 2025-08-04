@@ -33,6 +33,25 @@ http://www.w3.org/ns/dqv#
  http://www.w3.org/ns/odrl/2/
 ```
 
+## Namespaces
+
+- SEDIMARK (Marketplace)
+```
+https://w3id.org/sedimark/ontology#
+```
+- DCAT (Data Catalogues)
+```
+"http://www.w3.org/ns/dcat#"
+```
+- DQV (Asset Quality)
+```
+http://www.w3.org/ns/dqv#
+```
+- ODRL (Asset Policies)
+```
+ http://www.w3.org/ns/odrl/2/
+```
+
 ## Instantiation Example:
 Offering provided by CVSSP living lab for ehealth monitoring.
 
