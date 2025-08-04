@@ -34,17 +34,7 @@ sedimark:DocumentRequirementsShape
             }
         """
     ] ;
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "At least one sedimark:Participant instance must exist" ;
-        sh:select """
-        PREFIX sedimark: <https://w3id.org/sedimark/ontology#>
-            SELECT $this
-            WHERE {
-                FILTER NOT EXISTS { ?participant a sedimark:Participant }
-            }
-        """
-    ] ;
+
     sh:sparql [
         a sh:SPARQLConstraint ;
         sh:message "At least one sedimark:OfferingContract instance must exist" ;
