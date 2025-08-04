@@ -101,11 +101,10 @@ sedimark:OfferingShape
     # isListedBy property
     sh:property [
         sh:path sedimark:isListedBy ;
-        sh:class sedimark:Self-Listing ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:message "sedimark:Offering must have exactly one sedimark:isListedBy with sedimark:Self-Listing value" ;
+        sh:message "sedimark:Offering must have exactly one sedimark:isListedBy with a sedimark:Self-Listing id" ;
     ] ;
     
     # hasOfferingContract property
