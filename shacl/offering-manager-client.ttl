@@ -177,15 +177,6 @@ sedimark:AssetShape
         sh:message "sedimark:Asset must have at least one dcat:theme with skos:Concept id" ;
     ] ;
     
-    # Identifier property
-    sh:property [
-        sh:path dcterms:identifier ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message "sedimark:Asset must have exactly one dcterms:identifier with xsd:string value" ;
-    ] ;
-    
     # Title property
     sh:property [
         sh:path dcterms:title ;
