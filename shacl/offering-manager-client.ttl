@@ -121,6 +121,14 @@ sedimark:OfferingShape
         sh:message "sedimark:Offering must have at least one sedimark:hasOfferingContract with sedimark:OfferingContract value" ;
     ] ;
     
+    # publisher property
+    sh:property [
+        sh:path dcterms:publisher ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "dcterms:publisher must refer to a sedimark:Participant id" ;
+    ] ;
+
     # License property
     sh:property [
         sh:path dcterms:license ;
@@ -194,15 +202,6 @@ sedimark:AssetShape
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:message "sedimark:Asset must have exactly one dcterms:description with xsd:string value" ;
-    ] ;
-    
-    # Creator property
-    sh:property [
-        sh:path dcterms:creator ;
-        sh:datatype xsd:string ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message "sedimark:Asset must have exactly one dcterms:creator with xsd:string value" ;
     ] ;
     
     # Issued property
