@@ -91,10 +91,16 @@ sedimark:OfferingShape
     # hasAsset property
     sh:property [
         sh:path sedimark:hasAsset ;
-        sh:class sedimark:Asset ;
+        sh:or (
+            [ sh:class sedimark:Asset ]
+            [ sh:class sedimark:DataAsset ]
+            [ sh:class sedimark:AIModelAsset ]
+            [ sh:class sedimark:ServiceAsset ]
+            [ sh:class sedimark:OtherAsset ]
+        ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:message "sedimark:Offering must have at least one sedimark:hasAsset with sedimark:Asset value" ;
+        sh:message "sedimark:Offering must have at least one of the following asset value: Asset, DataAsset, AIModelAsset, ServiceAsset, OtherAsset" ;
     ] ;
     
     # isListedBy property
@@ -219,10 +225,9 @@ sedimark:AssetShape
     # Spatial property
     sh:property [
         sh:path dcterms:spatial ;
-        sh:datatype xsd:anyURI ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:message "sedimark:Asset must have exactly one dcterms:spatial with xsd:anyURI value" ;
+        sh:message "sedimark:Asset must have exactly one dcterms:spatial with dcterms:Location id" ;
     ] ;
     
     # Optional generatedBy property
