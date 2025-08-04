@@ -151,15 +151,6 @@ sedimark:AssetShape
         sh:message "sedimark:Asset must have at least one sedimark:isProvidedBy with sedimark:AssetProvision value" ;
     ] ;
     
-    # hasAssetQuality property
-    sh:property [
-        sh:path sedimark:hasAssetQuality ;
-        sh:class sedimark:AssetQuality ;
-        sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:message "sedimark:Asset must have at least one sedimark:hasAssetQuality with sedimark:AssetQuality value" ;
-    ] ;
-    
     # Theme property
     sh:property [
         sh:path dcat:theme ;
