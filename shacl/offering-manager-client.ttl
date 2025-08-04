@@ -301,28 +301,28 @@ sedimark:ParticipantShape
 # OfferingContract shape
 sedimark:OfferingContractShape
     a sh:NodeShape ;
-    sh:targetClass sedimark:OfferingContract ;
+    sh:targetClass sedimark:OfferingContract .
     
     # permission property
-    sh:property [
-        sh:path odrl:permission ;
-        sh:minCount 1 ;
-        sh:message "sedimark:OfferingContract must have at least one odrl:permission" ;
-    ] ;
+    # sh:property [
+    #     sh:path odrl:permission ;
+    #     sh:minCount 1 ;
+    #     sh:message "sedimark:OfferingContract must have at least one odrl:permission" ;
+    # ] ;
     
     # duty property
-    sh:property [
-        sh:path odrl:duty ;
-        sh:minCount 1 ;
-        sh:message "sedimark:OfferingContract must have at least one odrl:duty" ;
-    ] ;
+    # sh:property [
+    #     sh:path odrl:duty ;
+    #     sh:minCount 1 ;
+    #     sh:message "sedimark:OfferingContract must have at least one odrl:duty" ;
+    # ] ;
     
     # obligation property
-    sh:property [
-        sh:path odrl:obligation ;
-        sh:minCount 1 ;
-        sh:message "sedimark:OfferingContract must have at least one odrl:obligation" ;
-    ] .
+    # sh:property [
+    #     sh:path odrl:obligation ;
+    #     sh:minCount 1 ;
+    #     sh:message "sedimark:OfferingContract must have at least one odrl:obligation" ;
+    # ] .
 
 # AssetProvision shape - validate that for each Asset there's at least one AssetProvision
 sedimark:AssetProvisionRequirementShape
