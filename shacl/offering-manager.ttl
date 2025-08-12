@@ -51,7 +51,7 @@ sedimark:DocumentRequirementsShape
 sedimark:OfferingShape
     a sh:NodeShape ;
     sh:targetClass sedimark:Offering ;
-   \s
+   
     # Title property
     sh:property [
         sh:path dcterms:title ;
@@ -60,7 +60,7 @@ sedimark:OfferingShape
         sh:maxCount 1 ;
         sh:message "sedimark:Offering must have exactly one dcterms:title with xsd:string value" ;
     ] ;
-   \s
+   
     # Description property
     sh:property [
         sh:path dcterms:description ;
@@ -69,7 +69,7 @@ sedimark:OfferingShape
         sh:maxCount 1 ;
         sh:message "sedimark:Offering must have exactly one dcterms:description with xsd:string value" ;
     ] ;
-   \s
+   
     # Theme taxonomy property
     sh:property [
         sh:path dcat:themeTaxonomy ;
@@ -77,7 +77,7 @@ sedimark:OfferingShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Offering must have at least one dcat:themeTaxonomy with skos:ConceptScheme value" ;
     ] ;
-   \s
+   
     # hasAsset property
     sh:property [
         sh:path sedimark:hasAsset ;
@@ -92,7 +92,7 @@ sedimark:OfferingShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Offering must have at least one of the following asset value: Asset, DataAsset, AIModelAsset, ServiceAsset, OtherAsset" ;
     ] ;
-   \s
+   
     # isListedBy property
     sh:property [
         sh:path sedimark:isListedBy ;
@@ -101,7 +101,7 @@ sedimark:OfferingShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Offering must have exactly one sedimark:isListedBy with a sedimark:Self-Listing id" ;
     ] ;
-   \s
+   
     # hasOfferingContract property
     sh:property [
         sh:path sedimark:hasOfferingContract ;
@@ -110,7 +110,7 @@ sedimark:OfferingShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Offering must have at least one sedimark:hasOfferingContract with sedimark:OfferingContract value" ;
     ] ;
-   \s
+   
     # publisher property
     sh:property [
         sh:path dcterms:publisher ;
@@ -137,7 +137,7 @@ sedimark:AssetShape
     sh:targetClass sedimark:AIModelAsset ;
     sh:targetClass sedimark:ServiceAsset ;
     sh:targetClass sedimark:OtherAsset ;
-   \s
+   
     # offeredBy property
     sh:property [
         sh:path sedimark:offeredBy ;
@@ -146,7 +146,7 @@ sedimark:AssetShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Asset must have at least one sedimark:offeredBy with sedimark:Offering value" ;
     ] ;
-   \s
+   
     # isProvidedBy property
     sh:property [
         sh:path sedimark:isProvidedBy ;
@@ -155,14 +155,14 @@ sedimark:AssetShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Asset must have at least one sedimark:isProvidedBy with sedimark:AssetProvision value" ;
     ] ;
-   \s
+   
     # Theme property
     sh:property [
         sh:path dcat:theme ;
         sh:minCount 1 ;
         sh:message "sedimark:Asset must have at least one dcat:theme with skos:Concept id" ;
     ] ;
-   \s
+   
     # Title property
     sh:property [
         sh:path dcterms:title ;
@@ -171,7 +171,7 @@ sedimark:AssetShape
         sh:maxCount 1 ;
         sh:message "sedimark:Asset must have exactly one dcterms:title with xsd:string value" ;
     ] ;
-   \s
+   
     # Description property
     sh:property [
         sh:path dcterms:description ;
@@ -180,7 +180,7 @@ sedimark:AssetShape
         sh:maxCount 1 ;
         sh:message "sedimark:Asset must have exactly one dcterms:description with xsd:string value" ;
     ] ;
-   \s
+   
     # Issued property
     sh:property [
         sh:path dcterms:issued ;
@@ -189,7 +189,7 @@ sedimark:AssetShape
         sh:maxCount 1 ;
         sh:message "sedimark:Asset must have exactly one dcterms:issued with xsd:dateTime value" ;
     ] ;
-   \s
+   
     # Keyword property
     sh:property [
         sh:path dcat:keyword ;
@@ -197,7 +197,7 @@ sedimark:AssetShape
         sh:minCount 1 ;
         sh:message "sedimark:Asset must have at least one dcat:keyword with xsd:string value" ;
     ] ;
-   \s
+   
     # Spatial property
     sh:property [
         sh:path dcterms:spatial ;
@@ -205,14 +205,14 @@ sedimark:AssetShape
         sh:maxCount 1 ;
         sh:message "sedimark:Asset must have exactly one dcterms:spatial with dcterms:Location id" ;
     ] ;
-   \s
+   
     # Optional generatedBy property
     sh:property [
         sh:path prov:generatedBy ;
         sh:datatype xsd:dateTime ;
         sh:message "sedimark:Asset can have prov:generatedBy properties with xsd:dateTime values" ;
     ] ;
-   \s
+   
     # Optional isVersionOf property
     sh:property [
         sh:path dcat:isVersionOf ;
@@ -224,7 +224,7 @@ sedimark:AssetShape
 sedimark:SelfListingShape
     a sh:NodeShape ;
     sh:targetClass sedimark:Self-Listing ;
-   \s
+   
     # belongsTo property
     sh:property [
         sh:path sedimark:belongsTo ;
@@ -233,18 +233,18 @@ sedimark:SelfListingShape
         sh:nodeKind sh:IRI ;
         sh:message "sedimark:Self-Listing must have exactly one sedimark:belongsTo with sedimark:Participant value" ;
     ] .
-   \s
+   
     # Title property removed
-   \s
+   
     # Description property removed
    
-   \s
+   
     # Issued property removed
    
-   \s
+   
     # Modified property removed
 
-   \s
+   
     # Landing page property removed
    
 
@@ -252,7 +252,7 @@ sedimark:SelfListingShape
 sedimark:ParticipantShape
     a sh:NodeShape ;
     sh:targetClass sedimark:Participant ;
-   \s
+   
     # accountId property
     sh:property [
         sh:path schema:accountId ;
@@ -261,7 +261,7 @@ sedimark:ParticipantShape
         sh:maxCount 1 ;
         sh:message "sedimark:Participant must have exactly one schema:accountId with xsd:string value" ;
     ] .
-   \s
+   
     # email property removed
     
 
@@ -269,21 +269,21 @@ sedimark:ParticipantShape
 sedimark:OfferingContractShape
     a sh:NodeShape ;
     sh:targetClass sedimark:OfferingContract .
-   \s
+   
     # permission property
     # sh:property [
     #     sh:path odrl:permission ;
     #     sh:minCount 1 ;
     #     sh:message "sedimark:OfferingContract must have at least one odrl:permission" ;
     # ] ;
-   \s
+   
     # duty property
     # sh:property [
     #     sh:path odrl:duty ;
     #     sh:minCount 1 ;
     #     sh:message "sedimark:OfferingContract must have at least one odrl:duty" ;
     # ] ;
-   \s
+   
     # obligation property
     # sh:property [
     #     sh:path odrl:obligation ;
@@ -314,7 +314,7 @@ sedimark:AssetProvisionRequirementShape
 # Validate that referenced instances exist
 sedimark:InstanceExistenceShape
     a sh:NodeShape ;
-   \s
+   
     # Check if referenced Offering instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -323,12 +323,12 @@ sedimark:InstanceExistenceShape
         PREFIX sedimark: <https://w3id.org/sedimark/ontology#>
             SELECT ?this ?value
             WHERE {
-                { ?this sedimark:offeredBy ?value }\s
+                { ?this sedimark:offeredBy ?value }
                 FILTER NOT EXISTS { ?value a sedimark:Offering }
             }
         """
     ] ;
-   \s
+   
     # Check if referenced Asset instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -342,7 +342,7 @@ sedimark:InstanceExistenceShape
             }
         """
     ] ;
-   \s
+   
     # Check if referenced Self-Listing instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -356,7 +356,7 @@ sedimark:InstanceExistenceShape
             }
         """
     ] ;
-   \s
+   
     # Check if referenced AssetProvision instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -370,7 +370,7 @@ sedimark:InstanceExistenceShape
             }
         """
     ] ;
-   \s
+   
     # Check if referenced AssetQuality instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -384,7 +384,7 @@ sedimark:InstanceExistenceShape
             }
         """
     ] ;
-   \s
+   
     # Check if referenced OfferingContract instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -398,7 +398,7 @@ sedimark:InstanceExistenceShape
             }
         """
     ] ;
-   \s
+   
     # Check if referenced Participant instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
@@ -412,7 +412,7 @@ sedimark:InstanceExistenceShape
             }
         """
     ] ;
-   \s
+   
     # Check if referenced ConceptScheme instances exist
     sh:sparql [
         a sh:SPARQLConstraint ;
